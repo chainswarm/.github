@@ -1,4 +1,4 @@
-# Chain Swarm: Vision Document v2
+# Chain Swarm: THe Vision
 
 ## Executive Summary
 
