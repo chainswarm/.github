@@ -1,4 +1,4 @@
-# Chain Swarm: THe Vision
+# Chain Swarm: The Vision
 
 ## Executive Summary
 
