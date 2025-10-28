@@ -2,7 +2,7 @@
 
 ## Vision
 
-A system that **monitors blockchain networks for suspicious activity**, **analyzes alerts**, and **identifies risk**—helping track **stolen funds** and disrupt fraud. It is **expandable** across major blockchain types, **open source**, and **rapidly evolving** by design.
+A system that **monitors blockchain networks for suspicious activity**, **analyses alerts**, and **identifies risk**—helping track **stolen funds** and disrupt fraud. It is **expandable** across major blockchain types, **open source**, and **rapidly evolving** by design.
 
 ## Mission
 
@@ -23,9 +23,9 @@ ChainSwarm AML is a modular ecosystem composed of four reinforcing **mechanics**
    Predictive models produce **calibrated probabilities** and **ranked risk** for addresses/alerts, with drift monitoring and reproducible runs.
 
 2. **Blockchain Indexing**
-   A multi-chain data layer that **ingests and normalizes** blocks/transactions/events, **builds features** (temporal windows, proximity to known bad actors, entity/link stats), **constructs graphs** (entities, relations, flows), and **publishes deterministic batches** for downstream scoring and analysis—guarded by quality gates (completeness, de-duplication, timestamp sanity, lineage).
+   A multi-chain data layer that **ingests and normalises** blocks/transactions/events, **builds features** (temporal windows, proximity to known bad actors, entity/link stats), **constructs graphs** (entities, relations, flows), and **publishes deterministic batches** for downstream scoring and analysis—guarded by quality gates (completeness, de-duplication, timestamp sanity, lineage).
 
-3. **Address Labeling**
+3. **Address Labelling**
    High-coverage labels from curated sources and community contributions, maintained via **validation loops** to keep precision high and staleness low.
 
 4. **AI-Agents**
@@ -40,10 +40,28 @@ ChainSwarm AML is a modular ecosystem composed of four reinforcing **mechanics**
   Expand multi-chain ingestion, feature engineering, graph construction, and batch publication with strict quality gates.
 
 * **Phase 3: Address Labelling**
-  Launch labelling programs, imports, and validation; raise label coverage and freshness.
+  Launch labelling programmes, imports, and validation; raise label coverage and freshness.
 
 * **Phase 4: AI-Agents**
   Introduce investigator assistants for assisted tracing, typology suggestions, and narrative drafts.
 
 * **Phase 5: Continuous Improvements**
   Ongoing performance/reliability upgrades, drift & calibration management, provenance/audit packs, and rapid chain/family expansion.
+
+---
+
+## Repositories
+
+* **Data Pipeline** — [chainswarm/data-pipeline](https://github.com/chainswarm/data-pipeline)
+  Source-of-Truth (SOT) pipeline: multi-chain ingest & normalisation, feature engineering, typology generation, graph construction, and **deterministic batch** publication with lineage and quality gates.
+
+* **Risk Scoring** — [chainswarm/risk-scoring](https://github.com/chainswarm/risk-scoring)
+  Training/evaluation harness for AML models (calibration, AUC/NDCG, drift checks), submission packaging, and reproducible runs with model cards.
+
+* **Chain Insights (Web/App & APIs)** — [chainswarm/chain-insights](https://github.com/chainswarm/chain-insights)
+  Investigator surfaces: instant risk checks, graph/network analytics, cases & alerts, explanations and exports; programmatic access via APIs.
+
+* **Agents** — [chainswarm/agents](https://github.com/chainswarm/agents)
+  **AI-Agents** for investigations: flow tracing, typology detection, narrative drafting, and artefact generation—powered by Risk-Scoring, Indexing, and Labelling outputs.
+
+---
