@@ -231,7 +231,7 @@ Responsibilities: Indexing infrastructure, subnet mechanics, overall architectur
 - Confidential Computing capabilities with TDX/SGX for Trusted Execution Environments
 - Active Bittensor miner with deep network understanding
 
-**U1OCORE — Development Partner**
+**U1CORE — Development Partner**
 
 - Chain Insights application development (UI/UX design, frontend implementation)
 - Application backend services
