@@ -10,20 +10,20 @@ Version 1.0 | 2025
 
 ## Table of Contents
 
-1. Abstract
-2. Introduction
-3. Problem Statement
-4. Solution Overview
-5. Architecture
-6. Mechanisms of Intelligence
-7. Chain Synthetics Framework
-8. Chain Insights Application
-9. x402 Agent Gateway
-10. Token Economics
-11. Use Cases
-12. Roadmap
-13. Team & Partners
-14. Conclusion
+1. [Abstract](#1-abstract)
+2. [Introduction](#2-introduction)
+3. [Problem Statement](#3-problem-statement)
+4. [Solution Overview](#4-solution-overview)
+5. [Architecture](#5-architecture)
+6. [Mechanisms of Intelligence](#6-mechanisms-of-intelligence)
+7. [Chain Synthetics Framework](#7-chain-synthetics-framework)
+8. [Chain Insights Application](#8-chain-insights-application)
+9. [x402 Agent Gateway](#9-x402-agent-gateway)
+10. [Token Economics](#10-token-economics)
+11. [Use Cases](#11-use-cases)
+12. [Roadmap](#12-roadmap)
+13. [Team & Partners](#13-team--partners)
+14. [Conclusion](#14-conclusion)
 
 ---
 
