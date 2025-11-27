@@ -178,7 +178,31 @@ Emphasise the separation: "We run the infrastructure so miners can focus purely 
 
 ---
 
-## Slide 10: Chain Insights Application
+## Slide 10: How Miners Are Validated
+
+**Each mechanism has objective, gaming-resistant validation**
+
+| Mechanism | Validation Method | Scoring Criteria |
+|-----------|-------------------|------------------|
+| **Analytics** | Chain Synthetics benchmark | Precision, recall, speed, novelty |
+| **Machine Learning** | Chain Synthetics + temporal validation | Accuracy over time ($T + \tau$), A/B vs. production |
+| **Labelling** | Evidence-based verification against indexing service | Quality, quantity, novelty, long-term accuracy |
+| **Intelligence (LLM)** | Golden Dataset evaluation | Query accuracy, graph integration, report quality |
+
+**Anti-Gaming Measures:**
+- Test datasets regenerate each round
+- Parameters randomized within realistic ranges
+- Holdout patterns not revealed until post-evaluation
+- Labels must withstand re-verification over time
+
+> *Miners can't game the system — they can only improve it.*
+
+**Speaker Notes:**
+Emphasise that this is a key differentiator: "We've solved the validation problem. Every contribution is objectively measured, and gaming is mathematically difficult."
+
+---
+
+## Slide 11: Chain Insights Application
 
 **The Consumer-Facing Intelligence Layer**
 
@@ -194,14 +218,14 @@ Emphasise the separation: "We run the infrastructure so miners can focus purely 
 - Generate court-admissible investigation reports
 
 ### Pricing
-- **1,000 credits = 100 USDT**
+- **1,000 credits = 10 USDT**
 - 1 credit = 1 address risk check
 - Chat usage calculated per interaction
 - *Free for Bittensor community during beta*
 
 ---
 
-## Slide 11: x402 Agent Gateway
+## Slide 12: x402 Agent Gateway
 
 **Built for the Agentic Economy**
 
@@ -230,29 +254,34 @@ Agent Request                    Response
 
 ---
 
-## Slide 12: Revenue Model & Token Economics
+## Slide 13: Revenue Model & Token Economics
 
-**Sustainable Value Flow**
+**Five Revenue Streams — Sustainable Value Flow**
 
+| Revenue Stream | Description |
+|----------------|-------------|
+| **Chain Insights Credits** | 1,000 credits = 10 USDT (risk scoring, chat) |
+| **x402 Agent Gateway** | Pay-per-query micropayments from AI agents |
+| **Enterprise API Licenses** | Bulk queries, SLAs, dedicated support |
+| **Address Label Datasets** | License verified, up-to-date address attributions to exchanges, compliance providers, and other projects |
+| **Investigation Reports** | Premium court-admissible forensic reports |
+
+**Value Distribution:**
 ```
-Revenue Streams                    Value Distribution
-─────────────────                  ──────────────────
-Chain Insights App (Credits)  ──┐
-                                 ├──▶ Subnet Operations
-x402 API (Pay-per-query)     ──┤
-                                 ├──▶ $ALPHA Buybacks
-Enterprise Licenses          ──┘
-                                 └──▶ Development Fund
+Revenue ──┬──▶ Subnet Operations (infrastructure, development, support)
+          ├──▶ $ALPHA Buybacks (demand pressure, aligned incentives)
+          └──▶ Development Fund (R&D, multi-chain expansion, partnerships)
 ```
 
-**Miner Incentives:**
-- Earn $ALPHA emissions for validated improvements
-- Tournament-based: innovate or emissions stop
-- Open-source contributions benefit the entire ecosystem
+**Why Address Labels Matter:**
+Verified address datasets are extremely valuable and hard to source. Exchanges, compliance providers, and other intelligence projects need current, accurate attributions — we create this as a byproduct of the Labelling Mechanism.
+
+**Speaker Notes:**
+Emphasise diversified revenue: "We're not dependent on one income stream. As the subnet grows, each mechanism creates monetizable assets — from API calls to datasets to premium reports."
 
 ---
 
-## Slide 13: Roadmap
+## Slide 14: Roadmap
 
 ### Now — Q4 2025
 - ✅ Core Indexing Service (Bittensor, Torus)
@@ -279,7 +308,7 @@ Enterprise Licenses          ──┘
 
 ---
 
-## Slide 14: Team & Partners
+## Slide 15: Team & Partners
 
 ### Founder
 **Kamil Wojciechowski (aphex5)**
@@ -300,7 +329,7 @@ Enterprise Licenses          ──┘
 
 ---
 
-## Slide 15: Why Bittensor? Why Now?
+## Slide 16: Why Bittensor? Why Now?
 
 **Starting where we're known, scaling where we're needed**
 
@@ -315,7 +344,7 @@ Enterprise Licenses          ──┘
 ---
 
 
-## Slide 16: Contact
+## Slide 17: Contact
 
 **Chain Insights Subnet**
 *Powered by Chainswarm Technology*
