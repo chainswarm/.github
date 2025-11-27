@@ -1,8 +1,3 @@
-Here's the pitch deck content ready for download:
-
----
-
-```markdown
 # Chain Insights Subnet - Pitch Deck
 
 ## Slide 1: Title
