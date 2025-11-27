@@ -288,13 +288,13 @@ Enterprise Licenses          ──┘
 - Full-stack subnet architect: indexing, analytics, ML, mechanisms
 
 ### Partners
-**Hyperclouds** — Infrastructure Partner
+**1-HORIZON LTD** — Infrastructure Partner
 - Scalable cloud infrastructure for indexing and validation
 - DevSecOps AIOps with 4 decades of expertise.
 - Confidential Computing with TDX/SGX for TEE
 - Bittensor Miner
 
-**U1OCORE** — Development Partner  
+**U1CORE** — Development Partner  
 - Chain Insights application (UI/UX, backend)
 - Enterprise-grade frontend development
 
