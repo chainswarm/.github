@@ -224,14 +224,14 @@ Responsibilities: Indexing infrastructure, subnet mechanics, overall architectur
 
 ### Partners
 
-**Hyperclouds — Infrastructure Partner**
+**1-HORIZON LTD — Infrastructure Partner**
 
 - Scalable cloud infrastructure for indexing and validation services
 - DevSecOps and AIOps expertise with four decades of combined experience
 - Confidential Computing capabilities with TDX/SGX for Trusted Execution Environments
 - Active Bittensor miner with deep network understanding
 
-**U1OCORE — Development Partner**
+**U1CORE — Development Partner**
 
 - Chain Insights application development (UI/UX design, frontend implementation)
 - Application backend services
