@@ -17,13 +17,14 @@ Version 1.0 | 2025
 5. [Architecture](#5-architecture)
 6. [Mechanisms of Intelligence](#6-mechanisms-of-intelligence)
 7. [Chain Synthetics Framework](#7-chain-synthetics-framework)
-8. [Chain Insights Application](#8-chain-insights-application)
-9. [x402 Agent Gateway](#9-x402-agent-gateway)
-10. [Token Economics](#10-token-economics)
-11. [Use Cases](#11-use-cases)
-12. [Roadmap](#12-roadmap)
-13. [Team & Partners](#13-team--partners)
-14. [Conclusion](#14-conclusion)
+8. [Miner Validation](#8-miner-validation)
+9. [Chain Insights Application](#9-chain-insights-application)
+10. [x402 Agent Gateway](#10-x402-agent-gateway)
+11. [Token Economics](#11-token-economics)
+12. [Use Cases](#12-use-cases)
+13. [Roadmap](#13-roadmap)
+14. [Team & Partners](#14-team--partners)
+15. [Conclusion](#15-conclusion)
 
 ---
 
@@ -333,7 +334,7 @@ Data hunters and OSINT specialists who discover and verify:
 
 1. **Discovery:** Miners identify labelled addresses from public sources
 2. **Evidence Collection:** Each label requires cryptographic evidence of source
-3. **Verification:** Validators verify that the address exists and matches the claimed behaviour againstthe  indexing service
+3. **Verification:** Validators verify that the address exists and matches the claimed behaviour against the indexing service
 4. **Integration:** Verified labels integrated into the production intelligence layer
 
 #### Incentive Model
@@ -487,13 +488,91 @@ To prevent overfitting:
 
 ---
 
-## 8. Chain Insights Application
+## 8. Miner Validation
 
-### 8.1 Overview
+Each mechanism employs objective, gaming-resistant validation tailored to its contribution type. This section provides a comprehensive overview of how miners are validated across all four mechanisms.
+
+### 8.1 Validation Overview
+
+| Mechanism | Validation Method | Primary Scoring Criteria |
+|-----------|-------------------|--------------------------|
+| **Analytics** | Chain Synthetics benchmark | Precision, recall, speed, novelty |
+| **Machine Learning** | Chain Synthetics + temporal validation | Accuracy over time ($T + \tau$), A/B vs. production |
+| **Labelling** | Evidence-based verification | Quality, quantity, novelty, long-term accuracy |
+| **Intelligence (LLM)** | Golden Dataset evaluation | Query accuracy, graph integration, report quality |
+
+### 8.2 Analytics Mechanism Validation
+
+The Analytics Mechanism uses the Chain Synthetics Framework for objective benchmarking:
+
+1. **Blind Evaluation:** Miners submit code via Docker containers without knowing which transactions in test datasets are synthetic vs. real
+2. **Benchmark Execution:** Validators run submissions against Chain Synthetics test data containing injected fraud patterns
+3. **Objective Scoring:** Submissions scored on:
+   - **Precision:** What fraction of flagged patterns are actually fraudulent?
+   - **Recall:** What fraction of actual fraud patterns were detected?
+   - **Speed:** Processing time for dataset analysis
+   - **Novelty:** Detection of patterns not in the training distribution
+4. **Production Deployment:** Best-performing code is adopted by the subnet owner for production alerts
+
+### 8.3 Machine Learning Mechanism Validation
+
+The ML Mechanism extends Chain Synthetics validation with temporal and production testing:
+
+1. **Ground Truth Evaluation:** Models validated against Chain Synthetics labelled data
+2. **Temporal Validation:** Predictions validated over time ($T + \tau$) to ensure real-world accuracy, not just test set performance—this catches models that overfit to static benchmarks
+3. **A/B Testing:** Candidate models tested against the current production model for drift detection
+4. **Calibration Assessment:** Predicted probabilities must match observed frequencies
+5. **Continuous Challenge:** New submissions continuously challenge the production "Oracle"
+
+### 8.4 Labelling Mechanism Validation
+
+The Labelling Mechanism uses evidence-based verification rather than synthetic benchmarks:
+
+1. **Evidence Requirement:** Each label submission requires cryptographic evidence of source (OSINT findings, public attributions, regulatory blacklists, theft reports, on-chain proof)
+2. **Indexing Service Verification:** Validators verify the address exists and matches claimed behaviour against the Core Indexing Service
+3. **Scoring Dimensions:**
+   - **Quality:** Labels that prove accurate over time earn higher scores; labels that are challenged and disproven lose points
+   - **Quantity:** Comprehensive coverage across address categories (exchanges, scams, sanctioned entities, etc.)
+   - **Novelty:** Previously unknown labels earn a premium over already-known attributions
+   - **Verification Resistance:** Labels that withstand re-verification and challenge over time
+4. **Long-Term Accuracy Tracking:** Label accuracy is monitored over time; miners whose labels consistently prove correct build reputation
+
+### 8.5 Intelligence Mechanism Validation
+
+The Intelligence (LLM) Mechanism uses benchmark evaluation against curated test scenarios:
+
+1. **Golden Dataset:** Models tested against a curated "Golden Dataset" of complex investigative queries and scenarios with known correct answers
+2. **Integration Testing:** Validation that the model can properly query the Chain Insights knowledge graph and interpret results
+3. **Capability Assessment:**
+   - **Terminology Understanding:** Correct use of AML terminology ("structuring," "peeling chain," "mixer," "layering")
+   - **Regulatory Context:** Accurate representation of KYC/AML requirements, FATF guidelines
+   - **Report Generation:** Quality of generated investigation narratives
+4. **Human Evaluation Component:** For subjective quality dimensions, a panel evaluation may supplement automated scoring
+
+### 8.6 Anti-Gaming Measures
+
+All mechanisms implement measures to prevent gaming:
+
+| Measure | Analytics | ML | Labelling | Intelligence |
+|---------|-----------|-----|-----------|--------------|
+| Regenerated test data each round | ✅ | ✅ | — | ✅ |
+| Randomised parameters | ✅ | ✅ | — | ✅ |
+| Holdout patterns/questions | ✅ | ✅ | — | ✅ |
+| Temporal validation | — | ✅ | ✅ | — |
+| Evidence requirements | — | — | ✅ | — |
+| Long-term accuracy tracking | — | ✅ | ✅ | — |
+
+> *Miners cannot game the system—they can only improve it.*
+
+---
+
+## 9. Chain Insights Application
+
+### 9.1 Overview
 
 Chain Insights is the consumer-facing application delivering subnet intelligence to end users. It provides accessible interfaces for risk scoring, investigation, and AI-powered analysis.
 
-### 8.2 Risk Scoring
+### 9.2 Risk Scoring
 
 #### Functionality
 
@@ -515,7 +594,7 @@ Risk scores include factor breakdown:
 
 Users can understand *why* an address is flagged, not just that it is flagged.
 
-### 8.3 AI Investigator Chat
+### 9.3 AI Investigator Chat
 
 #### Functionality
 
@@ -533,7 +612,7 @@ Natural language interface for complex queries:
 - Generate structured investigation reports
 - Explain technical concepts in an accessible language
 
-### 8.4 Pricing Model
+### 9.4 Pricing Model
 
 **Credit-Based Access**
 
@@ -547,9 +626,9 @@ During the initial launch, Bittensor community members receive free access to bu
 
 ---
 
-## 9. x402 Agent Gateway
+## 10. x402 Agent Gateway
 
-### 9.1 The Agent Payment Problem
+### 10.1 The Agent Payment Problem
 
 Autonomous AI agents face a fundamental challenge when accessing paid services: traditional payment models assume human users with accounts, subscriptions, and manual payment authorisation.
 
@@ -561,7 +640,7 @@ Agents need:
 - **Programmatic:** Payment authorisation without human intervention
 - **Real-time:** No delays for payment processing
 
-### 9.2 x402 Protocol Integration
+### 10.2 x402 Protocol Integration
 
 The x402 protocol enables HTTP-native payments. Chain Insights integrates x402 to provide agent-accessible intelligence:
 
@@ -586,7 +665,7 @@ The x402 protocol enables HTTP-native payments. Chain Insights integrates x402 t
          │                           │
 ```
 
-### 9.3 Use Cases
+### 10.3 Use Cases
 
 **DeFi Protocol Integration**
 A lending protocol queries the address risk before accepting deposits. High-risk addresses trigger additional verification or rejection.
@@ -603,7 +682,7 @@ A compliance agent monitors portfolio exposure and automatically flags when coun
 **Cross-Protocol Coordination**
 Multiple agents share intelligence through Chain Insights, a common infrastructure that builds collective awareness.
 
-### 9.4 Pricing
+### 10.4 Pricing
 
 Agent gateway pricing mirrors credit-based pricing:
 
@@ -614,23 +693,44 @@ Agent gateway pricing mirrors credit-based pricing:
 
 ---
 
-## 10. Token Economics
+## 11. Token Economics
 
-### 10.1 Value Flow Architecture
+### 11.1 Revenue Model
+
+Chain Insights generates revenue through five complementary streams, creating a diversified and sustainable business model:
+
+| Revenue Stream | Description | Target Customer |
+|----------------|-------------|-----------------|
+| **Chain Insights Credits** | 1,000 credits = 10 USDT for risk scoring and chat queries | Retail users, small teams, investigators |
+| **x402 Agent Gateway** | Pay-per-query micropayments, fractions of a cent per query | Autonomous AI agents, DeFi protocols, trading bots |
+| **Enterprise API Licenses** | Bulk queries, SLAs, custom analytics, dedicated support | Exchanges, compliance platforms, large organisations |
+| **Address Label Datasets** | Licensed access to verified, up-to-date address attributions | Other intelligence providers, exchanges, compliance vendors |
+| **Investigation Reports** | Premium court-admissible forensic reports via AI Investigator | Law enforcement, legal teams, recovery services |
+
+### 11.2 Value Flow Architecture
 
 Chain Insights creates sustainable value flow connecting revenue generation to network incentives:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                     REVENUE SOURCES                              │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐  │
-│  │ Chain Insights  │  │  x402 Agent     │  │  Enterprise     │  │
-│  │ Credits         │  │  Payments       │  │  Licenses       │  │
-│  └────────┬────────┘  └────────┬────────┘  └────────┬────────┘  │
-└───────────┼────────────────────┼────────────────────┼───────────┘
-            └────────────────────┼────────────────────┘
-                                 │
-                                 ▼
+│  ┌───────────────┐ ┌───────────────┐ ┌───────────────┐          │
+│  │Chain Insights │ │ x402 Agent    │ │ Enterprise    │          │
+│  │Credits        │ │ Payments      │ │ Licenses      │          │
+│  └───────┬───────┘ └───────┬───────┘ └───────┬───────┘          │
+│          │                 │                 │                   │
+│  ┌───────┴─────────────────┴─────────────────┴───────┐          │
+│  │                                                    │          │
+│  │  ┌───────────────┐         ┌───────────────┐      │          │
+│  │  │Address Label  │         │ Investigation │      │          │
+│  │  │Datasets       │         │ Reports       │      │          │
+│  │  └───────┬───────┘         └───────┬───────┘      │          │
+│  │          │                         │              │          │
+│  └──────────┼─────────────────────────┼──────────────┘          │
+└─────────────┼─────────────────────────┼─────────────────────────┘
+              └────────────┬────────────┘
+                           │
+                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   VALUE DISTRIBUTION                             │
 │                                                                  │
@@ -652,7 +752,7 @@ Chain Insights creates sustainable value flow connecting revenue generation to n
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 10.2 Miner Incentives
+### 11.3 Miner Incentives
 
 Miners earn subnet alpha token emissions for validated contributions:
 
@@ -680,7 +780,7 @@ Miners earn subnet alpha token emissions for validated contributions:
 - Evaluated on the golden dataset of complex queries
 - Integration testing with Chain Insights knowledge graph
 
-### 10.3 Open Source Commitment
+### 11.4 Open Source Commitment
 
 All winning miner contributions are open-sourced:
 
@@ -690,9 +790,41 @@ All winning miner contributions are open-sourced:
 
 Miners are compensated for innovation through emissions; the ecosystem benefits from open knowledge.
 
-### 10.4 Buyback Mechanism
+### 11.5 Address Label Datasets as Monetizable Asset
 
-Revenue from Chain Insights application and x402 gateway funds token buybacks:
+The Labelling Mechanism creates a unique byproduct: a continuously curated, verified database of address attributions. This dataset has significant standalone value:
+
+**Why Address Labels Are Valuable**
+
+- **Scarcity:** Comprehensive, verified address labels are extremely difficult to source
+- **Freshness:** Labels require continuous curation as new addresses emerge and attributions change
+- **Verification:** Each label in Chain Insights has cryptographic evidence and has passed validator verification
+- **Coverage:** Decentralised discovery means broader coverage than any single organisation could achieve
+
+**Market Demand**
+
+Multiple market participants need current, accurate address attributions:
+
+- **Exchanges:** For internal compliance systems beyond their primary intelligence provider
+- **Compliance Vendors:** To supplement their own datasets
+- **Other Intelligence Providers:** Cross-reference and validation
+- **Research Institutions:** Academic study of blockchain ecosystems
+- **Law Enforcement:** Investigation support
+
+**Licensing Model**
+
+Address label datasets can be licensed in multiple formats:
+
+- **Full Dataset Access:** Complete verified label database with regular updates
+- **Category-Specific:** Only exchange labels, only sanctioned addresses, etc.
+- **API Access:** Query-based access for integration into existing systems
+- **Historical Snapshots:** Point-in-time datasets for research purposes
+
+This revenue stream turns miner contributions into a monetizable asset while providing ongoing value to the broader ecosystem.
+
+### 11.6 Buyback Mechanism
+
+Revenue from all five streams funds token buybacks:
 
 - Creates demand pressure supporting token value
 - Aligns subnet owner incentives with token holders
@@ -700,9 +832,9 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 ---
 
-## 11. Use Cases
+## 12. Use Cases
 
-### 11.1 Exchange Compliance
+### 12.1 Exchange Compliance
 
 **Scenario:** A centralised exchange needs to screen deposits and withdrawals for AML compliance.
 
@@ -715,7 +847,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 **Value:** Automated compliance reduces manual review burden while meeting regulatory requirements.
 
-### 11.2 DeFi Protocol Security
+### 12.2 DeFi Protocol Security
 
 **Scenario:** A lending protocol wants to prevent interaction with stolen funds or sanctioned addresses.
 
@@ -728,7 +860,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 **Value:** Protocol protection without manual intervention, suitable for fully autonomous operation.
 
-### 11.3 Hack Investigation
+### 12.3 Hack Investigation
 
 **Scenario:** A protocol suffers an exploit and needs to trace stolen funds.
 
@@ -741,7 +873,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 **Value:** Rapid investigation capability without specialised forensics expertise.
 
-### 11.4 Personal Risk Assessment
+### 12.4 Personal Risk Assessment
 
 **Scenario:** A user is blocked from an exchange and wants to understand why.
 
@@ -754,7 +886,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 **Value:** Transparency and recourse for users facing opaque compliance decisions.
 
-### 11.5 Autonomous Agent Risk Management
+### 12.5 Autonomous Agent Risk Management
 
 **Scenario:** An AI trading agent needs to avoid contaminated addresses while maximising returns.
 
@@ -767,7 +899,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 **Value:** Autonomous risk management enabling compliant automated trading.
 
-### 11.6 Privacy Audit
+### 12.6 Privacy Audit
 
 **Scenario:** A privacy-conscious user wants to understand their transaction graph exposure.
 
@@ -782,7 +914,7 @@ Revenue from Chain Insights application and x402 gateway funds token buybacks:
 
 ---
 
-## 12. Roadmap
+## 13. Roadmap
 
 ### Phase 1: Foundation (Q4 2025)
 
@@ -851,9 +983,9 @@ Chain Insights becomes the default intelligence layer for the agentic economy—
 
 ---
 
-## 13. Team & Partners
+## 14. Team & Partners
 
-### 13.1 Founder
+### 14.1 Founder
 
 **Kamil Wojciechowski (aphex5)**
 
@@ -875,7 +1007,7 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 - Overall architecture and technical leadership
 - Project management and coordination
 
-### 13.2 Partners
+### 14.2 Partners
 
 **1-HORIZON LTD — Infrastructure Partner**
 
@@ -891,7 +1023,7 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 - Enterprise-grade development practices
 - User experience optimisation
 
-### 13.3 Development Structure
+### 14.3 Development Structure
 
 **Core Team (Subnet Owner)**
 
@@ -915,9 +1047,9 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 
 ---
 
-## 14. Conclusion
+## 15. Conclusion
 
-### 14.1 The Opportunity
+### 15.1 The Opportunity
 
 Blockchain intelligence is at an inflexion point. Regulatory requirements are expanding globally. The agentic economy is emerging rapidly. Current centralised solutions cannot serve the scale, accessibility, and innovation requirements of this new landscape.
 
@@ -943,11 +1075,11 @@ Chain Insights Subnet addresses this opportunity by:
 
 **Building Sustainability**
 
-- Revenue from applications and API
+- Diversified revenue from five complementary streams
 - Token buybacks from operational income
 - Aligned incentives across stakeholders
 
-### 14.2 The Vision
+### 15.2 The Vision
 
 Chain Insights becomes the default intelligence layer for the agentic economy.
 
@@ -955,7 +1087,7 @@ Any agent, any chain, any query—with real-time risk assessment enabling safe a
 
 We do not predict the future of blockchain compliance and intelligence. We build the infrastructure that makes it possible.
 
-### 14.3 Call to Action
+### 15.3 Call to Action
 
 **For Miners:**
 Join the innovation competition. Whether you're a software engineer optimizing graph algorithms, a data scientist training ML models, an OSINT specialist discovering address intelligence, or an AI engineer fine-tuning language models—there is a mechanism for your expertise.
