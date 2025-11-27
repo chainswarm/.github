@@ -123,7 +123,7 @@ Emphasise the separation: "We run the infrastructure so miners can focus purely 
 ### Analytics Mechanism
 - **Who:** Software engineers, algorithm researchers
 - **What:** Optimised graph algorithms, pattern detection code
-- **Output:** Production-ready fraud detection (mixers, layering, peel chains)
+- **Output:** Production-ready fraud detection (mixers, layering, peel chains, and many more...)
 
 ### Labelling Mechanism
 - **Who:** Data hunters, OSINT specialists
