@@ -29,9 +29,9 @@ Version 1.0 | 2025
 
 ## 1. Abstract
 
-Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, fraud detection, and investigative AI capabilities for the emerging agentic economy. The subnet introduces a novel architecture separating infrastructure operation from intelligence innovation: the subnet owner maintains reliable core indexing services while miners compete in tournaments to advance algorithms, train superior machine learning models, discover validated address labels, and fine-tune specialized large language models.
+Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, fraud detection, and investigative AI capabilities for the emerging agentic economy. The subnet introduces a novel architecture that separates infrastructure operations from intelligence innovation: the subnet owner maintains reliable core indexing services, while miners compete in tournaments to advance algorithms, train superior machine learning models, discover validated address labels, and fine-tune specialised large language models.
 
-This paper describes the technical architecture, incentive mechanisms, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users requiring blockchain risk assessment. By rewarding breakthroughs rather than mere computation, Chain Insights aligns economic incentives with continuous advancement of the state of the art in blockchain forensics and anti-money laundering detection.
+This paper describes the technical architecture, incentive mechanisms, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users requiring blockchain risk assessment. By rewarding breakthroughs rather than mere computation, Chain Insights aligns economic incentives with the continuous advancement of the state of the art in blockchain forensics and anti-money laundering detection.
 
 ---
 
@@ -41,7 +41,7 @@ This paper describes the technical architecture, incentive mechanisms, and produ
 
 The cryptocurrency ecosystem is undergoing a fundamental transformation. Autonomous AI agents are emerging as economic actors—executing trades, managing portfolios, interacting with DeFi protocols, and making real-time decisions without human intervention. These agents require infrastructure that matches their operational model: programmatic, real-time, and pay-per-use.
 
-When an autonomous agent prepares to execute a transaction, it needs to answer a critical question: *Is this counterparty safe?* Current blockchain intelligence solutions, designed for human compliance officers reviewing quarterly reports, cannot serve this need. The agentic economy demands intelligence infrastructure built for machines.
+When an autonomous agent prepares to execute a transaction, it needs to answer a critical question: *Is this counterparty safe?* Current blockchain intelligence solutions, designed for human compliance officers reviewing quarterly reports, cannot serve this need. The agentic economy demands an intelligence infrastructure built for machines.
 
 ### 2.2 The Intelligence Gap
 
@@ -52,7 +52,7 @@ Blockchain intelligence today is characterised by centralisation, high cost, and
 - **Retail users excluded** from understanding their own risk profiles
 - **Closed innovation** where improvements happen behind proprietary walls
 
-Chain Insights Subnet addresses these gaps by building an open, decentralised intelligence network where innovation is incentivised, access is democratised, and neutrality is maintained.
+Chain Insights Subnet addresses these gaps by building an open, decentralised intelligence network that incentivises innovation, democratises access, and maintains neutrality.
 
 ### 2.3 Design Philosophy
 
@@ -77,7 +77,7 @@ This asymmetry benefits no one. Users lose access to financial services. Exchang
 Autonomous AI agents represent the fastest-growing category of blockchain users. These agents need to make risk decisions in milliseconds:
 
 - Should this DeFi protocol accept a deposit from this address?
-- Do you think this wallet should alert the user about this recipient?
+- Should this wallet alert the user about this recipient?
 - Should this trading bot interact with this liquidity pool?
 - Do you think this compliance agent should flag this transaction for review?
 
