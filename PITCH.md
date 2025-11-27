@@ -7,7 +7,6 @@
 
 Powered by Chainswarm Technology
 
-YUMA Accelerator Pre-Registration
 
 ---
 
@@ -195,7 +194,7 @@ Emphasise the separation: "We run the infrastructure so miners can focus purely 
 - Generate court-admissible investigation reports
 
 ### Pricing
-- **1,000 credits = 10 USDT**
+- **1,000 credits = 100 USDT**
 - 1 credit = 1 address risk check
 - Chat usage calculated per interaction
 - *Free for Bittensor community during beta*
@@ -291,6 +290,9 @@ Enterprise Licenses          ──┘
 ### Partners
 **Hyperclouds** — Infrastructure Partner
 - Scalable cloud infrastructure for indexing and validation
+- DevSecOps AIOps with 4 decades of expertise.
+- Confidential Computing with TDX/SGX for TEE
+- Bittensor Miner
 
 **U1OCORE** — Development Partner  
 - Chain Insights application (UI/UX, backend)
@@ -312,99 +314,13 @@ Enterprise Licenses          ──┘
 
 ---
 
-## Slide 16: The Ask
 
-**YUMA Accelerator Support**
-
-We're seeking:
-- **Delegation** to bootstrap validator network
-- **Visibility** within Bittensor ecosystem
-- **Mentorship** on subnet economics and growth
-
-**What we deliver:**
-- Production-ready subnet within accelerator period
-- Free Chain Insights access for the Bittensor community
-- Open-source intelligence improvements benefiting the entire ecosystem
-
----
-
-## Slide 17: Contact
+## Slide 16: Contact
 
 **Chain Insights Subnet**
 *Powered by Chainswarm Technology*
 
 - **Founder:** Kamil Wojciechowski (aphex5)
 - **GitHub:** github.com/chainswarm
-- **Discord:** [TBD]
-- **Twitter/X:** [TBD]
 
 *Neutral intelligence for a decentralised world.*
-```
-
----
-
-Now proceeding with the **Light Paper**:
-
----
-
-# Chain Insights Subnet — Light Paper
-
-**Decentralised Blockchain Intelligence for the Agentic Economy**
-
-*Powered by Chainswarm Technology*
-
-Version 1.0 | 2025
-
----
-
-## Executive Summary
-
-Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, fraud detection, and investigative AI capabilities. Unlike centralised solutions that charge enterprises $50,000+ annually and offer no access to developers or retail users, Chain Insights delivers intelligence through three channels: a consumer application, an enterprise API, and an x402-enabled gateway for autonomous AI agents.
-
-The subnet operates on a novel principle: **computation is cheap, innovation is priceless**. Rather than rewarding miners for running infrastructure, Chain Insights rewards researchers, data scientists, and AI engineers for improving algorithms, training superior models, and discovering validated intelligence. The subnet owner operates core infrastructure to ensure reliability, while miners compete in tournaments to advance the state of the art.
-
-This architecture positions Chain Insights as the default intelligence layer for the emerging agentic economy—where autonomous systems require real-time, programmatic access to blockchain risk assessment before executing transactions.
-
----
-
-## The Problem
-
-### Centralised Intelligence is Broken
-
-The blockchain intelligence market is dominated by a handful of centralised providers—Chainalysis, Elliptic, TRM Labs—who serve enterprise clients at premium prices. This model creates three critical gaps:
-
-**1. Accessibility Gap**
-Retail users have no visibility into their own risk profiles. An individual can be banned from an exchange with no explanation and no recourse to understand why their address was flagged.
-
-**2. Developer Gap**  
-The agentic economy is emerging rapidly. Autonomous AI agents, DeFi protocols, and smart wallets need programmatic access to risk intelligence. Current providers offer no API access suitable for real-time, pay-per-query autonomous systems.
-
-**3. Innovation Gap**
-Closed systems innovate on their own timelines. Algorithm improvements, new pattern detection, and model updates happen behind proprietary walls. The broader ecosystem cannot contribute to or benefit from these advances.
-
-### The Regulatory Imperative
-
-Global regulation is accelerating. The EU's MiCA framework, US FinCEN Travel Rule, and expanding KYC requirements worldwide mean that every exchange, wallet, and DeFi protocol will require compliance tooling. The market for blockchain intelligence is not shrinking—it is about to expand dramatically.
-
----
-
-## The Solution
-
-### Neutral Intelligence Layer
-
-Chain Insights Subnet provides a **neutral intelligence layer** for any blockchain. We do not decide who is good or bad—we provide the intelligence. Users, applications, and agents choose how to act on that intelligence.
-
-This neutrality serves multiple use cases:
-- **Compliance teams** identify high-risk counterparties
-- **Investigators** trace stolen funds through complex laundering chains  
-- **Privacy advocates** audit their own transaction graph exposure
-- **DeFi protocols** screen addresses before allowing interactions
-- **AI agents** assess risk before executing autonomous transactions
-
-### Three Access Channels
-
-**Chain Insights Application**
-A consumer-facing web application where users can:
-- Check risk scores for any address (1 credit per query)
-- Understand why addresses are flagged with explainable factors
-- Chat with an AI investigator for complex queries
