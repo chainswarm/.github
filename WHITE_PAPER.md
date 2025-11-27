@@ -877,14 +877,14 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 
 ### 13.2 Partners
 
-**Hyperclouds — Infrastructure Partner**
+**1-HORIZON LTD — Infrastructure Partner**
 
 - Scalable cloud infrastructure for indexing and validation services
 - DevSecOps and AIOps expertise with four decades of combined experience
 - Confidential Computing capabilities with TDX/SGX for Trusted Execution Environments
 - Active Bittensor miner with deep network understanding
 
-**U1OCORE — Development Partner**
+**U1CORE — Development Partner**
 
 - Chain Insights application development (UI/UX design, frontend implementation)
 - Application backend services
@@ -907,7 +907,7 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 - OSINT specialists discovering address labels
 - AI engineers fine-tuning language models
 
-**Application Team (U1OCORE)**
+**Application Team (U1CORE)**
 
 - Chain Insights web application
 - User interfaces and experience
