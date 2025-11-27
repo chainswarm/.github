@@ -224,7 +224,7 @@ Responsibilities: Indexing infrastructure, subnet mechanics, overall architectur
 
 ### Partners
 
-**Hyperclouds — Infrastructure Partner**
+**1-HORIZON LTD — Infrastructure Partner**
 
 - Scalable cloud infrastructure for indexing and validation services
 - DevSecOps and AIOps expertise with four decades of combined experience
