@@ -1,6 +1,6 @@
 # Chain Insights Subnet — Light Paper
 
-**Decentralized Blockchain Intelligence for the Agentic Economy**
+**Decentralised Blockchain Intelligence for the Agentic Economy**
 
 *Powered by Chainswarm Technology*
 
@@ -69,7 +69,7 @@ Pricing: 1,000 credits for 10 USDT. Free for the Bittensor community during beta
 Direct API integration for exchanges, wallets, and compliance platforms requiring bulk queries, custom analytics, and SLA guarantees.
 
 **x402 Agent Gateway**
-An AI-native payment interface enabling autonomous agents to query risk intelligence in real-time. No accounts, no subscriptions—just pay-per-query micropayments. A DeFi protocol can check counterparty risk before executing a swap. A wallet can warn users about suspicious recipients. A trading bot can avoid tainted addresses.
+An AI-native payment interface that enables autonomous agents to query risk intelligence in real time. No accounts, no subscriptions—just pay-per-query micropayments. A DeFi protocol can check counterparty risk before executing a swap. A wallet can warn users about suspicious recipients. A trading bot can avoid tainted addresses.
 
 ---
 
