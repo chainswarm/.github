@@ -146,9 +146,64 @@ This model aligns incentives with progress. Stagnation is not rewarded. Breakthr
 
 ---
 
+## How Miners Are Validated
+
+Each mechanism uses objective, gaming-resistant validation tailored to its contribution type:
+
+### Analytics & Machine Learning Mechanisms
+
+Both mechanisms leverage the **Chain Synthetics Framework** for ground truth evaluation:
+
+1. **Blind Evaluation:** Miners submit code/models without knowing which transactions in test datasets are synthetic vs. real
+2. **Objective Scoring:** Submissions scored on precision, recall, processing speed, and novelty
+3. **Anti-Gaming Measures:** Test datasets regenerate each round, parameters are randomized, and holdout patterns remain hidden until post-evaluation
+
+For Machine Learning specifically:
+- **Temporal Validation:** Predictions validated over time ($T + \tau$) to ensure real-world accuracy, not just test set performance
+- **A/B Testing:** Candidate models tested against current production for drift detection
+
+### Labelling Mechanism
+
+Validated through **evidence-based verification**:
+
+1. Miners submit address labels with cryptographic evidence of source (OSINT, public attributions, regulatory blacklists, theft reports)
+2. Validators verify the address exists and matches claimed behaviour against the indexing service
+3. Labels scored on:
+   - **Quality:** Long-term accuracy and resistance to challenges
+   - **Quantity:** Comprehensive coverage across address categories
+   - **Novelty:** Previously unknown labels earn a premium
+   - **Verification:** Labels that withstand re-verification over time
+
+### Intelligence Mechanism (LLM)
+
+Validated through **benchmark evaluation**:
+
+1. Models tested against a "Golden Dataset" of complex investigative queries and scenarios
+2. Integration testing to verify the model can properly query the Chain Insights knowledge graph
+3. Assessment of terminology understanding, regulatory context, and report generation quality
+
+> *Miners can't game the system—they can only improve it.*
+
+---
+
 ## Token Economics
 
-### Value Flow
+### Revenue Model
+
+Chain Insights generates revenue through five complementary streams:
+
+| Revenue Stream | Description |
+|----------------|-------------|
+| **Chain Insights Credits** | 1,000 credits = 10 USDT for risk scoring and chat queries |
+| **x402 Agent Gateway** | Pay-per-query micropayments from autonomous AI agents |
+| **Enterprise API Licenses** | Bulk queries, SLAs, and dedicated support for organisations |
+| **Address Label Datasets** | License verified, up-to-date address attributions to exchanges, compliance providers, and other projects |
+| **Investigation Reports** | Premium court-admissible forensic reports generated through AI Investigator |
+
+**Why Address Labels Matter:**
+Verified address datasets are extremely valuable and difficult to source. They require continuous curation and verification to remain current. Exchanges, compliance providers, and other intelligence projects need accurate attributions for their own systems—Chain Insights creates this as a byproduct of the Labelling Mechanism, turning miner contributions into a monetizable asset.
+
+### Value Distribution
 
 ```
 ┌─────────────────────────────────┐
@@ -157,6 +212,8 @@ This model aligns incentives with progress. Stagnation is not rewarded. Breakthr
 │  • Chain Insights Credits       │
 │  • x402 Agent Queries           │
 │  • Enterprise Licenses          │
+│  • Address Label Datasets       │
+│  • Investigation Reports        │
 └───────────────┬─────────────────┘
                 │
                 ▼
@@ -173,10 +230,10 @@ This model aligns incentives with progress. Stagnation is not rewarded. Breakthr
 
 Miners earn subnet alpha tokens for validated contributions:
 
-- Analytics: Code that exceeds baseline benchmarks
-- Labelling: Verified labels with quality and quantity metrics
-- ML: Models that outperform current production scoring
-- Intelligence: LLMs that score highest on investigation benchmarks
+- **Analytics:** Code that exceeds baseline benchmarks
+- **Labelling:** Verified labels with quality and quantity metrics
+- **ML:** Models that outperform current production scoring
+- **Intelligence:** LLMs that score highest on investigation benchmarks
 
 All contributions are open-sourced, benefiting the entire ecosystem while rewarding individual innovation.
 
@@ -263,7 +320,7 @@ Chain Insights Subnet delivers this by:
 - **Democratizing access** through affordable credits and x402 agent payments
 - **Maintaining neutrality** as a tool rather than an arbiter
 - **Accelerating innovation** through tournament-based incentives for researchers and data scientists
-- **Building sustainability** through revenue-backed token economics
+- **Building sustainability** through diversified revenue streams and revenue-backed token economics
 
 The agentic economy needs intelligence. Chain Insights provides it.
 
