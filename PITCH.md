@@ -55,7 +55,7 @@ A decentralised blockchain intelligence network that provides:
    - Every exchange, wallet, and DeFi protocol needs compliance tooling
 
 3. **Bittensor's Maturity**
-   - Incentivised innovation model proven across 50+ subnets
+   - Incentivised innovation model proven across 128+ subnets
    - Ready for production-grade intelligence applications
 
 ---
