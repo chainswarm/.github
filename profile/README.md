@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="GitHub README cover.png" alt="Logo" width="100%" />
+</p>
+
 # Chain Insights Subnet — Light Paper
 
 **Decentralised Blockchain Intelligence for the Agentic Economy**
