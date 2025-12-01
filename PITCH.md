@@ -36,7 +36,7 @@ A decentralised blockchain intelligence network that provides:
 |-------------------|-----------------|------------------|
 | Programmatic risk queries | API integration | Chain Insights App |
 | Pay-per-call via x402 | Compliance tools | Credit-based access |
-| Real-time scoring | Custom analytics | **Visualize flow patterns** |
+| Real-time scoring | Custom analytics | Visualize flow patterns |
 
 **Core Principle:** We don't decide who's good or bad — we provide the intelligence. Users choose how to act.
 
