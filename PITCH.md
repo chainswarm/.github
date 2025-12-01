@@ -36,7 +36,7 @@ A decentralised blockchain intelligence network that provides:
 |-------------------|-----------------|------------------|
 | Programmatic risk queries | API integration | Chain Insights App |
 | Pay-per-call via x402 | Compliance tools | Credit-based access |
-| Real-time scoring | Custom analytics | Chat with AI investigator |
+| Real-time scoring | Custom analytics | **Visualize flow patterns** |
 
 **Core Principle:** We don't decide who's good or bad — we provide the intelligence. Users choose how to act.
 
@@ -67,7 +67,7 @@ A decentralised blockchain intelligence network that provides:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                     CHAIN INSIGHTS APP                       │
-│              Risk Scoring • AI Chat • Investigation          │
+│       Risk Scoring • Funds Tracking • AI Chat               │
 └─────────────────────────────────────────────────────────────┘
                               ▲
                               │ API
@@ -211,16 +211,20 @@ Emphasise that this is a key differentiator: "We've solved the validation proble
 - Understand *why* an address is flagged
 - Check your own wallets before interacting with exchanges
 
+### Funds Tracking
+- **Trace Money:** Follow funds across multiple hops and chains
+- **Visualize Patterns:** Interactive graph visualization of flow topology
+- **Reveal Destinations:** Identify ultimate recipients (exchanges, mixers, etc.)
+
 ### AI Investigator Chat
 - Natural language queries about blockchain activity
 - "Show me all addresses connected to this hack"
-- "Explain why this address is high risk"
 - Generate court-admissible investigation reports
 
-### Pricing
-- **1,000 credits = 10 USDT**
-- 1 credit = 1 address risk check
-- Chat usage calculated per interaction
+### Pricing Model
+- **Flexible Credit System:** Purchase credits with crypto
+- **Pay-Per-Use:** Spend credits only on queries, tracking, or chat
+- **Tiered Access:** Options for casual users vs. power users
 - *Free for Bittensor community during beta*
 
 ---
@@ -260,10 +264,10 @@ Agent Request                    Response
 
 | Revenue Stream | Description |
 |----------------|-------------|
-| **Chain Insights Credits** | 1,000 credits = 10 USDT (risk scoring, chat) |
+| **Chain Insights Credits** | Purchase credits for risk scoring, tracking, & chat |
 | **x402 Agent Gateway** | Pay-per-query micropayments from AI agents |
 | **Enterprise API Licenses** | Bulk queries, SLAs, dedicated support |
-| **Address Label Datasets** | License verified, up-to-date address attributions to exchanges, compliance providers, and other projects |
+| **Address Label Datasets** | License verified, up-to-date address attributions to exchanges, compliance providers, and other projects|
 | **Investigation Reports** | Premium court-admissible forensic reports |
 
 **Value Distribution:**
@@ -292,7 +296,7 @@ Emphasise diversified revenue: "We're not dependent on one income stream. As the
 
 ### Q1 2026
 - ML Mechanism launch
-- Chain Insights public release
+- Chain Insights public release (Risk & Tracking)
 - Bittensor EVM support
 - Torus EVM support
 
