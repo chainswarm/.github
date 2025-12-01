@@ -14,7 +14,7 @@ Powered by Chainswarm Technology
 
 **Blockchain intelligence is centralised, expensive, and inaccessible**
 
-- **Enterprises** pay $50,000+/year for Chainalysis, Elliptic, TRM Labs
+- **Enterprises** pay large amounts of money per year for Chainalysis, Elliptic, TRM Labs
 - **Developers & Agents** have no programmatic access to risk intelligence
 - **Retail users** are blocked by exchanges with no way to understand why
 - **Innovation is slow** — closed systems iterate on proprietary timelines
