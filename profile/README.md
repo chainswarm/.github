@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="GitHub README cover.png" alt="Logo" width="100%" />
+  <img src="../GitHub%20README%20cover.png" alt="Logo" width="100%" />
 </p>
 
-# Chain Insights Subnet — Light Paper
+# Chain Insights - The Light Paper
 
 **Decentralised Blockchain Intelligence for the Agentic Economy**
 
