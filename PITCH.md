@@ -292,7 +292,7 @@ Emphasise diversified revenue: "We're not dependent on one income stream. As the
 - ✅ Analytics Pipeline baseline
 - ✅ Chain Synthetics framework
 - 🔄 Analytics Mechanism subnet
-- 🔄 Chain Insights Miner Leaderboards
+- 🔄 Chain Insights Miners Leaderboards
 
 ### Q1 2026
 - Subnet API
