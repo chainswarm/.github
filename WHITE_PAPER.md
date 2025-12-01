@@ -4,7 +4,7 @@
 
 *Powered by Chainswarm Technology*
 
-Version 1.0 | 2025
+Version 1.1 | 2025
 
 ---
 
@@ -30,9 +30,9 @@ Version 1.0 | 2025
 
 ## 1. Abstract
 
-Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, fraud detection, and investigative AI capabilities for the emerging agentic economy. The subnet introduces a novel architecture that separates infrastructure operations from intelligence innovation: the subnet owner maintains reliable core indexing services, while miners compete in tournaments to advance algorithms, train superior machine learning models, discover validated address labels, and fine-tune specialised large language models.
+Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, funds tracking, and investigative AI capabilities for the emerging agentic economy. The subnet introduces a novel architecture that separates infrastructure operations from intelligence innovation: the subnet owner maintains reliable core indexing services, while miners compete in tournaments to advance algorithms, train superior machine learning models, discover validated address labels, and fine-tune specialised large language models.
 
-This paper describes the technical architecture, incentive mechanisms, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users requiring blockchain risk assessment. By rewarding breakthroughs rather than mere computation, Chain Insights aligns economic incentives with the continuous advancement of the state of the art in blockchain forensics and anti-money laundering detection.
+This paper describes the technical architecture, incentive mechanisms, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users. By rewarding breakthroughs rather than mere computation, Chain Insights aligns economic incentives with the continuous advancement of the state of the art in blockchain forensics, money flow visualisation, and anti-money laundering detection.
 
 ---
 
@@ -67,7 +67,7 @@ This philosophy shapes every architectural decision. Miners are not infrastructu
 
 ### 3.1 Accessibility Crisis
 
-The blockchain intelligence market serves a narrow customer base. Enterprise compliance teams at major exchanges can afford contracts costing $50,000+ annually. Everyone else—retail users, small projects, developers, autonomous agents—has no access.
+The blockchain intelligence market serves a narrow customer base. Enterprise compliance teams at major exchanges can afford contracts costing substantial annual fees. Everyone else—retail users, small projects, developers, autonomous agents—has no access.
 
 Consider a common scenario: a retail user is banned from a centralised exchange. They receive no explanation, no recourse, and no way to understand what triggered the decision. Their address may have interacted with a flagged entity three hops away in a transaction graph they never knew existed. Without access to the same intelligence tools the exchange uses, they cannot understand, dispute, or remediate the issue.
 
@@ -78,7 +78,7 @@ This asymmetry benefits no one. Users lose access to financial services. Exchang
 Autonomous AI agents represent the fastest-growing category of blockchain users. These agents need to make risk decisions in milliseconds:
 
 - Should this DeFi protocol accept a deposit from this address?
-- Should this wallet alert the user about this recipient?
+- Do you think this wallet should alert the user about this recipient?
 - Should this trading bot interact with this liquidity pool?
 - Do you think this compliance agent should flag this transaction for review?
 
@@ -126,9 +126,9 @@ Chain Insights delivers intelligence through three complementary channels:
 A consumer-facing web application providing:
 
 - Risk scoring for any address with explainable factors
+- Funds Tracking to visualise money flow patterns
 - AI-powered chat interface for investigative queries
-- Investigation report generation
-- Credit-based pricing accessible to individuals and small teams
+- Interactive graph visualisations
 
 **Enterprise API**
 Direct integration for organisations requiring:
@@ -235,9 +235,9 @@ Chain Insights uses a **unified, value-oriented data model**:
 
 **Key Principles:**
 
-- **USD Value Normalisation:** All asset transfers converted to USD value at time of transaction, enabling cross-asset and cross-chain analysis without currency complexity
-- **Aggregated Money Flows:** Instead of storing individual transactions, the model aggregates flows between address pairs—capturing the relationship rather than every event
-- **Address-Centric Features:** Rich pre-calculated features per address, including volume metrics, counterparty analysis, temporal patterns, and graph properties
+- **USD Value Normalisation:** All asset transfers converted to USD value at time of transaction, enabling cross-asset and cross-chain analysis without currency complexity.
+- **Aggregated Money Flows:** Instead of storing individual transactions, the model aggregates flows between address pairs—capturing the relationship rather than every event.
+- **Address-Centric Features:** Rich pre-calculated features per address, including volume metrics, counterparty analysis, temporal patterns, and graph properties.
 
 This model is:
 
@@ -333,7 +333,7 @@ Data hunters and OSINT specialists who discover and verify:
 #### Process
 
 1. **Discovery:** Miners identify labelled addresses from public sources
-2. **Evidence Collection:** Each label requires cryptographic evidence of source
+2. **Evidence Collection:** Each label requires cryptographic evidence of the source
 3. **Verification:** Validators verify that the address exists and matches the claimed behaviour against the indexing service
 4. **Integration:** Verified labels integrated into the production intelligence layer
 
@@ -529,13 +529,13 @@ The ML Mechanism extends Chain Synthetics validation with temporal and productio
 The Labelling Mechanism uses evidence-based verification rather than synthetic benchmarks:
 
 1. **Evidence Requirement:** Each label submission requires cryptographic evidence of source (OSINT findings, public attributions, regulatory blacklists, theft reports, on-chain proof)
-2. **Indexing Service Verification:** Validators verify the address exists and matches claimed behaviour against the Core Indexing Service
+2. **Indexing Service Verification:** Validators verify the address exists, and matches claimed behaviour against the Core Indexing Service
 3. **Scoring Dimensions:**
    - **Quality:** Labels that prove accurate over time earn higher scores; labels that are challenged and disproven lose points
    - **Quantity:** Comprehensive coverage across address categories (exchanges, scams, sanctioned entities, etc.)
    - **Novelty:** Previously unknown labels earn a premium over already-known attributions
    - **Verification Resistance:** Labels that withstand re-verification and challenge over time
-4. **Long-Term Accuracy Tracking:** Label accuracy is monitored over time; miners whose labels consistently prove correct build reputation
+4. **Long-Term Accuracy Tracking:** Label accuracy is monitored over time; miners whose labels consistently prove correct build a reputation
 
 ### 8.5 Intelligence Mechanism Validation
 
@@ -570,7 +570,7 @@ All mechanisms implement measures to prevent gaming:
 
 ### 9.1 Overview
 
-Chain Insights is the consumer-facing application delivering subnet intelligence to end users. It provides accessible interfaces for risk scoring, investigation, and AI-powered analysis.
+Chain Insights is the consumer-facing application delivering subnet intelligence to end users. It provides accessible interfaces for risk scoring, funds tracking, investigation, and AI-powered analysis.
 
 ### 9.2 Risk Scoring
 
@@ -594,7 +594,19 @@ Risk scores include factor breakdown:
 
 Users can understand *why* an address is flagged, not just that it is flagged.
 
-### 9.3 AI Investigator Chat
+### 9.3 Funds Tracking
+
+#### Functionality
+
+A powerful visualisation tool designed to demystify money flow:
+
+- **Trace Money:** Follow funds across multiple hops and supported chains
+- **Visualise Flow Patterns:** Interactive graph visualisation displaying the flow topology
+- **Reveal Destinations:** Automatically identify and label ultimate recipients (e.g., exchanges, bridges, mixers, or high-risk services)
+
+This feature allows users to "see" the path of funds, making it easier to identify laundering attempts, structuring, or simple payment trails without manually parsing raw block explorer data.
+
+### 9.4 AI Investigator Chat
 
 #### Functionality
 
@@ -612,14 +624,14 @@ Natural language interface for complex queries:
 - Generate structured investigation reports
 - Explain technical concepts in an accessible language
 
-### 9.4 Pricing Model
+### 9.5 Pricing Model
 
-**Credit-Based Access**
+**Flexible Credit System**
 
-- 1,000 credits = 10 USDT
-- 1 credit = 1 address risk score query
-- Chat usage calculated per interaction (based on complexity and compute)
-- Credits never expire
+- Users purchase credits using cryptocurrency
+- **Pay-Per-Use:** Credits are spent only on specific queries, tracking actions, or chat interactions
+- **No Expiration:** Credits remain valid until used
+- **Tiered Access:** Options available for casual users versus power users (investigators)
 
 **Beta Period**
 During the initial launch, Bittensor community members receive free access to build familiarity and provide feedback.
@@ -701,8 +713,8 @@ Chain Insights generates revenue through five complementary streams, creating a 
 
 | Revenue Stream | Description | Target Customer |
 |----------------|-------------|-----------------|
-| **Chain Insights Credits** | 1,000 credits = 10 USDT for risk scoring and chat queries | Retail users, small teams, investigators |
-| **x402 Agent Gateway** | Pay-per-query micropayments, fractions of a cent per query | Autonomous AI agents, DeFi protocols, trading bots |
+| **Chain Insights Credits** | Purchase credits for risk scoring, tracking, & chat | Retail users, small teams, investigators |
+| **x402 Agent Gateway** | Pay-per-query micropayments from AI agents | Autonomous AI agents, DeFi protocols, trading bots |
 | **Enterprise API Licenses** | Bulk queries, SLAs, custom analytics, dedicated support | Exchanges, compliance platforms, large organisations |
 | **Address Label Datasets** | Licensed access to verified, up-to-date address attributions | Other intelligence providers, exchanges, compliance vendors |
 | **Investigation Reports** | Premium court-admissible forensic reports via AI Investigator | Law enforcement, legal teams, recovery services |
@@ -790,13 +802,13 @@ All winning miner contributions are open-sourced:
 
 Miners are compensated for innovation through emissions; the ecosystem benefits from open knowledge.
 
-### 11.5 Address Label Datasets as Monetizable Asset
+### 11.5 Address Label Datasets as Monetizable Assets
 
 The Labelling Mechanism creates a unique byproduct: a continuously curated, verified database of address attributions. This dataset has significant standalone value:
 
 **Why Address Labels Are Valuable**
 
-- **Scarcity:** Comprehensive, verified address labels are extremely difficult to source
+- **Scarcity:** Comprehensive, verified address labels are complicated to source
 - **Freshness:** Labels require continuous curation as new addresses emerge and attributions change
 - **Verification:** Each label in Chain Insights has cryptographic evidence and has passed validator verification
 - **Coverage:** Decentralised discovery means broader coverage than any single organisation could achieve
@@ -824,7 +836,7 @@ This revenue stream turns miner contributions into a monetizable asset while pro
 
 ### 11.6 Buyback Mechanism
 
-Revenue from all five streams funds token buybacks:
+Revenue from all five streams of funds token buybacks:
 
 - Creates demand pressure supporting token value
 - Aligns subnet owner incentives with token holders
@@ -866,10 +878,10 @@ Revenue from all five streams funds token buybacks:
 
 **Solution:**
 
+- Use the Funds Tracking tool to visualise flow patterns and identify destinations
 - Use the Chain Insights application to analyse attacker addresses
 - AI chat interface to explore the transaction graph
 - Generate an investigation report documenting the fund flow
-- Identify exchange deposits for potential recovery
 
 **Value:** Rapid investigation capability without specialised forensics expertise.
 
@@ -905,7 +917,7 @@ Revenue from all five streams funds token buybacks:
 
 **Solution:**
 
-- Analyse own addresses in Chain Insights
+- Analyse own addresses in Chain Insights using Funds Tracking
 - Map connections to known entities
 - Identify potential deanonymization vectors
 - Make informed decisions about future transaction patterns
@@ -916,70 +928,32 @@ Revenue from all five streams funds token buybacks:
 
 ## 13. Roadmap
 
-### Phase 1: Foundation (Q4 2025)
+### Phase 1 (Now — Q4 2025)
+*   ✅ Core Indexing Service (Bittensor)
+*   ✅ Analytics Pipeline baseline
+*   ✅ Chain Synthetics framework
+*   🔄 Analytics Mechanism subnet implementation
+*   🔄 Chain Insights Miners Leaderboards
 
-**Completed**
+### Phase 2 (Q1 2026)
+*   Subnet API Launch
+*   Labelling Mechanism subnet
+*   Chain Insights Funds Tracking
+*   Chain Insights Labels
+*   Bittensor EVM support
 
-- ✅ Core Indexing Service operational for Bittensor and Torus networks
-- ✅ Analytics Pipeline baseline implementation
-- ✅ Chain Synthetics benchmarking framework
+### Phase 3 (Q2 — Q3 2026)
+*   Machine Learning Mechanism subnet
+*   Chain Insights Risk Scoring
 
-**In Progress**
+### Phase 4 (Q4 2026+)
+*   Intelligence Mechanism subnet
+*   Chain Insights Chat (AI Investigator)
 
-- 🔄 Analytics Mechanism subnet implementation
-- 🔄 Benchmarking system for miner evaluation
-- 🔄 Chain Insights Risk Scoring beta (free for Bittensor community)
-
-**Deliverables**
-
-- Functional subnet with Analytics Mechanism
-- Public beta of the Chain Insights application
-- Initial miner participation and tournament cycles
-
-### Phase 2: Intelligence Expansion (Q1 2026)
-
-**Planned**
-
-- Machine Learning Mechanism launch
-- Chain Insights public release with credit system
-- Bittensor EVM support
-- Torus EVM support
-- ML Mechanism leaderboard in Chain Insights
-
-**Deliverables**
-
-- Production risk scoring powered by miner-trained models
-- EVM transaction analysis capability
-- Revenue generation begins
-
-### Phase 3: Full Intelligence Stack (Q2 2026)
-
-**Planned**
-
-- Labelling Mechanism launch
-- Intelligence Mechanism (LLM) launch
-- Chain Insights AI Chat interface
-- Labelling Mechanism leaderboard
-
-**Deliverables**
-
-- Comprehensive address intelligence from decentralised labelling
-- AI investigator chat powered by fine-tuned models
-- Complete the intelligence stack operational
-
-### Phase 4: Scale (2026 and Beyond)
-
-**Planned**
-
-- Multi-chain expansion: UTXO chains (Bitcoin ecosystem)
-- Additional Substrate chains (Polkadot ecosystem)
-- Broader EVM ecosystem coverage
-- Enterprise partnership program
-- Regulatory compliance integrations
-- x402 Agent Gateway public launch
-
-**Vision**
-Chain Insights becomes the default intelligence layer for the agentic economy—any agent, any chain, any query, paid for in real time.
+### Beyond
+*   Multi-chain expansion (UTXO, Substrate, EVM ecosystems)
+*   Enterprise partnerships
+*   Regulatory compliance integrations
 
 ---
 
@@ -1057,7 +1031,7 @@ Chain Insights Subnet addresses this opportunity by:
 
 **Democratizing Access**
 
-- Credit-based pricing accessible to individuals
+- Flexible credit-based pricing accessible to individuals
 - x402 gateway enabling autonomous agent integration
 - Free beta access for the Bittensor community
 
@@ -1093,7 +1067,7 @@ We do not predict the future of blockchain compliance and intelligence. We build
 Join the innovation competition. Whether you're a software engineer optimizing graph algorithms, a data scientist training ML models, an OSINT specialist discovering address intelligence, or an AI engineer fine-tuning language models—there is a mechanism for your expertise.
 
 **For Users:**
-Try Chain Insights during the beta period. Check your addresses. Explore the intelligence. Provide feedback that shapes the product.
+Try Chain Insights during the beta period. Check your addresses. Visualise the funds flow. Explore the intelligence. Provide feedback that shapes the product.
 
 **For Builders:**
 Integrate the x402 gateway into your agents and applications. Build on a neutral intelligence infrastructure. Join the agentic economy.
@@ -1113,7 +1087,6 @@ GitHub: github.com/chainswarm
 
 *Neutral intelligence for a decentralised world.*
 
----
 
-*Document Version 1.0 — 2025*
+*Document Version 1.1 — 2025*
 *Chain Insights Subnet — Powered by Chainswarm Technology*
