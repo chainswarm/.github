@@ -288,22 +288,26 @@ Emphasise diversified revenue: "We're not dependent on one income stream. As the
 ## Slide 14: Roadmap
 
 ### Now — Q4 2025
-- ✅ Core Indexing Service (Bittensor, Torus)
+- ✅ Core Indexing Service (Bittensor)
 - ✅ Analytics Pipeline baseline
 - ✅ Chain Synthetics framework
-- 🔄 Analytics Mechanism subnet implementation
-- 🔄 Chain Insights Risk Scoring (beta)
+- 🔄 Analytics Mechanism subnet
+- 🔄 Chain Insights Miner Leaderboards
 
 ### Q1 2026
-- ML Mechanism launch
-- Chain Insights public release (Risk & Tracking)
+- Subnet API
+- Labelling Mechanism subnet
+- Chain Insights Funds Tracking
+- Chain Insights Labels
 - Bittensor EVM support
-- Torus EVM support
 
-### Q2 2026
-- Labelling Mechanism launch
-- Intelligence Mechanism (LLM) launch
-- Chain Insights AI Chat
+### Q2-Q3 2026
+- ML Mechanism subnet
+- Chain Insights Risk Scoring
+
+## Q4 2026+
+- Intelligence Mechanism subnet
+- Chain Insights Chat
 
 ### Beyond
 - Multi-chain expansion (UTXO, Substrate, EVM ecosystems)
