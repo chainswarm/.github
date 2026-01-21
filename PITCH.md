@@ -7,43 +7,47 @@
 
 Powered by Chainswarm Technology — Built on Virtuals Protocol
 
+Token: **$CIA**
+
 ---
 
 ## Slide 2: The Problem
 
 **Blockchain intelligence is centralised, expensive, and static**
 
-- **Enterprises** pay large amounts of money per year for Chainalysis, Elliptic, TRM Labs
-- **Developers & Agents** have no programmatic access to risk intelligence
+- **Enterprises** pay large amounts annually for Chainalysis, Elliptic, TRM Labs
+- **Agents** have no programmatic access to risk intelligence
 - **Retail users** are blocked by exchanges with no way to understand why
 - **Threats evolve faster** than static systems can adapt
 
-> *As regulations tighten globally and autonomous agents emerge, the need for accessible, adaptive blockchain intelligence has never been greater.*
+> *As autonomous agents emerge and regulations tighten globally, the need for accessible, adaptive blockchain intelligence has never been greater.*
 
 **Speaker Notes:**
-Mention the personal story — "I was recently banned from an exchange with no explanation and no way to check my own address risk." This resonates with anyone who's experienced opaque compliance decisions.
+"I was recently banned from an exchange with no explanation and no way to check my own address risk." This resonates with anyone who's experienced opaque compliance decisions.
 
 ---
 
 ## Slide 3: The Solution
 
-**Chain Insights Agent: Autonomous Intelligence for Any Chain**
+**Chain Insights Agent: Autonomous Intelligence on Virtuals Protocol**
 
-An AI agent that provides blockchain intelligence through two operating modes:
+### Two Operating Modes:
 
 | Reactive Mode | Proactive Mode |
 |---------------|----------------|
 | User asks questions | Agent scans autonomously |
 | Agent researches & solves | Warns before threats materialise |
-| Powers AI Investigator chat | Auto-labels risky addresses |
+| Powers AI chat interface | Auto-labels risky addresses |
+| | Broadcasts on X/Twitter (like aixbt) |
 
-**Three Access Channels:**
+### Four Access Channels:
 
-| For Agents (x402) | For Enterprises | For Retail Users |
-|-------------------|-----------------|------------------|
-| Programmatic risk queries | API integration | Chain Insights App |
-| Pay-per-call via x402 | Compliance tools | Credit-based access |
-| Real-time scoring | Custom analytics | Proactive alerts |
+| Channel | Description |
+|---------|-------------|
+| **Chain Insights App** | Consumer web app with risk scoring, funds tracking, AI chat |
+| **ACP Gateway** | Agent-to-agent services via Virtuals Protocol |
+| **Butler** | User discovery through Virtuals consumer gateway |
+| **X/Twitter Bot** | Real-time threat alerts & community engagement |
 
 **Core Principle:** We don't decide who's good or bad — we provide the intelligence. Users choose how to act.
 
@@ -54,57 +58,52 @@ An AI agent that provides blockchain intelligence through two operating modes:
 **Three converging forces create the perfect moment**
 
 1. **Agentic Economy Emergence**
-   - Autonomous agents need real-time risk assessment before executing transactions
-   - x402 protocol enables AI-native payments for intelligence queries
+   - Autonomous agents need real-time risk assessment
+   - Virtuals Protocol provides agent-native infrastructure
+   - ACP enables standardised agent-to-agent commerce
 
 2. **Regulatory Acceleration**
    - EU MiCA, US FinCEN Travel Rule, global KYC requirements
    - Every exchange, wallet, and DeFi protocol needs compliance tooling
 
-3. **Virtuals Protocol Maturity**
-   - Agent-native platform purpose-built for autonomous AI
-   - Perfect environment for self-improving intelligence agents
+3. **Virtuals Ecosystem Maturity**
+   - ACP for agent commerce, Butler for user discovery
+   - Successful agents (aixbt) proving the model
+   - Ready for production-grade intelligence agents
 
 ---
 
-## Slide 5: How It Works — Architecture Overview
+## Slide 5: Architecture Overview
 
-**Self-Improving Agent with Continuous Enhancement**
+**Foundation Layer → Intelligence Layer → Interaction Layer**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     CHAIN INSIGHTS APP                       │
-│       Risk Scoring • Funds Tracking • AI Chat • Alerts      │
-└─────────────────────────────────────────────────────────────┘
-                              ▲
-                              │ API
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    x402 AGENT GATEWAY                        │
-│              Pay-per-query • Autonomous Access               │
+│                   INTERACTION LAYER                          │
+│    Chain Insights App │ ACP Gateway │ Butler │ X/Twitter    │
 └─────────────────────────────────────────────────────────────┘
                               ▲
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                  CHAIN INSIGHTS AGENT                        │
+│                   INTELLIGENCE LAYER                         │
 │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐            │
-│  │  Analytics  │ │  ML Risk    │ │    AI       │            │
-│  │  Engine     │ │  Models     │ │ Investigator│            │
+│  │  Reactive   │ │  Proactive  │ │  Learning   │            │
+│  │   Mode      │ │   Mode      │ │   Loop      │            │
 │  └─────────────┘ └─────────────┘ └─────────────┘            │
-│                        ▲                                     │
-│           ┌────────────┴────────────┐                       │
-│           │ Continuous Improvement  │                       │
-│           │    (Self-Learning)      │                       │
-│           └─────────────────────────┘                       │
-│                        ▲                                     │
-│           ┌────────────┴────────────┐                       │
-│           │  Core Indexing Service  │                       │
-│           └─────────────────────────┘                       │
+└─────────────────────────────────────────────────────────────┘
+                              ▲
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│                   FOUNDATION LAYER                           │
+│  Indexing │ Money Flows │ ML Features │ Pattern Detection   │
+│  Risk Scoring │ Evaluation/A/B Testing │ Chain Synthetics   │
+│                                                              │
+│  [Substrate Chains] [EVM Chains] [UTXO Chains]              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 **Speaker Notes:**
-Emphasise the self-improving nature: "Our agent continuously improves itself through automated loops—learning faster than threats evolve."
+"Foundation Layer handles all core data focused on value and money flows. Intelligence Layer runs the agent logic with a learning loop that continuously improves. Interaction Layer provides access via App, ACP, Butler, and Twitter."
 
 ---
 
@@ -128,25 +127,31 @@ Emphasise the self-improving nature: "Our agent continuously improves itself thr
 
 ---
 
-## Slide 7: Three Intelligence Capabilities
+## Slide 7: Virtuals Protocol Integration
 
-### Analytics Engine
-- **What:** Graph algorithms, pattern detection
-- **Output:** Identification of mixers, layering, peel chains, circular flows
+**Native to the Virtuals Ecosystem**
 
-### Machine Learning Models
-- **What:** Risk scoring, address classification
-- **Output:** Real-time risk scores for any address
+### Agent Commerce Protocol (ACP)
+- Pay-per-query with smart contract escrow
+- Standardised service schemas for risk queries
+- Seamless agent-to-agent transactions
 
-### AI Investigator (LLM)
-- **What:** Natural language interface for investigations
-- **Output:** Investigation insights and court-admissible reports
+### Butler Integration
+- User discovery through Virtuals consumer gateway
+- Natural language job requests
+- Guided requirement collection
 
-**All three continuously improve through autonomous agent loops.**
+### Social Presence (like aixbt)
+- X/Twitter bot for real-time threat alerts
+- Community engagement and threat reporting
+- Market intelligence broadcasting
+
+**Speaker Notes:**
+"We're fully integrated with Virtuals—not just hosted there. ACP for agent commerce, Butler for discovery, and social presence for community engagement."
 
 ---
 
-## Slide 8: Unique Technical Advantages
+## Slide 8: Foundation Layer — Value & Money Flows
 
 **Unified Data Model: Value-Oriented, Not Transaction-Oriented**
 
@@ -155,17 +160,23 @@ Emphasise the self-improving nature: "Our agent continuously improves itself thr
 | Store every transaction | Aggregate money flows |
 | Chain-specific schemas | Unified USD-value model |
 | Massive storage needs | Compressed, fast queries |
-| Focus on transactions | Focus on relationships |
+| Focus on transactions | Focus on value relationships |
 
-**Benefits:**
-- **Smaller:** Aggregated flows vs. raw transactions
-- **Faster:** Query relationships, not events
-- **Portable:** Same model works across Substrate, EVM, UTXO
-- **Richer:** Pre-calculated ML features per address
+### Foundation Layer Components:
+
+| Component | Purpose |
+|-----------|---------|
+| **Indexing Service** | Multi-chain data capture (Substrate, EVM, UTXO) |
+| **Money Flows** | USD-normalised aggregated relationships |
+| **ML Features** | Pre-calculated features per address |
+| **Pattern Detection** | Graph algorithms for fraud topologies |
+| **Risk Scoring** | Real-time assessment with explainable factors |
+| **Evaluation/A/B Testing** | Continuous improvement validation |
+| **Chain Synthetics** | Benchmarking framework |
 
 ---
 
-## Slide 9: Chain Synthetics — Benchmarking Innovation
+## Slide 9: Chain Synthetics — Benchmarking Self-Improvement
 
 **How do you objectively measure fraud detection?**
 
@@ -173,10 +184,10 @@ Emphasise the self-improving nature: "Our agent continuously improves itself thr
 
 - **Synthetic Patterns:** Inject known topologies (mixers, layering) into real data
 - **Historical Replay:** Recreate famous hacks (Mt. Gox, Ronin, FTX) on any chain
-- **Objective Scoring:** Precision, recall, and speed — no subjective judging
+- **Objective Scoring:** Precision, recall, speed — no subjective judging
 
 **Why it matters:**
-- Enables continuous self-improvement
+- Enables autonomous self-improvement
 - Validates every enhancement objectively
 - Ensures improvements work in real-world conditions
 
@@ -190,18 +201,18 @@ Emphasise the self-improving nature: "Our agent continuously improves itself thr
 User asks → Agent researches → Agent solves
 - "Show me all addresses connected to this hack"
 - "Generate an investigation report"
-- "What's the risk profile of this wallet's counterparties?"
+- "What's the risk profile of this wallet?"
 
 ### Proactive/Autonomous Mode
 Agent scans → Agent detects → Agent warns
 - **Early Warning:** Alerts before threats materialise
-- **Auto-Labelling:** Detects dusting attacks, labels source as risky
-- **Pattern Discovery:** Identifies new fraud topologies as they emerge
+- **Auto-Labelling:** Detects dusting attacks → labels source as risky
+- **Social Broadcasting:** Posts warnings on X/Twitter in real-time
 
 > *Protection before harm occurs, not just forensics after the fact.*
 
 **Speaker Notes:**
-Emphasise proactive: "Most intelligence is reactive—you find out after something bad happened. We warn you before it happens."
+"Most intelligence is reactive—you find out after something bad happened. We warn you before it happens, just like aixbt spots market trends before the crowd."
 
 ---
 
@@ -212,160 +223,184 @@ Emphasise proactive: "Most intelligence is reactive—you find out after somethi
 ### Risk Scoring
 - Enter any address → Get instant risk assessment
 - Understand *why* an address is flagged
-- Check your own wallets before interacting with exchanges
+- Track score changes over time
 
 ### Funds Tracking
 - **Trace Money:** Follow funds across multiple hops and chains
-- **Visualize Patterns:** Interactive graph visualization of flow topology
+- **Visualize Patterns:** Interactive graph visualization
 - **Reveal Destinations:** Identify ultimate recipients (exchanges, mixers, etc.)
 
-### AI Investigator Chat
+### AI Chat Interface
 - Natural language queries about blockchain activity
-- "Show me all addresses connected to this hack"
 - Generate court-admissible investigation reports
 
 ### Proactive Alerts
-- Warnings about emerging threats to watched addresses
-- Notifications when risk profiles change
+- Warnings when watched addresses interact with threats
+- Early notifications about emerging risks
 
-### Pricing Model
-- **Flexible Credit System:** Purchase credits with crypto
+### Pricing
+- **Flexible Credit System:** Purchase credits with $VIRTUAL or $CIA
 - **Pay-Per-Use:** Spend credits only on queries, tracking, or chat
-- **Tiered Access:** Options for casual users vs. power users
 
 ---
 
-## Slide 12: x402 Agent Gateway
+## Slide 12: ACP & Butler Integration
 
-**Built for the Agentic Economy**
+**Built for Agent-to-Agent Commerce**
+
+### ACP Service Schema
 
 ```
-Agent Request                    Response
-     │                              ▲
-     ▼                              │
-┌─────────────────────────────────────────────
-│         x402 Payment Layer          │
-│    Pay-per-query • No accounts      │
-│    Micropayments • Autonomous       │
-└─────────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────┐
-│      Chain Insights Agent API       │
-│   Risk Score • Labels • Analytics   │
-└─────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│         Other Virtuals Agents           │
+│  (Trading bots, DeFi agents, etc.)      │
+└─────────────────┬───────────────────────┘
+                  │ ACP Request
+                  ▼
+┌─────────────────────────────────────────┐
+│      Chain Insights ACP Gateway         │
+│                                         │
+│  • Risk Score Service                   │
+│  • Funds Tracking Service               │
+│  • Investigation Service                │
+│                                         │
+│  Pay-per-query │ Smart Contract Escrow  │
+└─────────────────────────────────────────┘
 ```
 
-**Use Cases:**
-- DeFi protocol checks counterparty risk before swap
-- Wallet warns user about suspicious recipient
-- Trading bot avoids tainted addresses
-- Compliance agent monitors portfolio exposure
+### Butler Discovery
+
+Users find Chain Insights through Butler:
+- Browse agent directory
+- Natural language requests: "Check if this address is risky"
+- Guided requirement collection
+- Service delivery via ACP
+
+**Speaker Notes:**
+"No enterprise contracts needed. Any agent or user can access our intelligence pay-as-you-go through ACP."
 
 ---
 
 ## Slide 13: Revenue Model & Token Economics
 
-**Five Revenue Streams — Sustainable Value Flow**
+**Pay-As-You-Go + 20% $VIRTUAL Buybacks**
 
-| Revenue Stream | Description |
-|----------------|-------------|
-| **Chain Insights Credits** | Purchase credits for risk scoring, tracking, & chat |
-| **x402 Agent Gateway** | Pay-per-query micropayments from AI agents |
-| **Enterprise API Licenses** | Bulk queries, SLAs, dedicated support |
-| **Address Label Datasets** | License verified, up-to-date address attributions to exchanges, compliance providers |
-| **Investigation Reports** | Premium court-admissible forensic reports |
+### Revenue Streams
+
+| Stream | Mechanism |
+|--------|-----------|
+| **Chain Insights App Credits** | Pay-per-use via application |
+| **ACP Service Payments** | Pay-per-query (agent-to-agent) |
+| **Label Licensing** | Verified address attribution data |
+| **Investigation Reports** | Premium court-admissible reports |
+
+**No enterprise licenses — all pay-as-you-go via ACP**
 
 ### $CIA Token
 
 | Utility | Description |
 |---------|-------------|
-| Service Access | Purchase credits for all Chain Insights services |
-| x402 Payments | Pay-per-query for agent gateway |
+| Service Access | Purchase credits for app features |
+| ACP Payments | Pay-per-query for agent services |
 | Premium Features | Advanced capabilities, higher rate limits |
-| Ecosystem Governance | Participate in protocol decisions |
 
-**Value Distribution:**
+### Value Distribution
+
 ```
-Revenue ──┬──▶ Operations & Development (infrastructure, R&D, support)
-          ├──▶ $CIA Buybacks (demand pressure, aligned incentives)
-          └──▶ Ecosystem Growth Fund (expansion, partnerships)
+Revenue ──┬──▶ 20% $VIRTUAL Buybacks (ecosystem commitment)
+          └──▶ 80% Operations & Development
 ```
 
 **Speaker Notes:**
-Emphasise diversified revenue: "We're not dependent on one income stream. As the agent improves, each capability creates monetizable assets."
+"20% of all revenue goes to $VIRTUAL buybacks. We succeed when Virtuals succeeds."
 
 ---
 
-## Slide 14: Roadmap
+## Slide 14: Use Cases
+
+### For Other Virtuals Agents
+- Trading agents query counterparty risk via ACP
+- DeFi agents validate addresses before transactions
+- Investigation agents coordinate on complex cases
+
+### For Users
+- Check your own address risk score
+- Understand why you were flagged
+- Trace funds flow with visualizations
+
+### For the Community
+- Real-time threat alerts on X/Twitter
+- Report suspicious addresses
+- Collective intelligence building
+
+---
+
+## Slide 15: Roadmap
 
 ### Now — Q4 2025
-- ✅ Core Indexing Service
-- ✅ Analytics Pipeline baseline
+- ✅ Core Indexing Service & Money Flows
 - ✅ Chain Synthetics framework
-- 🔄 Chain Insights Agent on Virtuals Protocol
-- 🔄 Continuous improvement loops operational
+- 🔄 Agent launch on Virtuals Protocol
+- 🔄 ACP + Butler integration
 
 ### Q1 2026
 - Chain Insights Application launch
 - Funds Tracking
-- x402 Agent Gateway
+- X/Twitter bot deployment
 - EVM chain expansion
 
 ### Q2-Q3 2026
-- Risk Scoring (full release)
+- Full Risk Scoring release
 - Proactive alerting system
 
 ### Q4 2026+
-- AI Investigator Chat
-- Court-admissible reports
-- Enterprise API
-
-### Beyond
-- Multi-chain expansion (UTXO, Substrate, EVM ecosystems)
-- Enterprise partnerships
-- Regulatory compliance integrations
+- AI Chat interface
+- Multi-chain expansion
 
 ---
 
-## Slide 15: Team & Partners
+## Slide 16: Team & Partners
 
 ### Founder
 **Kamil Wojciechowski (aphex5)**
-- Pioneered blockchain intelligence on Bittensor network
-- 1.5 years deep R&D, redesigning from first principles for agentic economy
-- Full-stack agent architect: indexing, analytics, ML, agent systems
+- Pioneered blockchain intelligence on Bittensor (SN15)
+- 1.5 years deep R&D, redesigning from first principles
+- Full-stack agent architect: indexing, analytics, ML, Virtuals integration
 
 ### Partners
 **1-HORIZON LTD** — Infrastructure Partner
-- Scalable cloud infrastructure for indexing and intelligence
+- Scalable cloud infrastructure
 - DevSecOps/AIOps with 4 decades of expertise
-- Confidential Computing with TDX/SGX for TEE
+- Confidential Computing (TDX/SGX)
 
 **U1CORE** — Development Partner  
-- Chain Insights application (UI/UX, backend)
-- Enterprise-grade frontend development
+- Chain Insights Application (UI/UX, backend)
+- Enterprise-grade development
 
 ---
 
-## Slide 16: Why Virtuals Protocol? Our Evolution
+## Slide 17: Why Virtuals Protocol?
 
-**From Bittensor pioneer to Virtuals agent**
+**From Bittensor Pioneer to Virtuals Native**
 
-Chain Insights originated as SN15 on the Bittensor network, where we pioneered decentralised blockchain intelligence. Through this experience, we developed sophisticated self-improvement methodologies that are now core to our agent architecture.
+Chain Insights evolved from Bittensor to Virtuals for strategic alignment with the agentic economy:
 
-**Why Virtuals?**
-- **Agent-Native Platform:** Purpose-built for autonomous AI agents
-- **Alignment with Vision:** Self-improving agent fits Virtuals' agent-first approach
-- **Ecosystem Synergies:** Integration with other Virtuals agents
-- **Proven Technology:** Battle-tested on Bittensor, optimised for Virtuals
+| Advantage | Description |
+|-----------|-------------|
+| **Agent-Native Platform** | Purpose-built for autonomous AI agents |
+| **ACP** | Standardised agent-to-agent commerce |
+| **Butler** | Consumer gateway for user discovery |
+| **Ecosystem** | Network effects with other Virtuals agents |
+| **Proven Model** | aixbt shows what's possible |
 
 **The Vision:**
-> Chain Insights becomes the default intelligence layer for the agentic economy — any agent, any chain, any query, with intelligence that evolves faster than threats.
+> Chain Insights becomes the default intelligence layer for the agentic economy — any agent, any chain, any query. Intelligence that improves itself. Protection that operates autonomously.
+
+**We build agents that protect agents.**
 
 ---
 
-## Slide 17: Contact
+## Slide 18: Contact
 
 **Chain Insights Agent**
 *Powered by Chainswarm Technology — Built on Virtuals Protocol*
@@ -373,5 +408,7 @@ Chain Insights originated as SN15 on the Bittensor network, where we pioneered d
 - **Token:** $CIA (Chain Insights Agent)
 - **Founder:** Kamil Wojciechowski (aphex5)
 - **GitHub:** github.com/chainswarm
+
+**20% of all revenue → $VIRTUAL buybacks**
 
 *Neutral intelligence for an autonomous world.*
