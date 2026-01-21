@@ -1,10 +1,10 @@
-# Chain Insights Subnet — White Paper
+# Chain Insights Agent — White Paper
 
-**Decentralised Blockchain Intelligence for the Agentic Economy**
+**Autonomous Blockchain Intelligence for the Agentic Economy**
 
 *Powered by Chainswarm Technology*
 
-Version 1.1 | 2025
+Version 2.0 | 2025
 
 ---
 
@@ -15,9 +15,9 @@ Version 1.1 | 2025
 3. [Problem Statement](#3-problem-statement)
 4. [Solution Overview](#4-solution-overview)
 5. [Architecture](#5-architecture)
-6. [Mechanisms of Intelligence](#6-mechanisms-of-intelligence)
+6. [Agent Capabilities](#6-agent-capabilities)
 7. [Chain Synthetics Framework](#7-chain-synthetics-framework)
-8. [Miner Validation](#8-miner-validation)
+8. [Continuous Improvement](#8-continuous-improvement)
 9. [Chain Insights Application](#9-chain-insights-application)
 10. [x402 Agent Gateway](#10-x402-agent-gateway)
 11. [Token Economics](#11-token-economics)
@@ -30,9 +30,9 @@ Version 1.1 | 2025
 
 ## 1. Abstract
 
-Chain Insights Subnet is a decentralised blockchain intelligence network built on Bittensor that provides real-time risk scoring, funds tracking, and investigative AI capabilities for the emerging agentic economy. The subnet introduces a novel architecture that separates infrastructure operations from intelligence innovation: the subnet owner maintains reliable core indexing services, while miners compete in tournaments to advance algorithms, train superior machine learning models, discover validated address labels, and fine-tune specialised large language models.
+Chain Insights Agent is an autonomous blockchain intelligence system built on Virtuals Protocol that provides real-time risk scoring, funds tracking, and investigative AI capabilities for the emerging agentic economy. The agent operates in two complementary modes: a reactive mode where users ask questions and the agent researches and solves problems, and a proactive mode where the agent autonomously scans the network, warns before threats materialise, and automatically labels risky addresses.
 
-This paper describes the technical architecture, incentive mechanisms, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users. By rewarding breakthroughs rather than mere computation, Chain Insights aligns economic incentives with the continuous advancement of the state of the art in blockchain forensics, money flow visualisation, and anti-money laundering detection.
+This paper describes the technical architecture, agent capabilities, and product ecosystem that positions Chain Insights as the neutral intelligence layer for autonomous agents, enterprises, and retail users. By employing self-improving AI systems that continuously enhance detection capabilities, Chain Insights stays ahead of evolving threats in blockchain forensics, money flow visualisation, and anti-money laundering detection.
 
 ---
 
@@ -51,15 +51,21 @@ Blockchain intelligence today is characterised by centralisation, high cost, and
 - **Centralised providers** (Chainalysis, Elliptic, TRM Labs) serve enterprise clients at premium prices
 - **No programmatic access** suitable for autonomous agents or real-time applications
 - **Retail users excluded** from understanding their own risk profiles
-- **Closed innovation** where improvements happen behind proprietary walls
+- **Static systems** that cannot adapt quickly to evolving threat patterns
 
-Chain Insights Subnet addresses these gaps by building an open, decentralised intelligence network that incentivises innovation, democratises access, and maintains neutrality.
+Chain Insights Agent addresses these gaps by building an intelligent, self-improving agent that democratises access, maintains neutrality, and continuously evolves its capabilities.
 
-### 2.3 Design Philosophy
+### 2.3 Evolution from Bittensor
 
-> *"Computation is cheap; innovation is priceless. Anyone can deploy servers to run established code—we don't need miners for mere execution. We need miners for breakthroughs, for pushing boundaries, for advancing the state of the art. This subnet rewards those who build the future, not those who replicate the present."*
+Chain Insights originated as SN15 on the Bittensor network, where we pioneered decentralised blockchain intelligence. Through operating a blockchain intelligence subnet, we developed sophisticated methodologies for pattern detection, risk scoring, and continuous system improvement. This experience proved invaluable in understanding how to build truly adaptive intelligence systems.
 
-This philosophy shapes every architectural decision. Miners are not infrastructure providers—they are researchers, data scientists, and AI engineers competing to improve intelligence capabilities. The subnet owner operates stable infrastructure so miners can focus entirely on innovation.
+As the agentic economy emerged, we evolved to Virtuals Protocol, which better aligns with our vision of an autonomous AI agent serving the blockchain intelligence needs of humans and machines alike. The lessons learned from Bittensor—particularly around continuous improvement and objective benchmarking—are now embedded in Chain Insights Agent's core architecture.
+
+### 2.4 Design Philosophy
+
+> *"The best intelligence system is one that improves itself faster than threats evolve. We build agents that learn, adapt, and protect—autonomously."*
+
+This philosophy shapes every architectural decision. Chain Insights Agent is not a static tool—it is a living system that continuously enhances its detection capabilities through self-improving AI loops. The agent operates both reactively (responding to user queries) and proactively (scanning for threats before they materialise).
 
 ---
 
@@ -78,17 +84,17 @@ This asymmetry benefits no one. Users lose access to financial services. Exchang
 Autonomous AI agents represent the fastest-growing category of blockchain users. These agents need to make risk decisions in milliseconds:
 
 - Should this DeFi protocol accept a deposit from this address?
-- Do you think this wallet should alert the user about this recipient?
+- Should this wallet alert the user about this recipient?
 - Should this trading bot interact with this liquidity pool?
-- Do you think this compliance agent should flag this transaction for review?
+- Should this compliance agent flag this transaction for review?
 
 Current intelligence providers offer no solution for these use cases. Their APIs are designed for batch processing and human review, not real-time autonomous decision-making. The x402 payment protocol enables a new model—pay-per-query micropayments that match the operational reality of autonomous agents—but no intelligence provider has built for this paradigm.
 
-### 3.3 Innovation Stagnation
+### 3.3 Static Intelligence in a Dynamic Threat Landscape
 
-Centralised intelligence providers innovate on their own timelines. Algorithm improvements, new pattern detection capabilities, and model updates happen behind closed doors. The broader ecosystem cannot contribute to these advances, verify their accuracy, or benefit from collective intelligence.
+Centralised intelligence providers update their systems on their own timelines. Algorithm improvements, new pattern detection capabilities, and model updates happen behind closed doors and on slow release cycles.
 
-This is particularly problematic for an adversarial domain. Money launderers, hackers, and fraudsters continuously evolve their techniques. A centralised provider with a small internal research team cannot match the innovation capacity of a decentralised network of incentivised researchers.
+This is particularly problematic for an adversarial domain. Money launderers, hackers, and fraudsters continuously evolve their techniques. A static system with periodic updates cannot keep pace with rapidly evolving threats. What's needed is an intelligence system that learns and adapts continuously—an agent that improves itself faster than threats evolve.
 
 ### 3.4 Regulatory Expansion
 
@@ -98,7 +104,7 @@ Global cryptocurrency regulation is accelerating:
 - **United States:** FinCEN Travel Rule extends reporting requirements
 - **Global:** FATF recommendations drive KYC/AML requirements worldwide
 
-Every exchange, wallet, DeFi protocol, and crypto service will require compliance tooling. The market for blockchain intelligence is expanding, not contracting. The question is whether this market will be served by centralised gatekeepers or open infrastructure.
+Every exchange, wallet, DeFi protocol, and crypto service will require compliance tooling. The market for blockchain intelligence is expanding, not contracting. The question is whether this market will be served by slow-moving centralised gatekeepers or adaptive, intelligent agents.
 
 ---
 
@@ -106,7 +112,7 @@ Every exchange, wallet, DeFi protocol, and crypto service will require complianc
 
 ### 4.1 Neutral Intelligence Layer
 
-Chain Insights Subnet provides a **neutral intelligence layer** for blockchain ecosystems. We do not decide who is good or bad—we provide intelligence. Users, applications, and agents choose how to act on that intelligence.
+Chain Insights Agent provides a **neutral intelligence layer** for blockchain ecosystems. We do not decide who is good or bad—we provide intelligence. Users, applications, and agents choose how to act on that intelligence.
 
 This neutrality is not moral relativism. It is recognition that blockchain intelligence is a dual-use capability:
 
@@ -118,7 +124,29 @@ This neutrality is not moral relativism. It is recognition that blockchain intel
 
 A neutral tool serves all these use cases. A tool that pre-judges would serve none of them well.
 
-### 4.2 Three Access Channels
+### 4.2 Dual Operating Modes
+
+Chain Insights Agent operates in two complementary modes:
+
+**Reactive Mode (ReAct-Style)**
+Users ask questions, and the agent researches, analyses, and solves problems:
+
+- "Show me all addresses connected to this hack"
+- "Explain the relationship between these two addresses"
+- "What is the risk profile of this wallet's counterparties?"
+- "Generate an investigation report for this address"
+
+The agent queries its knowledge base, follows transaction trails, synthesises findings, and delivers actionable intelligence.
+
+**Proactive/Autonomous Mode**
+The agent continuously scans the network and acts without user prompting:
+
+- **Early Warning System:** Warns before something bad happens—detecting emerging threat patterns and alerting affected users
+- **Automatic Threat Labelling:** Detects attack patterns (e.g., dusting attacks) and automatically labels source addresses as risky
+- **Pattern Discovery:** Identifies new fraud topologies as they emerge in the wild
+- **Continuous Monitoring:** Tracks addresses of interest and alerts on significant changes
+
+### 4.3 Three Access Channels
 
 Chain Insights delivers intelligence through three complementary channels:
 
@@ -129,6 +157,7 @@ A consumer-facing web application providing:
 - Funds Tracking to visualise money flow patterns
 - AI-powered chat interface for investigative queries
 - Interactive graph visualisations
+- Proactive alerts and notifications
 
 **Enterprise API**
 Direct integration for organisations requiring:
@@ -145,26 +174,6 @@ AI-native payment interface enabling:
 - No accounts or subscriptions required
 - Real-time response for autonomous decision-making
 - Programmatic access for any agent or application
-
-### 4.3 Decentralised Innovation
-
-Chain Insights separates two functions that are often conflated:
-
-**Infrastructure (Subnet Owner)**
-
-- Operates core indexing services across supported blockchains
-- Maintains the "source of truth" data layer
-- Ensures production stability and reliability
-- Deploys winning innovations to production
-
-**Intelligence (Miners)**
-
-- Compete to improve detection algorithms
-- Train superior machine learning models
-- Discover and verify address labels
-- Fine-tune specialised language models
-
-This separation allows miners to focus entirely on innovation. They do not need to maintain servers, sync blockchains, or worry about uptime. They submit breakthroughs, and breakthroughs are rewarded.
 
 ---
 
@@ -185,26 +194,36 @@ This separation allows miners to focus entirely on innovation. They do not need 
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                   INTELLIGENCE LAYER                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
-│  │  Analytics  │  │  Machine    │  │ Intelligence│              │
-│  │  Mechanism  │  │  Learning   │  │  Mechanism  │              │
-│  │             │  │  Mechanism  │  │  (LLM)      │              │
-│  └─────────────┘  └─────────────┘  └─────────────┘              │
-│                          │                                       │
-│              ┌───────────┴───────────┐                          │
-│              │  Labelling Mechanism  │                          │
-│              └───────────────────────┘                          │
+│                  CHAIN INSIGHTS AGENT                            │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │               AGENT ORCHESTRATION LAYER                  │    │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │    │
+│  │  │   Reactive   │  │  Proactive   │  │   Learning   │   │    │
+│  │  │    Mode      │  │    Mode      │  │    Loop      │   │    │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘   │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                               │                                  │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │               INTELLIGENCE LAYER                         │    │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │    │
+│  │  │  Analytics  │  │  Machine    │  │     AI      │      │    │
+│  │  │  Engine     │  │  Learning   │  │ Investigator│      │    │
+│  │  │             │  │  Models     │  │    (LLM)    │      │    │
+│  │  └─────────────┘  └─────────────┘  └─────────────┘      │    │
+│  └─────────────────────────────────────────────────────────┘    │
 └──────────────────────────┬──────────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                   FOUNDATION LAYER                               │
-│              ┌───────────────────────┐                          │
-│              │  Core Indexing        │                          │
-│              │  Service              │                          │
-│              │  (Subnet Owner)       │                          │
-│              └───────────────────────┘                          │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │            Core Indexing Service                         │    │
+│  │        ┌─────────────────────────────┐                   │    │
+│  │        │     Label Database          │                   │    │
+│  │        │   (External Services +      │                   │    │
+│  │        │    Auto-Discovery)          │                   │    │
+│  │        └─────────────────────────────┘                   │    │
+│  └─────────────────────────────────────────────────────────┘    │
 │                          │                                       │
 │     ┌────────────────────┼────────────────────┐                 │
 │     ▼                    ▼                    ▼                 │
@@ -217,7 +236,7 @@ This separation allows miners to focus entirely on innovation. They do not need 
 
 ### 5.2 Core Indexing Service
 
-The subnet owner operates the Core Indexing Service to provide reliable, consistent data across all mechanisms. This is not a mining opportunity—it is foundational infrastructure that ensures all miners work from the same verified dataset.
+The Core Indexing Service provides reliable, consistent data across all intelligence capabilities. This foundational infrastructure ensures the agent works from verified, up-to-date blockchain data.
 
 #### 5.2.1 Unified Data Model
 
@@ -251,23 +270,27 @@ This model is:
 The indexing service maintains blueprints for three blockchain paradigms:
 
 **Substrate Chains**
-Account-based model with native support for Bittensor, Torus, and the Polkadot ecosystem. The initial deployment focuses on the Bittensor and Torus networks.
+Account-based model with native support for Polkadot ecosystem networks.
 
 **EVM Chains**
-Support for Ethereum-compatible networks, including Bittensor EVM and Torus EVM layers, with blueprints ready for broader EVM ecosystem expansion.
+Support for Ethereum-compatible networks, enabling analysis across the EVM ecosystem.
 
 **UTXO Chains**
 Support for Bitcoin-style unspent transaction output models, enabling analysis of Bitcoin and derivative networks.
 
 The unified data model means that adding a new chain requires only implementing an indexer—not redesigning analytics, ML, or intelligence mechanisms.
 
-#### 5.2.3 Data Distribution
+#### 5.2.3 Label Database
 
-To ensure transparency and enable miner participation:
+Chain Insights maintains a comprehensive database of address attributions:
 
-- **Snapshot Distribution:** Regular data snapshots allow anyone to verify data without running a full sync
-- **Feature Export:** Pre-calculated ML features available for miner model training
-- **Graph Access:** Transaction graph data accessible for pattern detection development
+- **Exchange Addresses:** Known hot/cold wallets from centralised exchanges
+- **Fraud & Scam Addresses:** Reported ponzi schemes, rug pulls, phishing addresses
+- **Sanctioned Entities:** OFAC and other regulatory blacklists
+- **Theft Reports:** Addresses involved in hacks, exploits, and stolen funds
+- **Public Attributions:** Team wallets, protocol treasuries, known whale addresses
+
+Labels are sourced from external intelligence services and **automatically discovered** by the agent through its proactive monitoring capabilities.
 
 ### 5.3 Semi-Real-Time Processing
 
@@ -281,139 +304,89 @@ For use cases requiring faster response, the architecture supports prioritised p
 
 ---
 
-## 6. Mechanisms of Intelligence
+## 6. Agent Capabilities
 
-Chain Insights Subnet comprises four interoperable mechanisms, each targeting a different aspect of blockchain intelligence and attracting different miner profiles.
+Chain Insights Agent comprises three core intelligence capabilities, each continuously improved through self-learning systems.
 
-### 6.1 Analytics Mechanism
-
-#### Purpose
-
-Advance the state of the art in on-chain transaction pattern detection and graph algorithm optimisation.
-
-#### Participants
-
-Software engineers and algorithm researchers who:
-
-- Optimise graph algorithms (PageRank, Betweenness Centrality, Community Detection)
-- Develop pattern detection for complex topologies (layering networks, circular flows, obfuscation chains, and many more...)
-- Improve processing efficiency for large-scale datasets
-- Implement high-performance code (Rust, C++, CUDA)
-
-#### Process
-
-1. **Baseline Publication:** Subnet owner publishes baseline implementations for target algorithms
-2. **Code Submission:** Miners submit improved implementations via Docker containers
-3. **Benchmark Execution:** Validators run submissions against Chain Synthetics test data
-4. **Scoring:** Submissions scored on detection accuracy (precision/recall), processing speed, and novelty
-5. **Production Deployment:** Best-performing code adopted by subnet owner for production alerts
-
-#### Incentive Model
-
-Miners earn emissions for improvements over baseline. If a miner improves pattern detection accuracy by 5%, they earn emissions for that innovation period (typically one week). Once the improvement is absorbed into the new baseline, emissions stop. Miners must innovate again to earn again.
-
-This tournament-based model ensures continuous advancement. Unlike some subnets that reward continuous infrastructure provision, Chain Insights rewards breakthroughs.
-
-### 6.2 Labelling Mechanism
+### 6.1 Analytics Engine
 
 #### Purpose
 
-Create a decentralised address intelligence layer by aggregating and verifying labelled addresses from across the internet.
-
-#### Participants
-
-Data hunters and OSINT specialists who discover and verify:
-
-- **Exchange Addresses:** Known hot/cold wallets from centralised exchanges
-- **Fraud & Scam Addresses:** Reported ponzi schemes, rug pulls, phishing addresses
-- **Sanctioned Entities:** OFAC and other regulatory blacklists
-- **Theft Reports:** Addresses involved in hacks, exploits, and stolen funds
-- **Public Attributions:** Team wallets, protocol treasuries, known whale addresses
-
-#### Process
-
-1. **Discovery:** Miners identify labelled addresses from public sources
-2. **Evidence Collection:** Each label requires cryptographic evidence of the source
-3. **Verification:** Validators verify that the address exists and matches the claimed behaviour against the indexing service
-4. **Integration:** Verified labels integrated into the production intelligence layer
-
-#### Incentive Model
-
-Labelling mechanism rewards both quality and quantity:
-
-- **Quality:** Labels that prove accurate over time earn higher scores
-- **Quantity:** Comprehensive coverage across address categories
-- **Novelty:** Previously unknown labels earn a premium
-- **Verification:** Labels that withstand challenge and re-verification
-
-### 6.3 Machine Learning Mechanism
-
-#### Purpose
-
-Train and deploy the most accurate risk scoring models for address classification and behaviour prediction.
-
-#### Participants
-
-Data scientists and ML engineers who:
-
-- Train classification models (address type, risk category)
-- Develop prediction models (future behaviour, token movement likelihood)
-- Optimise model architectures for accuracy and inference speed
-- Create ensemble approaches combining multiple signals
-
-#### Process
-
-1. **Data Access:** Miners access features from the indexing service and labels from the labelling mechanism
-2. **Training:** Offline model training using historical data and ground truth labels
-3. **Submission:** Miners submit model containers/weights for evaluation
-4. **Evaluation:** Models validated against Chain Synthetics ground truth
-5. **Temporal Validation:** Predictions validated over time ($T + \tau$) to measure real-world accuracy
-6. **A/B Testing:** Candidate models tested against production for drift detection
-7. **Deployment:** Best-performing model becomes production "Oracle" for risk scoring
-
-#### Scoring Dimensions
-
-- **Fraud Detection:** Alert candidate identification → scoring → confirmed alert accuracy
-- **Address Classification:** Correct categorization of address types
-- **Proximity Risk:** Accurate assessment of contamination from related addresses
-- **Calibration:** Predicted probabilities match observed frequencies
-
-#### Incentive Model
-
-Similar to Analytics Mechanism—tournament-based emissions for models that exceed current production performance. New submissions continuously challenge models.
-
-### 6.4 Intelligence Mechanism
-
-#### Purpose
-
-Fine-tune and provide large language models capable of understanding blockchain forensics, AML concepts, and Chain Insights data structures.
-
-#### Participants
-
-AI engineers and LLM specialists who:
-
-- Fine-tune open-weights models (Llama, Mistral, etc.) on domain-specific data
-- Create training datasets for blockchain/AML terminology
-- Integrate knowledge graph capabilities (GraphRAG)
-- Optimise models for investigative report generation
-
-#### Process
-
-1. **Base Model Selection:** Miners choose open-weights foundation models
-2. **Dataset Curation:** Create domain-specific training data (terminology, scenarios, report formats)
-3. **Fine-Tuning:** Train specialised models for the blockchain intelligence domain
-4. **Evaluation:** Models tested against the "Golden Dataset" of complex queries and investigation scenarios
-5. **Integration Testing:** Validate the model can query the Chain Insights knowledge graph
-6. **Deployment:** Winning model powers Chain Insights Chat interface
+Detect complex transaction patterns indicative of money laundering, fraud, or suspicious activity.
 
 #### Capabilities
 
-Fine-tuned models should demonstrate:
+- **Graph Algorithms:** PageRank, Betweenness Centrality, Community Detection optimised for blockchain transaction graphs
+- **Pattern Detection:** Identification of complex topologies including:
+  - Mixing patterns (multi-input, multi-output transactions obscuring fund origin)
+  - Layering networks (multiple intermediate addresses between source and destination)
+  - Peel chains (sequential transactions peeling small amounts to final destination)
+  - Circular flows (funds returning to origin through complex paths)
+  - And many more fraud topologies
+- **High Performance:** Optimised processing for large-scale datasets
 
-- **Terminology Understanding:** "Structuring," "peeling chain," "mixer," "layering"
-- **Regulatory Context:** KYC/AML requirements, FATF guidelines, jurisdiction-specific rules
-- **Data Structure Familiarity:** Query Chain Insights APIs, interpret risk scores, navigate graph data
+#### Continuous Improvement
+
+The Analytics Engine improves itself through agent-driven loops that test new algorithm variations against the Chain Synthetics benchmark framework, automatically adopting improvements that demonstrate superior detection accuracy.
+
+### 6.2 Machine Learning Models
+
+#### Purpose
+
+Provide accurate risk scoring for any blockchain address through trained classification and prediction models.
+
+#### Capabilities
+
+- **Address Classification:** Categorise addresses by type (exchange, DeFi, personal, suspicious)
+- **Risk Scoring:** Real-time risk assessment for any address
+- **Behaviour Prediction:** Likelihood of future suspicious activity
+- **Proximity Risk:** Assessment of contamination from related addresses
+- **Calibrated Probabilities:** Predicted probabilities that match observed frequencies
+
+#### Model Architecture
+
+- Ensemble approaches combining multiple signals
+- Pre-calculated features from the Core Indexing Service
+- Ground truth labels from the Label Database
+- Temporal validation to ensure real-world accuracy
+
+#### Continuous Improvement
+
+ML models are continuously refined through automated training loops that:
+- Evaluate new model architectures against production performance
+- Validate predictions over time to catch overfitting
+- A/B test candidate models against current production
+- Automatically deploy models that demonstrate improvement
+
+### 6.3 AI Investigator (LLM)
+
+#### Purpose
+
+Enable natural language interaction for complex blockchain investigations and report generation.
+
+#### Capabilities
+
+- **Natural Language Queries:** Users ask questions in plain English
+- **Knowledge Graph Integration:** Query Chain Insights data through conversation
+- **Multi-Hop Analysis:** Synthesise complex relationships across transaction chains
 - **Report Generation:** Create clear, court-admissible investigation narratives
+
+#### Domain Expertise
+
+The AI Investigator understands:
+
+- **AML Terminology:** "Structuring," "peeling chain," "mixer," "layering"
+- **Regulatory Context:** KYC/AML requirements, FATF guidelines, jurisdiction-specific rules
+- **Chain Insights Data:** Query APIs, interpret risk scores, navigate graph data
+- **Investigation Methodology:** Systematic approaches to blockchain forensics
+
+#### Continuous Improvement
+
+The LLM capabilities are enhanced through agent loops that:
+- Fine-tune on domain-specific data (terminology, scenarios, report formats)
+- Evaluate against complex query benchmarks
+- Improve knowledge graph integration
+- Enhance report quality and accuracy
 
 ---
 
@@ -426,7 +399,7 @@ Measuring fraud detection accuracy requires ground truth—known examples of fra
 - Real fraud labels are sensitive and not publicly available
 - Historical hacks are documented but not structured for benchmarking
 - Synthetic data may not reflect real-world complexity
-- Miners could overfit to known test cases
+- Systems could overfit to known test cases
 
 Chain Synthetics solves this through a novel approach to benchmark generation.
 
@@ -463,11 +436,11 @@ This enables testing whether detection algorithms would have caught historical i
 
 ### 7.3 Benchmark Execution
 
-During miner evaluation:
+Chain Synthetics powers the continuous improvement loops:
 
-1. **Dataset Generation:** Chain Synthetics produces a test dataset with injected patterns
-2. **Blind Evaluation:** Miners do not know which transactions are synthetic
-3. **Submission Execution:** Miner code runs against test dataset
+1. **Dataset Generation:** Chain Synthetics produces test datasets with injected patterns
+2. **Blind Evaluation:** The agent's systems do not know which transactions are synthetic
+3. **Execution:** Detection algorithms run against test datasets
 4. **Scoring:** Results compared against ground truth labels
 
 #### Metrics
@@ -488,81 +461,68 @@ To prevent overfitting:
 
 ---
 
-## 8. Miner Validation
+## 8. Continuous Improvement
 
-Each mechanism employs objective, gaming-resistant validation tailored to its contribution type. This section provides a comprehensive overview of how miners are validated across all four mechanisms.
+### 8.1 Self-Improving Agent Architecture
 
-### 8.1 Validation Overview
+Chain Insights Agent employs autonomous improvement loops that continuously enhance its intelligence capabilities. Rather than waiting for manual updates, the agent runs local improvement agents that test, evaluate, and deploy enhancements automatically.
 
-| Mechanism | Validation Method | Primary Scoring Criteria |
-|-----------|-------------------|--------------------------|
-| **Analytics** | Chain Synthetics benchmark | Precision, recall, speed, novelty |
-| **Machine Learning** | Chain Synthetics + temporal validation | Accuracy over time ($T + \tau$), A/B vs. production |
-| **Labelling** | Evidence-based verification | Quality, quantity, novelty, long-term accuracy |
-| **Intelligence (LLM)** | Golden Dataset evaluation | Query accuracy, graph integration, report quality |
+### 8.2 Improvement Loop Architecture
 
-### 8.2 Analytics Mechanism Validation
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                  CONTINUOUS IMPROVEMENT SYSTEM                   │
+│                                                                  │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐          │
+│  │  Generate   │    │  Evaluate   │    │   Deploy    │          │
+│  │  Variation  │───▶│  Against    │───▶│   If        │          │
+│  │             │    │  Benchmark  │    │   Better    │          │
+│  └─────────────┘    └─────────────┘    └─────────────┘          │
+│        ▲                                      │                  │
+│        │                                      │                  │
+│        └──────────────────────────────────────┘                  │
+│                    Continuous Loop                               │
+│                                                                  │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                CHAIN SYNTHETICS BENCHMARK                │    │
+│  │    Objective ground truth for measuring improvement      │    │
+│  └─────────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-The Analytics Mechanism uses the Chain Synthetics Framework for objective benchmarking:
+### 8.3 What Gets Improved
 
-1. **Blind Evaluation:** Miners submit code via Docker containers without knowing which transactions in test datasets are synthetic vs. real
-2. **Benchmark Execution:** Validators run submissions against Chain Synthetics test data containing injected fraud patterns
-3. **Objective Scoring:** Submissions scored on:
-   - **Precision:** What fraction of flagged patterns are actually fraudulent?
-   - **Recall:** What fraction of actual fraud patterns were detected?
-   - **Speed:** Processing time for dataset analysis
-   - **Novelty:** Detection of patterns not in the training distribution
-4. **Production Deployment:** Best-performing code is adopted by the subnet owner for production alerts
+**Analytics Engine**
+- New graph algorithm implementations
+- Pattern detection optimisations
+- Processing efficiency improvements
+- Novel fraud topology detection
 
-### 8.3 Machine Learning Mechanism Validation
+**Machine Learning Models**
+- Model architecture variations
+- Feature engineering improvements
+- Training methodology refinements
+- Ensemble combination strategies
 
-The ML Mechanism extends Chain Synthetics validation with temporal and production testing:
+**AI Investigator (LLM)**
+- Domain-specific fine-tuning
+- Knowledge graph query capabilities
+- Report generation quality
+- Terminology and context understanding
 
-1. **Ground Truth Evaluation:** Models validated against Chain Synthetics labelled data
-2. **Temporal Validation:** Predictions validated over time ($T + \tau$) to ensure real-world accuracy, not just test set performance—this catches models that overfit to static benchmarks
-3. **A/B Testing:** Candidate models tested against the current production model for drift detection
-4. **Calibration Assessment:** Predicted probabilities must match observed frequencies
-5. **Continuous Challenge:** New submissions continuously challenge the production "Oracle"
+### 8.4 Quality Assurance
 
-### 8.4 Labelling Mechanism Validation
+All improvements are validated against objective benchmarks before deployment:
 
-The Labelling Mechanism uses evidence-based verification rather than synthetic benchmarks:
+| Capability | Validation Method | Key Metrics |
+|-----------|-------------------|-------------|
+| Analytics | Chain Synthetics benchmark | Precision, recall, speed |
+| ML Models | Chain Synthetics + temporal validation | Accuracy over time, calibration |
+| LLM | Golden Dataset evaluation | Query accuracy, report quality |
 
-1. **Evidence Requirement:** Each label submission requires cryptographic evidence of source (OSINT findings, public attributions, regulatory blacklists, theft reports, on-chain proof)
-2. **Indexing Service Verification:** Validators verify the address exists, and matches claimed behaviour against the Core Indexing Service
-3. **Scoring Dimensions:**
-   - **Quality:** Labels that prove accurate over time earn higher scores; labels that are challenged and disproven lose points
-   - **Quantity:** Comprehensive coverage across address categories (exchanges, scams, sanctioned entities, etc.)
-   - **Novelty:** Previously unknown labels earn a premium over already-known attributions
-   - **Verification Resistance:** Labels that withstand re-verification and challenge over time
-4. **Long-Term Accuracy Tracking:** Label accuracy is monitored over time; miners whose labels consistently prove correct build a reputation
+**Temporal Validation**: ML predictions are validated over time ($T + \tau$) to ensure real-world accuracy, not just test set performance.
 
-### 8.5 Intelligence Mechanism Validation
-
-The Intelligence (LLM) Mechanism uses benchmark evaluation against curated test scenarios:
-
-1. **Golden Dataset:** Models tested against a curated "Golden Dataset" of complex investigative queries and scenarios with known correct answers
-2. **Integration Testing:** Validation that the model can properly query the Chain Insights knowledge graph and interpret results
-3. **Capability Assessment:**
-   - **Terminology Understanding:** Correct use of AML terminology ("structuring," "peeling chain," "mixer," "layering")
-   - **Regulatory Context:** Accurate representation of KYC/AML requirements, FATF guidelines
-   - **Report Generation:** Quality of generated investigation narratives
-4. **Human Evaluation Component:** For subjective quality dimensions, a panel evaluation may supplement automated scoring
-
-### 8.6 Anti-Gaming Measures
-
-All mechanisms implement measures to prevent gaming:
-
-| Measure | Analytics | ML | Labelling | Intelligence |
-|---------|-----------|-----|-----------|--------------|
-| Regenerated test data each round | ✅ | ✅ | — | ✅ |
-| Randomised parameters | ✅ | ✅ | — | ✅ |
-| Holdout patterns/questions | ✅ | ✅ | — | ✅ |
-| Temporal validation | — | ✅ | ✅ | — |
-| Evidence requirements | — | — | ✅ | — |
-| Long-term accuracy tracking | — | ✅ | ✅ | — |
-
-> *Miners cannot game the system—they can only improve it.*
+**A/B Testing**: Candidate improvements tested against production systems before full deployment.
 
 ---
 
@@ -570,7 +530,7 @@ All mechanisms implement measures to prevent gaming:
 
 ### 9.1 Overview
 
-Chain Insights is the consumer-facing application delivering subnet intelligence to end users. It provides accessible interfaces for risk scoring, funds tracking, investigation, and AI-powered analysis.
+Chain Insights is the consumer-facing application delivering agent intelligence to end users. It provides accessible interfaces for risk scoring, funds tracking, investigation, and AI-powered analysis—plus proactive alerts from the agent's autonomous monitoring.
 
 ### 9.2 Risk Scoring
 
@@ -624,7 +584,17 @@ Natural language interface for complex queries:
 - Generate structured investigation reports
 - Explain technical concepts in an accessible language
 
-### 9.5 Pricing Model
+### 9.5 Proactive Alerts
+
+#### Functionality
+
+The agent's autonomous monitoring capabilities surface through the application:
+
+- **Threat Warnings:** Alerts when addresses you're monitoring interact with newly flagged entities
+- **Pattern Detection:** Notifications when suspicious patterns are detected involving watched addresses
+- **Early Warning:** Proactive alerts about emerging threats before they impact you
+
+### 9.6 Pricing Model
 
 **Flexible Credit System**
 
@@ -632,9 +602,6 @@ Natural language interface for complex queries:
 - **Pay-Per-Use:** Credits are spent only on specific queries, tracking actions, or chat interactions
 - **No Expiration:** Credits remain valid until used
 - **Tiered Access:** Options available for casual users versus power users (investigators)
-
-**Beta Period**
-During the initial launch, Bittensor community members receive free access to build familiarity and provide feedback.
 
 ---
 
@@ -707,7 +674,20 @@ Agent gateway pricing mirrors credit-based pricing:
 
 ## 11. Token Economics
 
-### 11.1 Revenue Model
+### 11.1 $CIA Token
+
+**$CIA (Chain Insights Agent)** is the native token of the Chain Insights ecosystem on Virtuals Protocol. It powers access to intelligence services, enables ecosystem governance, and captures value from the agent's revenue streams.
+
+#### Token Utility
+
+| Utility | Description |
+|---------|-------------|
+| **Service Access** | Purchase credits for risk scoring, tracking, and AI chat |
+| **x402 Payments** | Pay-per-query for agent gateway access |
+| **Premium Features** | Access to advanced capabilities and higher rate limits |
+| **Ecosystem Governance** | Participate in protocol decisions and roadmap prioritisation |
+
+### 11.2 Revenue Model
 
 Chain Insights generates revenue through five complementary streams, creating a diversified and sustainable business model:
 
@@ -719,9 +699,9 @@ Chain Insights generates revenue through five complementary streams, creating a 
 | **Address Label Datasets** | Licensed access to verified, up-to-date address attributions | Other intelligence providers, exchanges, compliance vendors |
 | **Investigation Reports** | Premium court-admissible forensic reports via AI Investigator | Law enforcement, legal teams, recovery services |
 
-### 11.2 Value Flow Architecture
+### 11.3 Value Flow Architecture
 
-Chain Insights creates sustainable value flow connecting revenue generation to network incentives:
+Chain Insights creates sustainable value flow connecting revenue generation to token value:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -747,71 +727,33 @@ Chain Insights creates sustainable value flow connecting revenue generation to n
 │                   VALUE DISTRIBUTION                             │
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
-│  │                 Subnet Operations                        │    │
-│  │  Infrastructure • Development • Support                  │    │
+│  │                 Operations & Development                 │    │
+│  │  Infrastructure • R&D • Support • Continuous Improvement │    │
 │  └─────────────────────────────────────────────────────────┘    │
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
-│  │              Alpha Token Buybacks                        │    │
+│  │              $CIA Token Buybacks                         │    │
 │  │  Revenue-funded purchases supporting token value         │    │
 │  └─────────────────────────────────────────────────────────┘    │
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
-│  │               Development Fund                           │    │
-│  │  Continued R&D • Multi-chain expansion • Partnerships    │    │
+│  │               Ecosystem Growth Fund                      │    │
+│  │  Partnerships • Multi-chain expansion • Integrations     │    │
 │  └─────────────────────────────────────────────────────────┘    │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 11.3 Miner Incentives
+### 11.4 Address Label Datasets as Monetizable Assets
 
-Miners earn subnet alpha token emissions for validated contributions:
-
-**Analytics Mechanism**
-
-- Emissions for code that exceeds baseline benchmarks
-- Tournament-based: earn during the innovation period, then must improve again
-- Winning code is open-sourced and deployed to production
-
-**Labelling Mechanism**
-
-- Emissions based on the quality and quantity of verified labels
-- Quality is measured by long-term accuracy and resistance to challenges
-- Novelty premium for previously unknown attributions
-
-**Machine Learning Mechanism**
-
-- Emissions for models exceeding production performance
-- Temporal validation ensures real-world accuracy, not just test set performance
-- Continuous challenge from new submissions
-
-**Intelligence Mechanism**
-
-- Emissions for LLMs scoring highest on investigation benchmarks
-- Evaluated on the golden dataset of complex queries
-- Integration testing with Chain Insights knowledge graph
-
-### 11.4 Open Source Commitment
-
-All winning miner contributions are open-sourced:
-
-- Detection algorithms published for community benefit
-- Model architectures and training approaches documented
-- Collective intelligence benefits the entire ecosystem
-
-Miners are compensated for innovation through emissions; the ecosystem benefits from open knowledge.
-
-### 11.5 Address Label Datasets as Monetizable Assets
-
-The Labelling Mechanism creates a unique byproduct: a continuously curated, verified database of address attributions. This dataset has significant standalone value:
+The auto-discovery capabilities create a unique byproduct: a continuously curated, verified database of address attributions. This dataset has significant standalone value:
 
 **Why Address Labels Are Valuable**
 
 - **Scarcity:** Comprehensive, verified address labels are complicated to source
 - **Freshness:** Labels require continuous curation as new addresses emerge and attributions change
-- **Verification:** Each label in Chain Insights has cryptographic evidence and has passed validator verification
-- **Coverage:** Decentralised discovery means broader coverage than any single organisation could achieve
+- **Verification:** Each label is validated against on-chain behaviour
+- **Coverage:** Autonomous discovery means broader coverage than manual curation
 
 **Market Demand**
 
@@ -832,14 +774,12 @@ Address label datasets can be licensed in multiple formats:
 - **API Access:** Query-based access for integration into existing systems
 - **Historical Snapshots:** Point-in-time datasets for research purposes
 
-This revenue stream turns miner contributions into a monetizable asset while providing ongoing value to the broader ecosystem.
+### 11.5 Buyback Mechanism
 
-### 11.6 Buyback Mechanism
-
-Revenue from all five streams of funds token buybacks:
+Revenue from all five streams funds $CIA token buybacks:
 
 - Creates demand pressure supporting token value
-- Aligns subnet owner incentives with token holders
+- Aligns ecosystem incentives with token holders
 - Sustainable model tied to actual usage and revenue
 
 ---
@@ -924,36 +864,51 @@ Revenue from all five streams of funds token buybacks:
 
 **Value:** Empowered privacy management through transparency.
 
+### 12.7 Proactive Threat Detection
+
+**Scenario:** A user wants to be warned before interacting with newly discovered scams.
+
+**Solution:**
+
+- Chain Insights Agent autonomously monitors the network
+- Detects dusting attacks and labels source addresses as risky
+- Alerts the user before they interact with flagged addresses
+- Continuously updates threat intelligence in real-time
+
+**Value:** Protection before harm occurs, not just forensics after the fact.
+
 ---
 
 ## 13. Roadmap
 
 ### Phase 1 (Now — Q4 2025)
-*   ✅ Core Indexing Service (Bittensor)
+*   ✅ Core Indexing Service
 *   ✅ Analytics Pipeline baseline
 *   ✅ Chain Synthetics framework
-*   🔄 Analytics Mechanism subnet implementation
-*   🔄 Chain Insights Miners Leaderboards
+*   🔄 Chain Insights Agent launch on Virtuals Protocol
+*   🔄 Continuous improvement loops operational
 
 ### Phase 2 (Q1 2026)
-*   Subnet API Launch
-*   Labelling Mechanism subnet
+*   Chain Insights Application public launch
 *   Chain Insights Funds Tracking
-*   Chain Insights Labels
-*   Bittensor EVM support
+*   x402 Agent Gateway
+*   EVM chain support expansion
 
 ### Phase 3 (Q2 — Q3 2026)
-*   Machine Learning Mechanism subnet
-*   Chain Insights Risk Scoring
+*   Chain Insights Risk Scoring (full release)
+*   Proactive alerting system
+*   ML model enhancement cycle
 
 ### Phase 4 (Q4 2026+)
-*   Intelligence Mechanism subnet
-*   Chain Insights Chat (AI Investigator)
+*   AI Investigator Chat (full release)
+*   Court-admissible report generation
+*   Enterprise API launch
 
 ### Beyond
 *   Multi-chain expansion (UTXO, Substrate, EVM ecosystems)
 *   Enterprise partnerships
 *   Regulatory compliance integrations
+*   Advanced autonomous capabilities
 
 ---
 
@@ -963,32 +918,32 @@ Revenue from all five streams of funds token buybacks:
 
 **Kamil Wojciechowski (aphex5)**
 
-Creator of Chain Insights SN15, the original blockchain intelligence subnet on Bittensor. Following SN15's operation, Kamil invested 1.5 years in deep research and architectural redesign, rebuilding the system from first principles.
+Creator of Chain Insights, who pioneered blockchain intelligence on the Bittensor network with SN15. Following extensive operation of a decentralised intelligence subnet, Kamil invested 1.5 years in deep research and architectural redesign, rebuilding the system from first principles for the agentic economy.
 
 This extensive R&D period addressed fundamental questions:
 
-- How should infrastructure and innovation be separated?
-- What incentive models drive continuous advancement rather than stagnation?
-- How can fraud detection be objectively measured?
+- How should intelligence systems continuously improve themselves?
+- What architectures enable both reactive and proactive agent capabilities?
+- How can fraud detection be objectively measured and benchmarked?
 - What data model enables cross-chain analysis at scale?
 
-The answers to these questions shaped Chain Insights Subnet's architecture.
+The answers to these questions shaped Chain Insights Agent's architecture. The evolution from Bittensor to Virtuals Protocol represents the natural progression toward a truly autonomous AI agent paradigm.
 
 **Responsibilities:**
 
 - Indexing infrastructure design and operation
-- Subnet mechanics and incentive design
-- Overall architecture and technical leadership
+- Agent architecture and continuous improvement systems
+- Overall technical leadership
 - Project management and coordination
 
 ### 14.2 Partners
 
 **1-HORIZON LTD — Infrastructure Partner**
 
-- Scalable cloud infrastructure for indexing and validation services
+- Scalable cloud infrastructure for indexing and intelligence services
 - DevSecOps and AIOps expertise with four decades of combined experience
 - Confidential Computing capabilities with TDX/SGX for Trusted Execution Environments
-- Active Bittensor miner with deep network understanding
+- Deep blockchain ecosystem understanding
 
 **U1CORE — Development Partner**
 
@@ -997,27 +952,21 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 - Enterprise-grade development practices
 - User experience optimisation
 
-### 14.3 Development Structure
+### 14.3 Why Virtuals Protocol?
 
-**Core Team (Subnet Owner)**
+Chain Insights evolved from Bittensor to Virtuals Protocol for strategic alignment with the agentic economy:
 
-- Maintains indexing infrastructure
-- Operates benchmarking and validation systems
-- Deploys winning innovations to production
-- Coordinates mechanism development
+**Agent-Native Platform**
+Virtuals Protocol is purpose-built for autonomous AI agents, providing native infrastructure for agent deployment, tokenisation, and ecosystem integration.
 
-**Miners (Decentralised Contributors)**
+**Alignment with Vision**
+The Chain Insights vision of an autonomous, self-improving intelligence agent aligns perfectly with Virtuals' agent-first approach.
 
-- Software engineers advancing detection algorithms
-- Data scientists training ML models
-- OSINT specialists discovering address labels
-- AI engineers fine-tuning language models
+**Ecosystem Synergies**
+Integration with other Virtuals agents enables collaborative intelligence—agents sharing insights and building collective awareness.
 
-**Application Team (U1CORE)**
-
-- Chain Insights web application
-- User interfaces and experience
-- Backend services and integrations
+**Proven Technology**
+The core technology was battle-tested on Bittensor. Virtuals provides the optimal environment for the next evolution.
 
 ---
 
@@ -1027,13 +976,13 @@ The answers to these questions shaped Chain Insights Subnet's architecture.
 
 Blockchain intelligence is at an inflexion point. Regulatory requirements are expanding globally. The agentic economy is emerging rapidly. Current centralised solutions cannot serve the scale, accessibility, and innovation requirements of this new landscape.
 
-Chain Insights Subnet addresses this opportunity by:
+Chain Insights Agent addresses this opportunity by:
 
 **Democratizing Access**
 
 - Flexible credit-based pricing accessible to individuals
 - x402 gateway enabling autonomous agent integration
-- Free beta access for the Bittensor community
+- Self-service application for anyone to check addresses
 
 **Maintaining Neutrality**
 
@@ -1041,11 +990,11 @@ Chain Insights Subnet addresses this opportunity by:
 - Tool for compliance, investigation, and privacy audit alike
 - Users decide how to act on intelligence
 
-**Accelerating Innovation**
+**Continuous Evolution**
 
-- Tournament-based incentives reward breakthroughs
-- Decentralised research community
-- Open-source contributions benefit the entire ecosystem
+- Self-improving AI systems that learn faster than threats evolve
+- Autonomous improvement loops enhance capabilities continuously
+- Proactive threat detection, not just reactive analysis
 
 **Building Sustainability**
 
@@ -1059,34 +1008,34 @@ Chain Insights becomes the default intelligence layer for the agentic economy.
 
 Any agent, any chain, any query—with real-time risk assessment enabling safe autonomous operation in an increasingly complex blockchain landscape.
 
-We do not predict the future of blockchain compliance and intelligence. We build the infrastructure that makes it possible.
+We build agents that protect agents. Intelligence that improves itself. Safety infrastructure for the autonomous future.
 
 ### 15.3 Call to Action
 
-**For Miners:**
-Join the innovation competition. Whether you're a software engineer optimizing graph algorithms, a data scientist training ML models, an OSINT specialist discovering address intelligence, or an AI engineer fine-tuning language models—there is a mechanism for your expertise.
-
 **For Users:**
-Try Chain Insights during the beta period. Check your addresses. Visualise the funds flow. Explore the intelligence. Provide feedback that shapes the product.
+Try Chain Insights. Check your addresses. Visualise the funds flow. Explore the intelligence. Experience what proactive protection feels like.
 
 **For Builders:**
 Integrate the x402 gateway into your agents and applications. Build on a neutral intelligence infrastructure. Join the agentic economy.
 
-**For Validators:**
-Support a subnet that rewards innovation over infrastructure. Help build the intelligence layer the ecosystem needs.
+**For Enterprises:**
+Contact us for API integration, bulk access, and custom solutions tailored to your compliance needs.
+
+**For the Curious:**
+Follow our progress. Watch the agent improve. Witness the future of blockchain intelligence.
 
 ---
 
-**Chain Insights Subnet**
-*Powered by Chainswarm Technology*
+**Chain Insights Agent**
+*Powered by Chainswarm Technology — Built on Virtuals Protocol*
 
-Decentralised blockchain intelligence for the agentic economy.
+Autonomous blockchain intelligence for the agentic economy.
 
 Founder: Kamil Wojciechowski (aphex5)
 GitHub: github.com/chainswarm
 
-*Neutral intelligence for a decentralised world.*
+*Neutral intelligence for an autonomous world.*
 
 
-*Document Version 1.1 — 2025*
-*Chain Insights Subnet — Powered by Chainswarm Technology*
+*Document Version 2.0 — 2025*
+*Chain Insights Agent — Powered by Chainswarm Technology*
