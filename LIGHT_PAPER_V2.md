@@ -84,6 +84,26 @@ The agentic economy needs agents that can protect themselves. Chain Insights mak
 
 ---
 
+## Supported Networks
+
+Chain Insights is built to be chain-agnostic. Our unified data model normalises transactions across different blockchain architectures into comparable, queryable intelligence.
+
+### Substrate Family
+Polkadot, Kusama, and the broader Substrate ecosystem. Starting with **Bittensor** — our home network and initial deployment target.
+
+### EVM Family
+Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche, and the expanding universe of EVM-compatible chains. One integration pattern covers the entire ecosystem.
+
+### UTXO Family
+Bitcoin, Litecoin, and other UTXO-based chains. The original blockchain architecture, requiring specialised analysis for transaction graph construction.
+
+### Solana (SVM)
+Solana's unique account-based architecture with its own virtual machine. High-throughput chains require purpose-built indexing — we're building it.
+
+**The vision:** Query any address on any major chain through a single interface. Cross-chain fund flows tracked seamlessly. Universal intelligence for a multi-chain world.
+
+---
+
 ## Built for the Agentic Economy
 
 The future of crypto is autonomous. AI agents are already trading, providing liquidity, managing portfolios, and interacting with DeFi protocols — all without human intervention.
