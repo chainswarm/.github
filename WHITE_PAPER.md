@@ -716,35 +716,35 @@ This burn mechanism:
 
 ## 11. Roadmap
 
-### Phase 1 (Now — Q4 2025)
+### Phase 1 — Bittensor Era (Completed)
 - [x] Core Indexing Service
 - [x] Money Flows data model
 - [x] Chain Synthetics framework
+- [x] Substrate chain support (Bittensor)
+- [x] Chain Insights Application
+- [x] Funds Tracking feature
+- [x] Analyzers & evaluation framework
+
+### Phase 2 — Virtuals Launch (Q1 2026)
 - [ ] Chain Insights Agent launch on Virtuals Protocol
+- [ ] $CIA token launch
 - [ ] ACP service integration
 - [ ] Butler onboarding
-- [ ] SVM (Solana) indexing support
-- [ ] Token launch ($CIA)
+- [ ] Base network support (EVM)
+- [ ] Basic Risk Scoring
 
-### Phase 2 (Q1 2026)
-- [ ] Chain Insights Application public launch
-- [ ] Funds Tracking feature
-- [ ] X/Twitter bot deployment
-- [ ] EVM chain support expansion
-- [ ] Continuous improvement loops operational
-- [ ] x402 on-chain payments integration
+### Phase 3 — Full Product (Q2 — Q3 2026)
+- [ ] AI Chat interface in Chain Insights App
+- [ ] Game Agent for X/Twitter
+- [ ] Virtuals Protocol capabilities integration
+- [ ] Proactive alerting system
+- [ ] x402 on-chain payments
 - [ ] Free credits system
 
-### Phase 3 (Q2 — Q3 2026)
-- [ ] Full Risk Scoring release
-- [ ] Proactive alerting system
-- [ ] ML model enhancement cycle
-- [ ] Additional Virtuals ecosystem integrations
-- [ ] AI Chat interface (beta)
-
 ### Phase 4 (Q4 2026+)
-- [ ] AI Chat interface (full release)
+- [ ] Full Risk Scoring with ML models
 - [ ] Court-admissible report generation
+- [ ] SVM (Solana) support
 - [ ] UTXO chains support (Bitcoin)
 - [ ] Token burn mechanism activation (post-profitability)
 
@@ -753,7 +753,6 @@ This burn mechanism:
 - [ ] Advanced autonomous capabilities
 - [ ] Ecosystem partnerships
 - [ ] Cross-chain flow tracking
-- [ ] Regulatory compliance certifications
 
 ---
 

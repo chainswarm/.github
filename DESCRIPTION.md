@@ -134,18 +134,26 @@ Protection that operates autonomously.
 
 ## Roadmap
 
-**Now — Q4 2025**
+**Bittensor Era (Completed)**
 - [x] Core indexing & money flows
 - [x] Chain Synthetics benchmark
-- [ ] Agent launch on Virtuals
-- [ ] $CIA token launch
+- [x] Substrate chain support (Bittensor)
+- [x] Chain Insights Application
+- [x] Funds Tracking feature
+- [x] Analyzers & evaluation framework
 
-**2026**
-- [ ] Chain Insights App
-- [ ] X/Twitter bot
-- [ ] Full risk scoring & proactive alerts
+**Virtuals Launch — Q1 2026**
+- [ ] Agent launch on Virtuals Protocol
+- [ ] $CIA token launch
+- [ ] ACP + Butler integration
+- [ ] Base network support (EVM)
+- [ ] Basic Risk Scoring
+
+**Full Product — 2026**
 - [ ] AI Chat interface
-- [ ] UTXO (Bitcoin) support
+- [ ] Game Agent for X/Twitter
+- [ ] Full Virtuals Protocol integration
+- [ ] Proactive alerts & monitoring
 
 ---
 

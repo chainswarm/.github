@@ -130,17 +130,23 @@ Burns activate only after sustainable profitability.
 
 ## Roadmap
 
-### Now — Q4 2025
+### Bittensor Era (Completed)
 - [x] Core indexing, money flows, Chain Synthetics
-- [ ] Agent launch on Virtuals
-- [ ] ACP + Butler integration
-- [ ] $CIA token launch
+- [x] Substrate chain support (Bittensor)
+- [x] Chain Insights Application + Funds Tracking
+- [x] Analyzers & evaluation framework
 
-### 2026
-- [ ] Chain Insights App launch
-- [ ] X/Twitter bot
-- [ ] Full risk scoring + proactive alerts
+### Virtuals Launch — Q1 2026
+- [ ] Agent launch on Virtuals Protocol
+- [ ] $CIA token launch
+- [ ] ACP + Butler integration
+- [ ] Base network support (EVM)
+- [ ] Basic Risk Scoring
+
+### Full Product — 2026
 - [ ] AI Chat interface
+- [ ] Game Agent for X/Twitter
+- [ ] Full Virtuals Protocol integration
 - [ ] Token burns (post-profitability)
 
 ---
