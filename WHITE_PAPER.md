@@ -14,12 +14,12 @@ Version 2.1 | 2025
 2. [Introduction](#2-introduction)
 3. [Problem Statement](#3-problem-statement)
 4. [Solution Overview](#4-solution-overview)
-5. [Architecture](#5-architecture)
-6. [Virtuals Protocol Integration](#6-virtuals-protocol-integration)
-7. [Chain Synthetics Framework](#7-chain-synthetics-framework)
-8. [Chain Insights Application](#8-chain-insights-application)
-9. [Token Economics](#9-token-economics)
-10. [Use Cases](#10-use-cases)
+5. [Use Cases](#5-use-cases)
+6. [Architecture](#6-architecture)
+7. [Virtuals Protocol Integration](#7-virtuals-protocol-integration)
+8. [Chain Synthetics Framework](#8-chain-synthetics-framework)
+9. [Chain Insights Application](#9-chain-insights-application)
+10. [Token Economics](#10-token-economics)
 11. [Roadmap](#11-roadmap)
 12. [Team & Partners](#12-team--partners)
 13. [Conclusion](#13-conclusion)
@@ -185,9 +185,85 @@ Real-time threat intelligence broadcasting:
 
 ---
 
-## 5. Architecture
+## 5. Use Cases
 
-### 5.1 System Overview
+### 5.1 Trading Agent Risk Check
+
+**Scenario:** An autonomous trading agent on Virtuals needs to verify counterparty addresses before executing swaps.
+
+**Solution:**
+- Agent queries Chain Insights via ACP for risk scores
+- Pay-per-query with smart contract escrow
+- Real-time response enables risk-informed trading decisions
+- Integration through standardised ACP schema
+
+**Value:** Autonomous risk management without human intervention.
+
+### 5.2 DeFi Protocol Security
+
+**Scenario:** A lending protocol wants to prevent interaction with stolen funds or sanctioned addresses.
+
+**Solution:**
+- Integrate Chain Insights via ACP for deposit screening
+- Automatic risk scoring for all incoming deposits
+- Flag high-risk addresses for additional verification
+- Continuous monitoring for risk changes
+
+**Value:** Protocol protection with seamless agent-to-agent integration.
+
+### 5.3 User Risk Assessment
+
+**Scenario:** A user is blocked from an exchange and wants to understand why.
+
+**Solution:**
+- Check own address in Chain Insights Application
+- Review explainable risk factors
+- Understand which interactions caused contamination
+- Take informed action to address the issue
+
+**Value:** Transparency and recourse for opaque compliance decisions.
+
+### 5.4 Hack Investigation
+
+**Scenario:** A protocol suffers an exploit and needs to trace stolen funds.
+
+**Solution:**
+- Use Funds Tracking to visualise flow patterns
+- AI chat to explore transaction graph
+- Generate investigation report documenting fund flow
+- Share findings with law enforcement
+
+**Value:** Rapid investigation without specialised forensics expertise.
+
+### 5.5 Proactive Threat Detection
+
+**Scenario:** Users want protection from emerging scams before interaction.
+
+**Solution:**
+- Chain Insights Agent monitors network autonomously
+- Detects attack patterns (dusting, phishing drops, etc.)
+- Posts warnings on X/Twitter in real-time
+- Labels source addresses for future queries
+
+**Value:** Community protection through proactive intelligence.
+
+### 5.6 Multi-Agent Coordination
+
+**Scenario:** A complex investigation requires coordination between multiple specialised agents.
+
+**Solution:**
+- Investigation agent requests intelligence from Chain Insights via ACP
+- Chain Insights provides risk data and flow analysis
+- Investigation agent synthesises with other sources
+- Collaborative intelligence across Virtuals ecosystem
+
+**Value:** Network effects from agent-to-agent commerce.
+
+---
+
+## 6. Architecture
+
+### 6.1 System Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -238,26 +314,27 @@ Real-time threat intelligence broadcasting:
 │     ┌────────────────────┼────────────────────┐                 │
 │     ▼                    ▼                    ▼                 │
 │ ┌────────┐          ┌────────┐          ┌────────┐             │
-│ │Substrate│         │  EVM   │          │  UTXO  │             │
-│ │ Chains │          │ Chains │          │ Chains │             │
-│ └────────┘          └────────┘          └────────┘             │
+│ │Substrate│      │  EVM   │      │  SVM   │      │  UTXO  │    │
+│ │ Chains │      │ Chains │      │(Solana)│      │ Chains │    │
+│ └────────┘      └────────┘      └────────┘      └────────┘    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 5.2 Foundation Layer
+### 6.2 Foundation Layer
 
 The Foundation Layer provides all core data infrastructure and analytical capabilities. This is where value flows are captured, processed, and analysed.
 
-#### 5.2.1 Core Indexing Service
+#### 6.2.1 Core Indexing Service
 
 The indexing service captures blockchain data across multiple chains and transforms it into the unified data model.
 
 **Multi-Chain Support:**
 - **Substrate Chains:** Account-based model with native support for Polkadot ecosystem networks
 - **EVM Chains:** Support for Ethereum-compatible networks across the EVM ecosystem
+- **SVM Chains:** Solana Virtual Machine support for the Solana ecosystem
 - **UTXO Chains:** Support for Bitcoin-style unspent transaction output models
 
-#### 5.2.2 Money Flows (Unified Data Model)
+#### 6.2.2 Money Flows (Unified Data Model)
 
 Chain Insights uses a **value-oriented data model** focused on money flows rather than individual transactions:
 
@@ -277,27 +354,37 @@ Chain Insights uses a **value-oriented data model** focused on money flows rathe
 
 This model is **smaller** (aggregated vs. raw), **faster** (query relationships, not events), **portable** (same model across all chains), and **analytical** (designed for ML and pattern detection).
 
-#### 5.2.3 ML Features
+#### 6.2.3 ML Features
 
-Pre-calculated machine learning features per address:
+**100+ pre-calculated features per address across 9 categories:**
 
-- Volume metrics (inflow, outflow, net flow over time windows)
-- Counterparty analysis (unique counterparties, concentration)
-- Temporal patterns (activity timing, frequency, bursts)
-- Graph properties (centrality, clustering coefficient)
-- Behavioural indicators (holding patterns, transaction sizes)
+| Category | Features | Description |
+|----------|----------|-------------|
+| **Base** | 9 | Degree, counterparties, transaction counts |
+| **Volume** | 10 | Inflow, outflow, net flow, averages, medians |
+| **Statistical** | 5 | Variance, skewness, kurtosis, coefficient of variation |
+| **Flow** | 6 | Concentration, diversity, reciprocity, velocity |
+| **Graph** | 14 | PageRank, betweenness, closeness, k-core, community |
+| **Directional** | 5 | In/out ratio, asymmetry, flow direction entropy |
+| **Behavioral** | 40+ | Temporal patterns, burst detection, structuring signals |
+| **Edge** | 7 | Relationship age, bidirectionality, multi-asset ratios |
+| **Label** | 12 | Entity type indicators, risk proximity scores |
 
-#### 5.2.4 Pattern Detection
+#### 6.2.4 Pattern Detection
 
-Graph algorithms and pattern detection for identifying suspicious topologies:
+**7 specialized detectors** for identifying suspicious topologies:
 
-- **Mixing Patterns:** Multi-input, multi-output transactions obscuring fund origin
-- **Layering Networks:** Multiple intermediate addresses between source and destination
-- **Peel Chains:** Sequential transactions peeling small amounts to final destination
-- **Circular Flows:** Funds returning to origin through complex paths
-- **Custom Patterns:** Continuously expanding library of fraud topologies
+| Detector | Purpose |
+|----------|---------|
+| **Cycle Detector** | Circular flows returning funds to origin |
+| **Layering Detector** | Multiple intermediate hops obscuring source/destination |
+| **Network Detector** | Coordinated activity across address clusters |
+| **Proximity Detector** | Risk propagation through transaction graph |
+| **Motif Detector** | Known fraud subgraph patterns (mixers, peel chains) |
+| **Burst Detector** | Sudden activity spikes indicating automated operations |
+| **Threshold Detector** | Structuring patterns to evade reporting limits |
 
-#### 5.2.5 Risk Scoring
+#### 6.2.5 Risk Scoring
 
 Real-time risk assessment for any address:
 
@@ -307,7 +394,7 @@ Real-time risk assessment for any address:
 - Calibrated probabilities that match observed frequencies
 - Confidence intervals for score uncertainty
 
-#### 5.2.6 Evaluation & A/B Testing
+#### 6.2.6 Evaluation & A/B Testing
 
 Continuous improvement through automated evaluation:
 
@@ -316,11 +403,11 @@ Continuous improvement through automated evaluation:
 - **Temporal Validation:** Predictions validated over time to catch overfitting
 - **Automatic Deployment:** Improvements that exceed benchmarks are deployed automatically
 
-### 5.3 Intelligence Layer
+### 6.3 Intelligence Layer
 
 The Intelligence Layer contains the agent's cognitive capabilities and learning systems.
 
-#### 5.3.1 Agent Orchestration
+#### 6.3.1 Agent Orchestration
 
 **Reactive Mode:**
 - Receives queries from users (via App, Butler) or agents (via ACP)
@@ -340,7 +427,7 @@ The Intelligence Layer contains the agent's cognitive capabilities and learning 
 - Evaluates variations against Chain Synthetics
 - Deploys improvements that exceed current performance
 
-#### 5.3.2 Intelligence Capabilities
+#### 6.3.2 Intelligence Capabilities
 
 **Analytics Engine:**
 Orchestrates graph algorithms and pattern detection, combining multiple signals to identify complex fraud schemes.
@@ -355,15 +442,15 @@ Monitors X/Twitter and other social sources for:
 - Emerging threat discussions
 - Market sentiment affecting risk assessment
 
-### 5.4 Interaction Layer
+### 6.4 Interaction Layer
 
 The Interaction Layer provides all interfaces for humans and agents to access Chain Insights intelligence.
 
-#### 5.4.1 Chain Insights Application
+#### 6.4.1 Chain Insights Application
 
 Consumer web application with full access to all capabilities (see Section 8).
 
-#### 5.4.2 Butler Discovery
+#### 6.4.2 Butler Discovery
 
 Integration with Virtuals Protocol's Butler enables:
 - Agent discovery through Butler's directory
@@ -371,7 +458,7 @@ Integration with Virtuals Protocol's Butler enables:
 - Guided requirement collection
 - Service delivery through ACP
 
-#### 5.4.3 ACP Gateway
+#### 6.4.3 ACP Gateway
 
 Native Agent Commerce Protocol integration:
 - Standardised service schema for intelligence queries
@@ -379,7 +466,7 @@ Native Agent Commerce Protocol integration:
 - Cryptographic verification of service delivery
 - Seamless integration with Virtuals agent ecosystem
 
-#### 5.4.4 X/Twitter Bot
+#### 6.4.4 X/Twitter Bot
 
 Autonomous social presence similar to aixbt:
 - Real-time threat alerts and warnings
@@ -389,9 +476,9 @@ Autonomous social presence similar to aixbt:
 
 ---
 
-## 6. Virtuals Protocol Integration
+## 7. Virtuals Protocol Integration
 
-### 6.1 Why Virtuals Protocol?
+### 7.1 Why Virtuals Protocol?
 
 Chain Insights evolved to Virtuals Protocol for strategic alignment with the agentic economy:
 
@@ -419,54 +506,20 @@ Integration with other Virtuals agents creates network effects:
 - Investigation agents coordinate on complex cases
 - Collaborative intelligence across the ecosystem
 
-### 6.2 ACP Service Schema
+### 7.2 ACP Service Schema
 
-Chain Insights exposes services through standardised ACP schemas:
+Chain Insights will expose services through standardised ACP schemas:
 
-**Risk Query Service:**
-```
-Service: chain_insights_risk_score
-Input: { address: string, chain: string }
-Output: { 
-  risk_score: float,
-  risk_factors: array,
-  confidence: float,
-  timestamp: datetime
-}
-```
+| Service | Description |
+|---------|-------------|
+| **Risk Score** | Real-time risk assessment for any address |
+| **Funds Tracking** | Multi-hop flow analysis with destination identification |
+| **Investigation** | Natural language queries and report generation |
+| **Address Labels** | Entity attribution and classification data |
+| **Batch Screening** | Bulk address verification for compliance |
+| **Monitoring Alerts** | Webhook notifications for watched addresses |
 
-**Funds Tracking Service:**
-```
-Service: chain_insights_funds_tracking
-Input: { 
-  address: string, 
-  chain: string,
-  depth: int,
-  direction: "inflow" | "outflow" | "both"
-}
-Output: {
-  flows: array,
-  destinations: array,
-  graph: object
-}
-```
-
-**Investigation Service:**
-```
-Service: chain_insights_investigation
-Input: { 
-  query: string,
-  addresses: array,
-  report_format: "summary" | "detailed" | "court"
-}
-Output: {
-  findings: string,
-  evidence: array,
-  risk_assessment: object
-}
-```
-
-### 6.3 Social Intelligence (X/Twitter)
+### 7.3 Social Intelligence (X/Twitter)
 
 Following the model of successful Virtuals agents like aixbt, Chain Insights maintains an active social presence:
 
@@ -487,9 +540,9 @@ Following the model of successful Virtuals agents like aixbt, Chain Insights mai
 
 ---
 
-## 7. Chain Synthetics Framework
+## 8. Chain Synthetics Framework
 
-### 7.1 The Ground Truth Problem
+### 8.1 The Ground Truth Problem
 
 Measuring fraud detection accuracy requires ground truth—known examples of fraudulent activity with verified labels. This creates a fundamental challenge:
 
@@ -500,7 +553,7 @@ Measuring fraud detection accuracy requires ground truth—known examples of fra
 
 Chain Synthetics solves this through a novel approach to benchmark generation.
 
-### 7.2 Architecture
+### 8.2 Architecture
 
 Chain Synthetics generates test data by **injecting synthetic patterns into real blockchain data**. Synthetic patterns are blurred and merged with existing transactions so they appear natural within the transaction graph. This blending ensures that improvements work in real-world conditions, not just on isolated test data.
 
@@ -523,7 +576,7 @@ Chain Synthetics can recreate famous hacks and exploits:
 - Adapted to any supported blockchain network
 - Tests whether detection would have caught historical incidents
 
-### 7.3 Continuous Improvement
+### 8.3 Continuous Improvement
 
 Chain Synthetics powers the agent's self-improvement loop:
 
@@ -534,47 +587,30 @@ Chain Synthetics powers the agent's self-improvement loop:
 
 This ensures Chain Insights continuously improves without manual intervention.
 
-### 7.4 Anti-Gaming Measures
-
-To prevent overfitting:
-- Test datasets regenerated for each evaluation
-- Pattern parameters randomised within realistic ranges
-- Multiple pattern types combined per dataset
-- Holdout patterns remain hidden until post-evaluation
-
 ---
 
-## 8. Chain Insights Application
+## 9. Chain Insights Application
 
-### 8.1 Overview
+### 9.1 Overview
 
 Chain Insights Application is the consumer-facing interface delivering agent intelligence to end users. It provides accessible interfaces for risk scoring, funds tracking, and AI-powered investigation.
 
-### 8.2 Risk Scoring
+### 9.2 AI Chat Interface
 
-#### Functionality
+Natural language interface for complex queries:
 
-- Enter any blockchain address
-- Receive a comprehensive risk assessment
-- View explainable factors contributing to the score
-- Understand connections to flagged entities
-- Track score changes over time
+- "Show me all addresses that received funds from this hack"
+- "Explain the relationship between these two addresses"
+- "What is the risk profile of this wallet's counterparties?"
+- "Generate an investigation report for this address"
 
-#### Explainability
+**Capabilities:**
+- Query Chain Insights knowledge through conversation
+- Synthesise complex multi-hop relationships
+- Generate structured investigation reports
+- Explain technical concepts in accessible language
 
-Risk scores include factor breakdown:
-
-- Direct exposure to known bad actors
-- Proximity to flagged addresses (graph distance)
-- Behavioural pattern matches
-- Volume and timing anomalies
-- Historical incident associations
-
-Users can understand *why* an address is flagged, not just that it is flagged.
-
-### 8.3 Funds Tracking
-
-#### Functionality
+### 9.3 Funds Tracking
 
 A powerful visualisation tool designed to demystify money flow:
 
@@ -584,25 +620,17 @@ A powerful visualisation tool designed to demystify money flow:
 
 This feature allows users to "see" the path of funds, making it easier to identify laundering attempts, structuring, or simple payment trails.
 
-### 8.4 AI Chat Interface
+### 9.4 Risk Scoring
 
-#### Functionality
+- Enter any blockchain address
+- Receive a comprehensive risk assessment
+- View explainable factors contributing to the score
+- Understand connections to flagged entities
+- Track score changes over time
 
-Natural language interface for complex queries:
+**Explainability:** Risk scores include factor breakdown—direct exposure to known bad actors, proximity to flagged addresses, behavioural pattern matches, volume and timing anomalies, and historical incident associations. Users understand *why* an address is flagged, not just that it is flagged.
 
-- "Show me all addresses that received funds from this hack"
-- "Explain the relationship between these two addresses"
-- "What is the risk profile of this wallet's counterparties?"
-- "Generate an investigation report for this address"
-
-#### Capabilities
-
-- Query Chain Insights knowledge through conversation
-- Synthesise complex multi-hop relationships
-- Generate structured investigation reports
-- Explain technical concepts in accessible language
-
-### 8.5 Proactive Alerts
+### 9.5 Proactive Alerts
 
 The agent's autonomous monitoring surfaces through the application:
 
@@ -610,22 +638,23 @@ The agent's autonomous monitoring surfaces through the application:
 - **Pattern Detection:** Notifications when suspicious patterns involve watched addresses
 - **Early Warning:** Proactive alerts about emerging threats before they impact you
 
-### 8.6 Pricing Model
+### 9.6 Pricing Model
 
-**Flexible Credit System**
+**Free Credits + Pay-As-You-Go**
 
-- Users purchase credits using $VIRTUAL or $CIA tokens
-- **Pay-Per-Use:** Credits spent only on queries, tracking, or chat
-- **No Expiration:** Credits remain valid until used
-- **Tiered Access:** Options for casual users versus power users
+- **Free Tier:** New users receive free credits to explore the platform
+- **Pay-Per-Use:** After free credits, pay only for what you use
+- **On-Chain Payments:** Native support for x402 protocol enabling seamless crypto micropayments
+- **$CIA or $VIRTUAL:** Purchase additional credits with ecosystem tokens
+- **No Subscriptions:** No monthly fees, no enterprise contracts—just usage-based pricing
 
 ---
 
-## 9. Token Economics
+## 10. Token Economics
 
-### 9.1 $CIA Token
+### 10.1 $CIA Token
 
-**$CIA (Chain Insights Agent)** is the native token of the Chain Insights ecosystem on Virtuals Protocol. It powers access to intelligence services and captures value from the agent's revenue.
+**$CIA (Chain Insights Agent)** is the native token of the Chain Insights ecosystem on Virtuals Protocol.
 
 #### Token Utility
 
@@ -635,175 +664,96 @@ The agent's autonomous monitoring surfaces through the application:
 | **ACP Payments** | Pay-per-query for agent-to-agent services |
 | **Premium Features** | Access to advanced capabilities and higher rate limits |
 
-### 9.2 Revenue Model
+### 10.2 Revenue Model
 
 Chain Insights generates revenue through pay-per-use services:
 
-| Revenue Stream | Description | Mechanism |
-|----------------|-------------|-----------|
-| **Chain Insights App Credits** | Purchase credits for risk scoring, tracking, & chat | Pay-per-use via app |
-| **ACP Service Payments** | Pay-per-query from other Virtuals agents | Via Agent Commerce Protocol |
-| **Address Label Licensing** | Licensed access to verified address attributions | Data licensing agreements |
-| **Investigation Reports** | Premium court-admissible forensic reports | Per-report pricing |
+| Revenue Stream | Mechanism |
+|----------------|-----------|
+| **Chain Insights App Credits** | Pay-per-use via application |
+| **ACP Service Payments** | Pay-per-query via Agent Commerce Protocol |
+| **Investigation Reports** | Premium court-admissible forensic reports |
 
-**No Enterprise Licenses:** All services are available pay-as-you-go via ACP. This ensures accessibility and aligns with the agent-native Virtuals ecosystem.
+**No Enterprise Licenses:** All services are available pay-as-you-go. This ensures accessibility and aligns with the agent-native Virtuals ecosystem.
 
-### 9.3 Value Flow & VIRTUAL Buybacks
+### 10.3 Token Burns & Value Flow
 
-Chain Insights commits to **20% buybacks of $VIRTUAL tokens** from all revenue streams:
+Once Chain Insights reaches profitability (covering development and infrastructure costs), **20% of net earnings will be used for $CIA token burns**:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     REVENUE SOURCES                              │
-│  ┌───────────────┐ ┌───────────────┐ ┌───────────────┐          │
-│  │Chain Insights │ │ ACP Service   │ │ Label &       │          │
-│  │App Credits    │ │ Payments      │ │ Reports       │          │
-│  └───────┬───────┘ └───────┬───────┘ └───────┬───────┘          │
-└──────────┼─────────────────┼─────────────────┼──────────────────┘
-           └─────────────────┼─────────────────┘
-                             │
-                             ▼
+│                        REVENUE                                   │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │
+                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                   VALUE DISTRIBUTION                             │
+│              COVER COSTS (Development + Infrastructure)          │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │
+                           ▼ After Profitability
+┌─────────────────────────────────────────────────────────────────┐
+│                   NET EARNINGS DISTRIBUTION                      │
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
-│  │              20% — $VIRTUAL Buybacks                     │    │
-│  │  Revenue-funded purchases supporting Virtuals ecosystem  │    │
+│  │                    80% — Operations                      │    │
+│  │       Growth • R&D • Continuous Improvement              │    │
 │  └─────────────────────────────────────────────────────────┘    │
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
-│  │              80% — Operations & Development              │    │
-│  │  Infrastructure • R&D • Continuous Improvement           │    │
+│  │                    20% — $CIA Burns                      │    │
+│  │            Deflationary mechanism from profits           │    │
 │  └─────────────────────────────────────────────────────────┘    │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-This buyback mechanism:
-- Demonstrates commitment to the Virtuals ecosystem
-- Creates sustainable demand for $VIRTUAL
-- Aligns Chain Insights success with ecosystem growth
-
-### 9.4 Address Labels as Monetizable Asset
-
-The agent's automatic threat detection creates valuable address attribution data:
-
-- **Auto-Discovery:** Agent detects attacks (dusting, phishing, etc.) and labels source addresses
-- **External Sources:** Integration with intelligence services supplements agent discovery
-- **Continuously Updated:** New threats labeled in real-time
-
-This dataset has significant standalone value for exchanges, compliance providers, and other intelligence services.
-
----
-
-## 10. Use Cases
-
-### 10.1 Trading Agent Risk Check
-
-**Scenario:** An autonomous trading agent on Virtuals needs to verify counterparty addresses before executing swaps.
-
-**Solution:**
-- Agent queries Chain Insights via ACP for risk scores
-- Pay-per-query with smart contract escrow
-- Real-time response enables risk-informed trading decisions
-- Integration through standardised ACP schema
-
-**Value:** Autonomous risk management without human intervention.
-
-### 10.2 DeFi Protocol Security
-
-**Scenario:** A lending protocol wants to prevent interaction with stolen funds or sanctioned addresses.
-
-**Solution:**
-- Integrate Chain Insights via ACP for deposit screening
-- Automatic risk scoring for all incoming deposits
-- Flag high-risk addresses for additional verification
-- Continuous monitoring for risk changes
-
-**Value:** Protocol protection with seamless agent-to-agent integration.
-
-### 10.3 User Risk Assessment
-
-**Scenario:** A user is blocked from an exchange and wants to understand why.
-
-**Solution:**
-- Check own address in Chain Insights Application
-- Review explainable risk factors
-- Understand which interactions caused contamination
-- Take informed action to address the issue
-
-**Value:** Transparency and recourse for opaque compliance decisions.
-
-### 10.4 Hack Investigation
-
-**Scenario:** A protocol suffers an exploit and needs to trace stolen funds.
-
-**Solution:**
-- Use Funds Tracking to visualise flow patterns
-- AI chat to explore transaction graph
-- Generate investigation report documenting fund flow
-- Share findings with law enforcement
-
-**Value:** Rapid investigation without specialised forensics expertise.
-
-### 10.5 Proactive Threat Detection
-
-**Scenario:** Users want protection from emerging scams before interaction.
-
-**Solution:**
-- Chain Insights Agent monitors network autonomously
-- Detects attack patterns (dusting, phishing drops, etc.)
-- Posts warnings on X/Twitter in real-time
-- Labels source addresses for future queries
-
-**Value:** Community protection through proactive intelligence.
-
-### 10.6 Multi-Agent Coordination
-
-**Scenario:** A complex investigation requires coordination between multiple specialised agents.
-
-**Solution:**
-- Investigation agent requests intelligence from Chain Insights via ACP
-- Chain Insights provides risk data and flow analysis
-- Investigation agent synthesises with other sources
-- Collaborative intelligence across Virtuals ecosystem
-
-**Value:** Network effects from agent-to-agent commerce.
+This burn mechanism:
+- Activates only after sustainable profitability
+- Creates deflationary pressure on $CIA supply
+- Aligns token holder interests with agent success
 
 ---
 
 ## 11. Roadmap
 
 ### Phase 1 (Now — Q4 2025)
-*   ✅ Core Indexing Service
-*   ✅ Money Flows data model
-*   ✅ Chain Synthetics framework
-*   🔄 Chain Insights Agent launch on Virtuals Protocol
-*   🔄 ACP service integration
-*   🔄 Butler onboarding
+- [x] Core Indexing Service
+- [x] Money Flows data model
+- [x] Chain Synthetics framework
+- [ ] Chain Insights Agent launch on Virtuals Protocol
+- [ ] ACP service integration
+- [ ] Butler onboarding
+- [ ] SVM (Solana) indexing support
+- [ ] Token launch ($CIA)
 
 ### Phase 2 (Q1 2026)
-*   Chain Insights Application public launch
-*   Funds Tracking feature
-*   X/Twitter bot deployment
-*   EVM chain support expansion
-*   Continuous improvement loops operational
+- [ ] Chain Insights Application public launch
+- [ ] Funds Tracking feature
+- [ ] X/Twitter bot deployment
+- [ ] EVM chain support expansion
+- [ ] Continuous improvement loops operational
+- [ ] x402 on-chain payments integration
+- [ ] Free credits system
 
 ### Phase 3 (Q2 — Q3 2026)
-*   Full Risk Scoring release
-*   Proactive alerting system
-*   ML model enhancement cycle
-*   Additional Virtuals ecosystem integrations
+- [ ] Full Risk Scoring release
+- [ ] Proactive alerting system
+- [ ] ML model enhancement cycle
+- [ ] Additional Virtuals ecosystem integrations
+- [ ] AI Chat interface (beta)
 
 ### Phase 4 (Q4 2026+)
-*   AI Chat interface (full release)
-*   Court-admissible report generation
-*   Multi-chain expansion (UTXO chains)
+- [ ] AI Chat interface (full release)
+- [ ] Court-admissible report generation
+- [ ] UTXO chains support (Bitcoin)
+- [ ] Token burn mechanism activation (post-profitability)
 
 ### Beyond
-*   Broader chain coverage
-*   Advanced autonomous capabilities
-*   Ecosystem partnerships
+- [ ] Broader chain coverage
+- [ ] Advanced autonomous capabilities
+- [ ] Ecosystem partnerships
+- [ ] Cross-chain flow tracking
+- [ ] Regulatory compliance certifications
 
 ---
 
