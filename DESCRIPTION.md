@@ -1,6 +1,6 @@
 # Chain Insights Agent — $CIA
 
-**The AI That Sees Through the Blockchain**
+**AI-Powered Blockchain Intelligence**
 
 *Your autonomous guardian in the crypto wilderness.*
 
@@ -10,7 +10,7 @@
 
 **Chain Insights Agent** is an autonomous AI agent that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
 
-While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA sees everything.
+While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA works to trace them.
 
 ---
 
@@ -33,18 +33,18 @@ $CIA doesn't wait for you to ask questions. It hunts.
 
 ### It Sees What You Can't
 - **Risk scoring** that reveals the hidden danger in any address
-- **Funds tracking** that follows money through the darkest corners of DeFi
+- **Funds tracking** that follows money through protocols, mixers, and laundering layers
 - **Pattern detection** that catches mixers, layering, and laundering schemes
 
 ### It Warns Before You're Hit
 - **Proactive alerts** when threats emerge near your wallet
 - **Real-time broadcasts** on X/Twitter exposing scams as they happen
-- **Auto-labeling** of malicious addresses the moment attacks begin
+- **Rapid labeling** of malicious addresses as attacks unfold
 
 ### It Answers When You Need It
 - **"Is this address safe?"** — Instant verdict with evidence
 - **"Where did these funds come from?"** — Complete trail visualization
-- **"Generate an investigation report"** — Court-ready documentation
+- **"Generate an investigation report"** — Detailed documentation for further analysis
 
 ---
 
@@ -62,8 +62,13 @@ Query risk via ACP. Make intelligent decisions. Build safer systems.
 ### Victims & Investigators
 Trace stolen funds. Document the trail. Get answers.
 
-### Everyone Else
-Finally understand why you got flagged. Check your own risk. Take back control.
+### Curious Minds
+
+Who is this wallet dealing with? Where did that money come from? Explore connections, satisfy your curiosity, do your own research.
+
+### Self-Investigators
+
+Finally understand why you got flagged. Check your own risk. Audit your own wallet history. Take back control.
 
 ---
 
@@ -76,7 +81,15 @@ Finally understand why you got flagged. Check your own risk. Take back control.
 | **SVM** | Solana |
 | **UTXO** | Bitcoin, Litecoin, Dogecoin, and more |
 
-All normalized to USD value flows. Same intelligence model, any chain.
+### Unified Money Flows
+
+All transactions are aggregated into **USD-normalized money flows** — the value at the exact moment of each transaction, regardless of the underlying asset. This provides:
+
+- **Asset-agnostic analysis** — compare BTC, ETH, and any token on equal footing
+- **Historical accuracy** — values reflect actual transaction time, not current prices
+- **Full detail access** — drill down to specific on-chain transactions when needed
+
+Same intelligence model, any chain.
 
 ---
 
@@ -95,32 +108,20 @@ All normalized to USD value flows. Same intelligence model, any chain.
 
 ## The $CIA Token
 
-**$CIA** is the settlement and value token for the intelligence ecosystem:
+**$CIA** powers the Chain Insights Agent ecosystem:
 
-- **Medium of exchange** — pay for risk scores, fund traces, investigation reports via ACP
-- **Agent-to-agent commerce** — native currency for autonomous workflows
-- **Deflationary mechanism** — revenue-backed burnback aligned with protocol growth
-
-### Ecosystem Commitment: Burnback at Scale
-
-**Above $40M FDV** — burnback is active:
-
-- **20% of monthly net revenue** is automatically directed to $CIA market buys
-- **Buys are burned onchain** with transparent, published accounting
-- **Net revenue** = total ACP payments minus operational costs (infrastructure, development)
-- **No custom utilities** beyond official Virtuals Protocol specs
-
-**Below $40M FDV** — no burnback, revenue reinvested into development and growth.
-
-This creates natural deflationary pressure tied to real demand, not artificial utility mechanics.
+- **Query payments** — pay for risk scores, fund traces, and investigation reports
+- **Agent commerce** — currency for agent-to-agent transactions via ACP
 
 ---
 
 ## Why $CIA Exists
 
-> *"I was banned from an exchange. No explanation. No recourse. No way to understand what I did wrong."*
+I spent years working at crypto exchanges. I've seen how the compliance sausage gets made.
 
-This happens every day. The tools to understand your own blockchain footprint exist — but they're locked behind enterprise contracts and compliance departments.
+Then I got banned from an exchange myself. No explanation. No recourse. No way to understand what triggered it. Later, I got scammed — twice. Watched my funds disappear into a maze of wallets I couldn't trace.
+
+The tools to investigate all of this exist. But they're built for compliance departments — not for the average person who got scammed, not for the small protocol that needs risk screening, not for the investigator working a case without a corporate budget.
 
 **$CIA breaks that lock.**
 
@@ -216,16 +217,19 @@ Protection that operates autonomously.
 
 | Pattern | Description |
 | ------- | ----------- |
-| Mixers & Tumblers | Obfuscation services designed to break transaction trails |
-| Layering | Multiple rapid transfers to obscure fund origins |
-| Peel Chains | Sequential transactions peeling off small amounts |
-| Consolidation | Multiple inputs merging into single outputs |
-| Dusting | Small amounts sent to track wallet activity |
-| Flash Loan Exploits | Single-block borrow-exploit-repay patterns |
-| Rug Pulls | Liquidity removal after token promotion |
-| Bridge Hopping | Cross-chain transfers to evade tracking |
-| DEX Routing | Complex swap paths through multiple pools |
-| Sybil Clusters | Coordinated wallets controlled by single entity |
+| Cycle | Circular transaction flows returning to origin |
+| Layering Path | Multiple transfers to obscure fund origins |
+| Smurfing Network | Breaking large amounts into smaller transactions |
+| Proximity Risk | Risk exposure from nearby wallets |
+| Fan-In Motif | Multiple inputs consolidating to single output |
+| Fan-Out Motif | Single input distributing to many outputs |
+| Temporal Burst | Sudden spikes in transaction activity |
+| Threshold Evasion | Transactions structured to stay under detection limits |
+| Wash Trading | Fake volume through self-trading |
+| Sybil Network | Coordinated wallets controlled by single entity |
+| Nested Services | Mixers and obfuscation services |
+| Rug Pull | Liquidity removal patterns |
+| Dormant Activation | Dormant wallets suddenly becoming active |
 
 ### ML — Intelligence Layer
 
@@ -279,26 +283,47 @@ The system continuously evaluates itself against synthetic test cases and recons
 
 ## Roadmap
 
-**Bittensor Era (Completed)**
-- [x] Core indexing & money flows
+### Bittensor Era (Completed)
+
+Chain Insights started as **Subnet 15** on Bittensor in the pre-dynamic TAO era. Early days focused on indexing, database modeling, funds flow graphs, and APIs — functional but immature. After the subnet, we spent 1.5 years rebuilding the architecture from the ground up.
+
+Virtuals Protocol is the next chapter. Agent-first. Commerce-ready. The right home for $CIA.
+
+### Day 0 — What We Launch With
+
+- [x] Chain Insights App with funds tracking
+- [x] Substrate/Bittensor chain support
+- [x] Analyzers & pattern detection
 - [x] Chain Synthetics benchmark
-- [x] Substrate chain support (Bittensor)
-- [x] Chain Insights Application
-- [x] Funds Tracking feature
-- [x] Analyzers & evaluation framework
+- [x] Evaluation framework
 
-**Virtuals Launch — Q1 2026**
-- [ ] Agent launch on Virtuals Protocol
-- [ ] $CIA token launch
-- [ ] ACP + Butler integration
-- [ ] Base network support (EVM)
-- [ ] Basic Risk Scoring
+### Ready But Waiting
 
-**Full Product — 2026**
-- [ ] AI Chat interface
-- [ ] Game Agent for X/Twitter
-- [ ] Full Virtuals Protocol integration
-- [ ] Proactive alerts & monitoring
+Additional blockchain support is architecturally ready but deferred while we focus on intelligence and agent capabilities:
+
+- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-DAO, waiting for use case
+- **EVM** (Ethereum, Base, Arbitrum) — code ready, integration pending
+- **SVM** (Solana) — foundation built, known path to completion
+
+### 2026 Priorities
+
+**Virtuals Integration:**
+
+- [ ] Agent & $CIA token launch on Virtuals Protocol
+- [ ] ACP integration
+- [ ] Butler integration
+- [ ] GAME agent (X/Twitter, proactive alerts & monitoring)
+
+**Chain Insights App:**
+
+- [ ] AI Chat with rich artifacts — reactive, user-driven queries
+- [ ] Risk Scoring
+
+**Intelligence Layer:**
+
+- [ ] ML models and risk scoring (in progress)
+- [ ] A/B testing framework
+- [ ] Continuous model retraining
 
 ---
 
