@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="GitHub README cover.png" alt="Chain Insights Agent — $CIA" width="100%">
+</p>
+
 # Chain Insights Agent — $CIA
 
 **AI-Powered Blockchain Intelligence**
@@ -17,6 +21,7 @@ While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hi
 ## The Problem Everyone Ignores
 
 Every day in crypto:
+
 - **Millions stolen** in hacks, scams, and exploits
 - **Thousands of wallets flagged** with no explanation
 - **Your counterparty** could be two hops from a hacker — and you'd never know
@@ -32,16 +37,19 @@ The billion-dollar intelligence tools? Reserved for exchanges who pay millions. 
 $CIA doesn't wait for you to ask questions. It hunts.
 
 ### It Sees What You Can't
+
 - **Risk scoring** that reveals the hidden danger in any address
 - **Funds tracking** that follows money through protocols, mixers, and laundering layers
 - **Pattern detection** that identifies mixers, layering behavior, and laundering schemes
 
 ### It Warns Before You're Hit
+
 - **Proactive alerts** when threats emerge near your wallet
 - **Real-time broadcasts** on X/Twitter exposing scams as they happen
 - **Rapid flagging** of suspicious address clusters as attacks unfold, with confidence scoring
 
 ### It Answers When You Need It
+
 - **"Is this address safe?"** — Instant verdict with evidence
 - **"Where did these funds come from?"** — Complete trail visualization
 - **"Generate an investigation report"** — Detailed documentation for further analysis
@@ -51,15 +59,19 @@ $CIA doesn't wait for you to ask questions. It hunts.
 ## Who Needs $CIA?
 
 ### Traders & Degens
+
 Check any address before you swap. Know who you're dealing with. Sleep better.
 
 ### Protocols & DAOs
+
 Screen deposits. Protect your treasury. Stay compliant without the enterprise price tag.
 
 ### Autonomous Agents
+
 Query risk via ACP. Make intelligent decisions. Build safer systems.
 
 ### Victims & Investigators
+
 Trace stolen funds. Document the trail. Get answers.
 
 ### Curious Minds
@@ -356,6 +368,7 @@ Additional blockchain support is architecturally ready but deferred while we foc
 ### TL;DR
 
 $CIA is an autonomous AI agent that:
+
 1. **Scores risk** on any blockchain address instantly
 2. **Tracks funds** through complex laundering schemes
 3. **Warns you** before threats reach your wallet
