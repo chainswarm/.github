@@ -324,7 +324,7 @@ Virtuals Protocol is the next chapter. Agent-first. Commerce-ready. The right ho
 
 Additional blockchain support is architecturally ready but deferred while we focus on intelligence and agent capabilities:
 
-- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-DAO, waiting for use case
+- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-dTAO, waiting for use case
 - **EVM** (Ethereum, Base, Arbitrum) — code ready, integration pending
 - **SVM** (Solana) — foundation built, known path to completion
 
