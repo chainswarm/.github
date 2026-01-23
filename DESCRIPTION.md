@@ -17,7 +17,7 @@ While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hi
 ## The Problem Everyone Ignores
 
 Every day in crypto:
-- **$2.7M+ stolen** in hacks, scams, and exploits
+- **Millions stolen** in hacks, scams, and exploits
 - **Thousands of wallets flagged** with no explanation
 - **Your counterparty** could be two hops from a hacker — and you'd never know
 
@@ -74,7 +74,7 @@ Finally understand why you got flagged. Check your own risk. Take back control.
 | **Substrate** | Polkadot ecosystem |
 | **EVM** | Ethereum, Base, Arbitrum, and more |
 | **SVM** | Solana |
-| **UTXO** | Bitcoin (coming soon) |
+| **UTXO** | Bitcoin, Litecoin, Dogecoin, and more |
 
 All normalized to USD value flows. Same intelligence model, any chain.
 
@@ -95,14 +95,24 @@ All normalized to USD value flows. Same intelligence model, any chain.
 
 ## The $CIA Token
 
-**$CIA** powers the entire intelligence ecosystem:
+**$CIA** is the settlement and value token for the intelligence ecosystem:
 
-- **Pay for queries** — risk scores, tracking, investigations
-- **Access premium features** — deeper analysis, higher limits
-- **Agent-to-agent commerce** — the currency of autonomous intelligence
+- **Medium of exchange** — pay for risk scores, fund traces, investigation reports via ACP
+- **Agent-to-agent commerce** — native currency for autonomous workflows
+- **Deflationary mechanism** — revenue-backed burnback aligned with protocol growth
 
-### Ecosystem Commitment
-**20% of all revenue** goes to $VIRTUAL buybacks. When $CIA wins, Virtuals wins.
+### Ecosystem Commitment: Burnback at Scale
+
+**Above $40M FDV** — burnback is active:
+
+- **20% of monthly net revenue** is automatically directed to $CIA market buys
+- **Buys are burned onchain** with transparent, published accounting
+- **Net revenue** = total ACP payments minus operational costs (infrastructure, development)
+- **No custom utilities** beyond official Virtuals Protocol specs
+
+**Below $40M FDV** — no burnback, revenue reinvested into development and growth.
+
+This creates natural deflationary pressure tied to real demand, not artificial utility mechanics.
 
 ---
 
@@ -129,6 +139,141 @@ Intelligence that improves itself faster than threats evolve.
 Protection that operates autonomously.
 
 **We build agents that protect agents.**
+
+---
+
+## Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              BLOCKCHAIN NODES                                │
+│                      Substrate  •  EVM  •  SVM  •  UTXO                      │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                INDEXERS                                      │
+├──────────────────┬──────────────────┬──────────────────┬────────────────────┤
+│   Money Flows    │     Labelers     │ Pricing Services │    Timeseries      │
+└────────┬─────────┴────────┬─────────┴────────┬─────────┴──────────┬─────────┘
+         └──────────────────┴─────────┬────────┴────────────────────┘
+                                      ▼
+                            ┌───────────────────┐
+                            │     ANALYZER      │
+                            │                   │
+                            │  Feature Extract  │
+                            │  Pattern Detect   │
+                            └─────────┬─────────┘
+                                      ▼
+                            ┌───────────────────┐
+                            │        ML         │
+                            │                   │
+                            │  Risk Scoring     │
+                            │  Classification   │
+                            │  Anomaly Detect   │
+                            │  Predictions      │
+                            └─────────┬─────────┘
+                                      ▼
+                            ┌───────────────────┐
+                            │     GRAPH RAG     │
+                            │                   │
+                            │  Money Flows      │
+                            │  Patterns         │
+                            │  Features         │
+                            │  Address Labels   │
+                            └─────────┬─────────┘
+                                      │
+                   ┌──────────────────┼──────────────────┐
+                   ▼                  ▼                  ▼
+          ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
+          │     API      │   │    AGENTS    │   │     EVAL     │
+          │              │   │              │   │              │
+          │  REST        │   │  GAME        │   │  Synthetics  │
+          │  MCP         │   │  ACP         │   │  Hack        │
+          │  ACP         │   │  Butler      │   │  Playbooks   │
+          │              │   │  App Chat    │   │              │
+          └──────────────┘   └──────────────┘   └──────┬───────┘
+                                                       │
+                                                       ▼
+                                               ┌──────────────┐
+                                               │ SELF-IMPROVE │
+                                               │     LOOP     │
+                                               └──────────────┘
+```
+
+### Analyzer — Feature Extraction & Pattern Detection
+
+**~100 Address Features** including:
+
+- Transaction volume & frequency metrics
+- Counterparty diversity scores
+- Temporal behavior patterns
+- Value distribution statistics
+- Protocol interaction fingerprints
+- Network centrality measures
+
+**Pattern Detection:**
+
+| Pattern | Description |
+| ------- | ----------- |
+| Mixers & Tumblers | Obfuscation services designed to break transaction trails |
+| Layering | Multiple rapid transfers to obscure fund origins |
+| Peel Chains | Sequential transactions peeling off small amounts |
+| Consolidation | Multiple inputs merging into single outputs |
+| Dusting | Small amounts sent to track wallet activity |
+| Flash Loan Exploits | Single-block borrow-exploit-repay patterns |
+| Rug Pulls | Liquidity removal after token promotion |
+| Bridge Hopping | Cross-chain transfers to evade tracking |
+| DEX Routing | Complex swap paths through multiple pools |
+| Sybil Clusters | Coordinated wallets controlled by single entity |
+
+### ML — Intelligence Layer
+
+- **Risk Scoring** — Probabilistic danger assessment for any address
+- **Classification** — Categorize addresses by behavior type
+- **Anomaly Detection** — Flag unusual activity in real-time
+- **Predictions** — Forecast likely next moves of tracked entities
+
+### GraphRAG — Knowledge Retrieval
+
+Unified knowledge graph combining:
+
+- **Money Flows** — Complete transaction trails
+- **Patterns** — Detected behavioral signatures
+- **Features** — Computed address characteristics
+- **Address Labels** — Known entities and risk tags
+
+### API — Integration Layer
+
+| Protocol | Use Case |
+| -------- | -------- |
+| **REST** | Traditional HTTP integration |
+| **MCP** | Model Context Protocol for AI agents |
+| **ACP** | Agent Commerce Protocol for Virtuals ecosystem |
+
+### Agents — Autonomous Interfaces
+
+| Agent | Function |
+| ----- | -------- |
+| **GAME** | Autonomous X/Twitter intelligence, real-time threat broadcasts |
+| **ACP** | Agent-to-agent commerce and queries |
+| **Butler** | Natural language gateway via Virtuals |
+| **App Chat** | Chain Insights App conversational interface |
+
+### Self-Improvement Loop
+
+```text
+Indexers ──────┐
+               ├──→ EVAL (Synthetics + Hack Playbooks)
+Synthetics ◄───┤           │
+      ▲        │           ▼
+      │        │      Analyzer → ML
+      │        │           │
+      └────────┴───────────┘
+         Continuous Improvement
+```
+
+The system continuously evaluates itself against synthetic test cases and reconstructed hack scenarios, using results to retrain models and generate harder test cases.
 
 ---
 
