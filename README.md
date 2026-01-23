@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="GitHub README cover.png" alt="Chain Insights Agent — $CIA" width="100%">
+  <img src="public/GitHub README cover.png" alt="Chain Insights Agent — $CIA" width="100%">
 </p>
 
 # Chain Insights Agent — $CIA
