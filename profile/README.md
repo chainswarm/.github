@@ -200,9 +200,11 @@ Additional blockchain support is architecturally ready:
 ## Quick Links
 
 - **Token:** $CIA on Virtuals Protocol
-- **Founder:** ([@aphex5](https://twitter.com/aphex5))
+- **Founder:** [@aphex5](https://twitter.com/aphex5)
 - **Built by:** Chainswarm Technology
-- **Partners:** 1-HORIZON LTD (Infrastructure) | U1CORE (Development)
+- **Partners:**
+  - 1-HORIZON LTD (Infrastructure)
+  -  U1CORE (Development)
 
 ---
 
