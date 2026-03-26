@@ -175,137 +175,6 @@ Protection that operates autonomously.
 
 **We build agents that protect agents.**
 
----
-
-## Architecture
-
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                             BLOCKCHAIN NODES                                │
-│                   Substrate • EVM • SVM • UTXO                              │
-└──────────────────────────────────┬──────────────────────────────────────────┘
-                                   │
-                                   ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                               INDEXERS                                      │
-├──────────────────┬──────────────────┬──────────────────┬────────────────────┤
-│   Money Flows    │    Labelers      │ Pricing Services │    Timeseries      │
-└────────┬─────────┴────────┬─────────┴────────┬─────────┴──────────┬─────────┘
-         └──────────────────┴─────────┬────────┴────────────────────┘
-                                      ▼
-                            ┌───────────────────┐
-                            │     ANALYZER       │
-                            │                    │
-                            │  Feature Extract   │
-                            │  Pattern Detect    │
-                            └─────────┬─────────┘
-                                      ▼
-                            ┌───────────────────┐
-                            │        ML          │
-                            │                    │
-                            │  Risk Propagation  │
-                            │  Classification    │
-                            │  Anomaly Detect    │
-                            │  Predictions       │
-                            └─────────┬─────────┘
-                                      ▼
-                            ┌───────────────────┐
-                            │    GRAPH RAG       │
-                            │                    │
-                            │  Money Flows       │
-                            │  Patterns          │
-                            │  Features          │
-                            │  Address Labels    │
-                            └─────────┬─────────┘
-                                      │
-              ┌──────────────────┼──────────────────┐
-              ▼                  ▼                   ▼
-     ┌──────────────┐  ┌──────────────┐    ┌──────────────┐
-     │     API      │  │   AGENTS     │    │     EVAL     │
-     │              │  │              │    │              │
-     │  REST        │  │  ACP/Butler  │    │  Synthetics  │
-     │  MCP         │  │  App Chat    │    │  Hack        │
-     │  ACP         │  │              │    │  Playbooks   │
-     └──────────────┘  └──────────────┘    └──────┬───────┘
-                                                   │
-                                                   ▼
-                                          ┌──────────────┐
-                                          │ SELF-IMPROVE │
-                                          │     LOOP     │
-                                          └──────────────┘
-```
-
-### Analyzer — Feature Extraction & Pattern Detection
-
-**~100 Address Features** including:
-
-- Transaction volume & frequency metrics
-- Counterparty diversity scores
-- Temporal behavior patterns
-- Value distribution statistics
-- Protocol interaction fingerprints
-- Network centrality measures
-
-**Pattern Detection:**
-
-| Pattern | Description |
-| ------- | ----------- |
-| Cycle | Circular transaction flows returning to origin |
-| Layering Path | Multiple transfers to obscure fund origins |
-| Smurfing Network | Breaking large amounts into smaller transactions |
-| Proximity Risk | Risk exposure from nearby wallets |
-| Fan-In Motif | Multiple inputs consolidating to single output |
-| Fan-Out Motif | Single input distributing to many outputs |
-| Temporal Burst | Sudden spikes in transaction activity |
-| Threshold Evasion | Transactions structured to stay under detection limits |
-| Wash Trading | Fake volume through self-trading |
-| Sybil Network | Coordinated wallets controlled by single entity |
-| Nested Services | Mixers and obfuscation services |
-| Rug Pull | Liquidity removal patterns |
-| Dormant Activation | Dormant wallets suddenly becoming active |
-
-### ML — Intelligence Layer
-
-- **Risk Propagation** — ML models that score how risk flows through transaction networks, not just individual addresses
-- **Classification** — Categorize addresses by behavior type
-- **Anomaly Detection** — Flag unusual activity in real-time
-- **Predictions** — Forecast likely next moves of tracked entities
-
-### GraphRAG — Knowledge Engine
-
-The core of $CIA. A unified knowledge graph combining:
-
-- **Money Flows** — Complete transaction trails
-- **Patterns** — Detected behavioral signatures
-- **Features** — Computed address characteristics
-- **Address Labels** — Known entities and risk tags
-
-GraphRAG is the permanent product. Everything else is a delivery surface.
-
-### API — Integration Layer
-
-| Protocol | Use Case |
-| -------- | -------- |
-| **REST** | Traditional HTTP integration |
-| **MCP** | Model Context Protocol — universal tool server for any AI agent or framework |
-| **ACP** | Agent Commerce Protocol for Virtuals ecosystem (Butler = natural language gateway) |
-
-### Self-Improvement Loop
-
-```text
-Indexers ──────┐
-               ├──→ EVAL (Synthetics + Hack Playbooks)
-Synthetics ◄───┤                 │
-               ▲                 ▼
-               │    Analyzer → ML
-               │         │
-               └────────┴───────────┘
-               Continuous Improvement
-```
-
-The system continuously evaluates itself against synthetic test cases and reconstructed hack scenarios, using results to retrain models and generate harder test cases.
-
----
 
 ## Roadmap
 
@@ -317,44 +186,23 @@ Virtuals Protocol is the next chapter. Agent-first. Commerce-ready. The right ho
 
 ### Day 0 — What We Launch With
 
-- [x] Chain Insights App with funds tracking
-- [x] Substrate/Bittensor chain support
-- [x] Analyzers & pattern detection
-- [x] Chain Synthetics benchmark
-- [x] Evaluation framework
-- [x] GraphRAG engine
-- [x] MCP server (live in Claude Desktop)
+- [x] Claude Desktop integartion
+- [X] MCP/ACP interfaces, x402 payments
+- [x] Bittensor blockchain support
 
 ### Chain Expansion (Next)
 
+- [ ] **EVM** (Base, Ethereum)
+  
 Additional blockchain support is architecturally ready:
 
-- **EVM** (Ethereum, Base, Arbitrum) — code ready, integration pending
-- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-dTAO, waiting for use case
-- **SVM** (Solana) — foundation built, known path to completion
+- [ ] **SVM** (Solana) — foundation built, known path to completion
+- [ ] **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-dTAO, waiting for use case
+ 
+**Intelligence:**
 
-### 2026 Priorities
-
-**Virtuals Integration:**
-
-- [ ] Agent & $CIA token launch on Virtuals Protocol
-- [ ] ACP integration (incl. Butler as natural language gateway)
-
-**Chain Insights App:**
-
-- [ ] AI Chat with rich artifacts — reactive, user-driven queries
-- [ ] Risk Scoring
-
-**Intelligence Layer:**
-
-- [ ] ML risk propagation models (in progress)
-- [ ] A/B testing framework
-- [ ] Continuous model retraining
-
-**Agent Communication:**
-
-- [ ] MCP — universal tool server for AI agents and frameworks
-- [ ] Full agent-to-agent intelligence via ACP
+- [ ] Advanced AI Investigations
+- [ ] Stolen funds realtime monitoring and exchange notification
 
 ---
 
