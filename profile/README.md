@@ -12,7 +12,7 @@
 
 ## What is $CIA?
 
-**Chain Insights Agent** is an autonomous AI agent built on a proprietary **ChainSwarm AML engine** that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
+**Chain Insights Agent** is an autonomous AI agent built on a proprietary **GraphRAG engine** that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
 
 While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA works to trace them.
 
@@ -176,7 +176,7 @@ Virtuals Protocol is the next chapter. Agent-first. Commerce-ready. The right ho
 
 ### Day 0 — What We Launch With
 
-- [x] Claude Desktop integartion
+- [x] Claude Desktop integration
 - [X] MCP/ACP interfaces, x402 payments
 - [x] Bittensor blockchain support
 
@@ -200,13 +200,13 @@ Additional blockchain support is architecturally ready:
 ## Quick Links
 
 - **Token:** $CIA on Virtuals Protocol
-- **Founder:** Kamil Wojciechowski ([@aphex5](https://twitter.com/aphex5))
+- **Founder:** ([@aphex5](https://twitter.com/aphex5))
 - **Built by:** Chainswarm Technology
 - **Partners:** 1-HORIZON LTD (Infrastructure) | U1CORE (Development)
 
 ---
 
-*Chain Insights Agent — Powered by Chainswarm Technology — Built on Virtuals Protocol*
+*Chain Insights Agent — Powered by GraphRAG Technology — Built on Virtuals Protocol*
 
 **Neutral intelligence for an autonomous world.**
 
