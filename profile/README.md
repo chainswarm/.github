@@ -8,13 +8,23 @@
 
 *Your autonomous guardian in the crypto wilderness.*
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=mwpB9Q5B8UI">
+    <img src="https://img.youtube.com/vi/mwpB9Q5B8UI/maxresdefault.jpg" alt="The Chain Insights Introduction" width="80%">
+  </a>
+  <br>
+  <strong>▶ Watch: The Chain Insights Introduction</strong>
+</p>
+
 ---
 
 ## What is $CIA?
 
-**Chain Insights Agent** is an autonomous AI agent that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
+**Chain Insights Agent** is an autonomous AI agent built on a proprietary **GraphRAG engine** that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
 
 While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA works to trace them.
+
+$CIA isn't just a tool — it's an agent that thinks. **ACP and MCP are its communication layer**, allowing other AI agents to query $CIA's intelligence directly. Think of it as an on-chain compliance analyst that any agent can hire.
 
 ---
 
@@ -38,14 +48,13 @@ $CIA doesn't wait for you to ask questions. It hunts.
 
 ### It Sees What You Can't
 
-- **Risk scoring** that reveals the hidden danger in any address
+- **Risk propagation scoring** — ML models that trace how risk flows through networks of addresses, not just flagging individual wallets
 - **Funds tracking** that follows money through protocols, mixers, and laundering layers
 - **Pattern detection** that identifies mixers, layering behavior, and laundering schemes
 
 ### It Warns Before You're Hit
 
 - **Proactive alerts** when threats emerge near your wallet
-- **Real-time broadcasts** on X/Twitter exposing scams as they happen
 - **Rapid flagging** of suspicious address clusters as attacks unfold, with confidence scoring
 
 ### It Answers When You Need It
@@ -59,27 +68,21 @@ $CIA doesn't wait for you to ask questions. It hunts.
 ## Who Needs $CIA?
 
 ### Traders & Degens
-
 Check any address before you swap. Know who you're dealing with. Sleep better.
 
 ### Protocols & DAOs
-
 Screen deposits. Protect your treasury. Stay compliant without the enterprise price tag.
 
 ### Autonomous Agents
-
 Query risk via ACP. Make intelligent decisions. Build safer systems.
 
 ### Victims & Investigators
-
 Trace stolen funds. Document the trail. Get answers.
 
 ### Curious Minds
-
 Who is this wallet dealing with? Where did that money come from? Explore connections, satisfy your curiosity, do your own research.
 
 ### Self-Investigators
-
 Finally understand why you got flagged. Check your own risk. Audit your own wallet history. Take back control.
 
 ---
@@ -88,7 +91,7 @@ Finally understand why you got flagged. Check your own risk. Audit your own wall
 
 | Family | Chains |
 |--------|--------|
-| **Substrate** | Polkadot ecosystem |
+| **Substrate** | Bittensor, Polkadot ecosystem |
 | **EVM** | Ethereum, Base, Arbitrum, and more |
 | **SVM** | Solana |
 | **UTXO** | Bitcoin, Litecoin, Dogecoin, and more |
@@ -110,11 +113,20 @@ Same intelligence model, any chain.
 | Channel | What You Get |
 |---------|--------------|
 | **Chain Insights App** | Risk scoring, funds tracking, AI chat — pay per query |
-| **Agent Commerce Protocol** | Direct agent-to-agent intelligence for Virtuals ecosystem |
-| **Butler** | Natural language requests through Virtuals gateway |
-| **X/Twitter** | Real-time threat alerts and community intelligence |
+| **ACP (Agent Commerce Protocol)** | Direct agent-to-agent intelligence for Virtuals ecosystem — natural language requests via Butler |
+| **MCP (Model Context Protocol)** | Universal tool server — already live in Claude Desktop, any AI agent or framework can plug in |
 
 **No subscriptions. No enterprise gatekeeping. Pay only for what you use.**
+
+### Already Live: Claude Desktop Integration
+
+$CIA runs as an MCP server inside Claude Desktop today — blockchain intelligence accessible through natural conversation. Fund your wallet, query risk, trace funds, all without leaving your AI assistant.
+
+<p align="center">
+  <img src="https://pbs.twimg.com/media/GnBExample.jpg" alt="CIA running in Claude Desktop" width="60%">
+</p>
+
+> *"In 2026 we no longer build webapps. We integrate with AI Tools instead."* — [@ChainAgent50744](https://x.com/ChainAgent50744/status/2036912383596138671)
 
 ---
 
@@ -170,59 +182,58 @@ Protection that operates autonomously.
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                              BLOCKCHAIN NODES                                │
-│                      Substrate  •  EVM  •  SVM  •  UTXO                      │
+│                             BLOCKCHAIN NODES                                │
+│                   Substrate • EVM • SVM • UTXO                              │
 └──────────────────────────────────┬──────────────────────────────────────────┘
                                    │
                                    ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                                INDEXERS                                      │
+│                               INDEXERS                                      │
 ├──────────────────┬──────────────────┬──────────────────┬────────────────────┤
-│   Money Flows    │     Labelers     │ Pricing Services │    Timeseries      │
+│   Money Flows    │    Labelers      │ Pricing Services │    Timeseries      │
 └────────┬─────────┴────────┬─────────┴────────┬─────────┴──────────┬─────────┘
          └──────────────────┴─────────┬────────┴────────────────────┘
                                       ▼
                             ┌───────────────────┐
-                            │     ANALYZER      │
-                            │                   │
-                            │  Feature Extract  │
-                            │  Pattern Detect   │
+                            │     ANALYZER       │
+                            │                    │
+                            │  Feature Extract   │
+                            │  Pattern Detect    │
                             └─────────┬─────────┘
                                       ▼
                             ┌───────────────────┐
-                            │        ML         │
-                            │                   │
-                            │  Risk Scoring     │
-                            │  Classification   │
-                            │  Anomaly Detect   │
-                            │  Predictions      │
+                            │        ML          │
+                            │                    │
+                            │  Risk Propagation  │
+                            │  Classification    │
+                            │  Anomaly Detect    │
+                            │  Predictions       │
                             └─────────┬─────────┘
                                       ▼
                             ┌───────────────────┐
-                            │     GRAPH RAG     │
-                            │                   │
-                            │  Money Flows      │
-                            │  Patterns         │
-                            │  Features         │
-                            │  Address Labels   │
+                            │    GRAPH RAG       │
+                            │                    │
+                            │  Money Flows       │
+                            │  Patterns          │
+                            │  Features          │
+                            │  Address Labels    │
                             └─────────┬─────────┘
                                       │
-                   ┌──────────────────┼──────────────────┐
-                   ▼                  ▼                  ▼
-          ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-          │     API      │   │    AGENTS    │   │     EVAL     │
-          │              │   │              │   │              │
-          │  REST        │   │  GAME        │   │  Synthetics  │
-          │  MCP         │   │  ACP         │   │  Hack        │
-          │  ACP         │   │  Butler      │   │  Playbooks   │
-          │              │   │  App Chat    │   │              │
-          └──────────────┘   └──────────────┘   └──────┬───────┘
-                                                       │
-                                                       ▼
-                                               ┌──────────────┐
-                                               │ SELF-IMPROVE │
-                                               │     LOOP     │
-                                               └──────────────┘
+              ┌──────────────────┼──────────────────┐
+              ▼                  ▼                   ▼
+     ┌──────────────┐  ┌──────────────┐    ┌──────────────┐
+     │     API      │  │   AGENTS     │    │     EVAL     │
+     │              │  │              │    │              │
+     │  REST        │  │  ACP/Butler  │    │  Synthetics  │
+     │  MCP         │  │  App Chat    │    │  Hack        │
+     │  ACP         │  │              │    │  Playbooks   │
+     └──────────────┘  └──────────────┘    └──────┬───────┘
+                                                   │
+                                                   ▼
+                                          ┌──────────────┐
+                                          │ SELF-IMPROVE │
+                                          │     LOOP     │
+                                          └──────────────┘
 ```
 
 ### Analyzer — Feature Extraction & Pattern Detection
@@ -256,48 +267,41 @@ Protection that operates autonomously.
 
 ### ML — Intelligence Layer
 
-- **Risk Scoring** — Probabilistic danger assessment for any address
+- **Risk Propagation** — ML models that score how risk flows through transaction networks, not just individual addresses
 - **Classification** — Categorize addresses by behavior type
 - **Anomaly Detection** — Flag unusual activity in real-time
 - **Predictions** — Forecast likely next moves of tracked entities
 
-### GraphRAG — Knowledge Retrieval
+### GraphRAG — Knowledge Engine
 
-Unified knowledge graph combining:
+The core of $CIA. A unified knowledge graph combining:
 
 - **Money Flows** — Complete transaction trails
 - **Patterns** — Detected behavioral signatures
 - **Features** — Computed address characteristics
 - **Address Labels** — Known entities and risk tags
 
+GraphRAG is the permanent product. Everything else is a delivery surface.
+
 ### API — Integration Layer
 
 | Protocol | Use Case |
 | -------- | -------- |
 | **REST** | Traditional HTTP integration |
-| **MCP** | Model Context Protocol for AI agents |
-| **ACP** | Agent Commerce Protocol for Virtuals ecosystem |
-
-### Agents — Autonomous Interfaces
-
-| Agent | Function |
-| ----- | -------- |
-| **GAME** | Autonomous X/Twitter intelligence, real-time threat broadcasts |
-| **ACP** | Agent-to-agent commerce and queries |
-| **Butler** | Natural language gateway via Virtuals |
-| **App Chat** | Chain Insights App conversational interface |
+| **MCP** | Model Context Protocol — universal tool server for any AI agent or framework |
+| **ACP** | Agent Commerce Protocol for Virtuals ecosystem (Butler = natural language gateway) |
 
 ### Self-Improvement Loop
 
 ```text
 Indexers ──────┐
                ├──→ EVAL (Synthetics + Hack Playbooks)
-Synthetics ◄───┤           │
-      ▲        │           ▼
-      │        │      Analyzer → ML
-      │        │           │
-      └────────┴───────────┘
-         Continuous Improvement
+Synthetics ◄───┤                 │
+               ▲                 ▼
+               │    Analyzer → ML
+               │         │
+               └────────┴───────────┘
+               Continuous Improvement
 ```
 
 The system continuously evaluates itself against synthetic test cases and reconstructed hack scenarios, using results to retrain models and generate harder test cases.
@@ -319,13 +323,15 @@ Virtuals Protocol is the next chapter. Agent-first. Commerce-ready. The right ho
 - [x] Analyzers & pattern detection
 - [x] Chain Synthetics benchmark
 - [x] Evaluation framework
+- [x] GraphRAG engine
+- [x] MCP server (live in Claude Desktop)
 
-### Ready But Waiting
+### Chain Expansion (Next)
 
-Additional blockchain support is architecturally ready but deferred while we focus on intelligence and agent capabilities:
+Additional blockchain support is architecturally ready:
 
-- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-dTAO, waiting for use case
 - **EVM** (Ethereum, Base, Arbitrum) — code ready, integration pending
+- **UTXO** (Bitcoin, Litecoin, Dogecoin, Zcash) — built pre-dTAO, waiting for use case
 - **SVM** (Solana) — foundation built, known path to completion
 
 ### 2026 Priorities
@@ -333,9 +339,7 @@ Additional blockchain support is architecturally ready but deferred while we foc
 **Virtuals Integration:**
 
 - [ ] Agent & $CIA token launch on Virtuals Protocol
-- [ ] ACP integration
-- [ ] Butler integration
-- [ ] GAME agent (X/Twitter, proactive alerts & monitoring)
+- [ ] ACP integration (incl. Butler as natural language gateway)
 
 **Chain Insights App:**
 
@@ -344,9 +348,14 @@ Additional blockchain support is architecturally ready but deferred while we foc
 
 **Intelligence Layer:**
 
-- [ ] ML models and risk scoring (in progress)
+- [ ] ML risk propagation models (in progress)
 - [ ] A/B testing framework
 - [ ] Continuous model retraining
+
+**Agent Communication:**
+
+- [ ] MCP — universal tool server for AI agents and frameworks
+- [ ] Full agent-to-agent intelligence via ACP
 
 ---
 
@@ -367,13 +376,15 @@ Additional blockchain support is architecturally ready but deferred while we foc
 
 ### TL;DR
 
-$CIA is an autonomous AI agent that:
+$CIA is an autonomous AI agent built on a GraphRAG engine that:
 
-1. **Scores risk** on any blockchain address instantly
+1. **Scores risk propagation** across blockchain address networks with ML
 2. **Tracks funds** through complex laundering schemes
 3. **Warns you** before threats reach your wallet
 4. **Answers questions** about any address or transaction
 5. **Works 24/7** without human intervention
+
+Other AI agents can hire $CIA as their on-chain compliance analyst via ACP and MCP. Already live in Claude Desktop.
 
 All accessible via app, API, or agent-to-agent protocol. No enterprise contracts. Pay as you go.
 
