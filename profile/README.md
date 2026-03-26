@@ -8,14 +8,6 @@
 
 *Your autonomous guardian in the crypto wilderness.*
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=mwpB9Q5B8UI">
-    <img src="https://img.youtube.com/vi/mwpB9Q5B8UI/maxresdefault.jpg" alt="The Chain Insights Introduction" width="80%">
-  </a>
-  <br>
-  <strong>▶ Watch: The Chain Insights Introduction</strong>
-</p>
-
 ---
 
 ## What is $CIA?
@@ -25,6 +17,14 @@
 While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA works to trace them.
 
 $CIA isn't just a tool — it's an agent that thinks. **ACP and MCP are its communication layer**, allowing other AI agents to query $CIA's intelligence directly. Think of it as an on-chain compliance analyst that any agent can hire.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=mwpB9Q5B8UI">
+    <img src="https://img.youtube.com/vi/mwpB9Q5B8UI/maxresdefault.jpg" alt="The Chain Insights Introduction" width="80%">
+  </a>
+  <br>
+  <strong>▶ Watch: The Chain Insights Introduction</strong>
+</p>
 
 ---
 
@@ -132,12 +132,11 @@ $CIA runs as an MCP server inside Claude Desktop today — blockchain intelligen
 
 ## The $CIA Token
 
-**$CIA** powers the Chain Insights Agent ecosystem:
+**$CIA** is the token of the Chain Insights Agent project, launched on Virtuals Protocol.
 
-- **Query payments** — pay for risk scores, fund traces, and investigation reports
-- **Agent commerce** — currency for agent-to-agent transactions via ACP
+$CIA represents ownership and alignment with the Chain Insights ecosystem — the team building autonomous blockchain intelligence. As the project grows and delivers value through ACP queries, MCP integrations, and chain expansion, $CIA holders are aligned with that growth.
 
-$CIA aligns access, usage, and incentives around a single intelligence provider — without subscriptions or enterprise contracts.
+$CIA is not a payment or utility token. Intelligence queries are paid in USDC via ACP.
 
 ---
 
