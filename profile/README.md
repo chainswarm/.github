@@ -113,7 +113,7 @@ Finally understand why you got flagged. Check your own risk. Audit your own wall
 $CIA runs as an MCP server inside Claude Desktop today — blockchain intelligence accessible through natural conversation. Fund your wallet, query risk, trace funds, all without leaving your AI assistant.
 
 <p align="center">
-  <img src="https://pbs.twimg.com/media/GnBExample.jpg" alt="CIA running in Claude Desktop" width="60%">
+  <img src="../public/HESQwWTXkAACfHq.jpeg" alt="CIA running in Claude Desktop" width="60%">
 </p>
 
 > *"In 2026 we no longer build webapps. We integrate with AI Tools instead."* — [@ChainAgent50744](https://x.com/ChainAgent50744/status/2036912383596138671)
