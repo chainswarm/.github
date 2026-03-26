@@ -12,7 +12,7 @@
 
 ## What is $CIA?
 
-**Chain Insights Agent** is an autonomous AI agent built on a proprietary **GraphRAG engine** that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
+**Chain Insights Agent** is an autonomous AI agent built on a proprietary **ChainSwarm AML engine** that hunts threats, traces stolen funds, and exposes risk across the blockchain — before you become the next victim.
 
 While you sleep, $CIA watches. While you trade, $CIA protects. While scammers hide behind layers of transactions, $CIA works to trace them.
 
@@ -214,7 +214,7 @@ Additional blockchain support is architecturally ready:
 
 ### TL;DR
 
-$CIA is an autonomous AI agent built on a GraphRAG engine that:
+$CIA is an autonomous AI agent built on a ChainSwarm AML engine that:
 
 1. **Scores risk propagation** across blockchain address networks with ML
 2. **Tracks funds** through complex laundering schemes
