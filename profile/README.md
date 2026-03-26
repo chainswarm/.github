@@ -91,20 +91,10 @@ Finally understand why you got flagged. Check your own risk. Audit your own wall
 
 | Family | Chains |
 |--------|--------|
-| **Substrate** | Bittensor, Polkadot ecosystem |
-| **EVM** | Ethereum, Base, Arbitrum, and more |
+| **Substrate** | Bittensor, Polkadot |
+| **EVM** | Ethereum, Base |
 | **SVM** | Solana |
-| **UTXO** | Bitcoin, Litecoin, Dogecoin, and more |
-
-### Unified Money Flows
-
-All transactions are aggregated into **USD-normalized money flows** — the value at the exact moment of each transaction, regardless of the underlying asset. This provides:
-
-- **Asset-agnostic analysis** — compare BTC, ETH, and any token on equal footing
-- **Historical accuracy** — values reflect actual transaction time, not current prices
-- **Full detail access** — drill down to specific on-chain transactions when needed
-
-Same intelligence model, any chain.
+| **UTXO** | Bitcoin, Litecoin, Dogecoin |
 
 ---
 
@@ -112,7 +102,7 @@ Same intelligence model, any chain.
 
 | Channel | What You Get |
 |---------|--------------|
-| **Chain Insights App** | Risk scoring, funds tracking, AI chat — pay per query |
+| **Claude Desktop** | Just chat with our AML system |
 | **ACP (Agent Commerce Protocol)** | Direct agent-to-agent intelligence for Virtuals ecosystem — natural language requests via Butler |
 | **MCP (Model Context Protocol)** | Universal tool server — already live in Claude Desktop, any AI agent or framework can plug in |
 
@@ -143,7 +133,7 @@ $CIA is not a payment or utility token. Intelligence queries are paid in USDC vi
 ## Important Notes
 
 - Chain Insights Agent analyzes **public blockchain data only**
-- All risk scores and labels are **probabilistic**, not determinations of guilt
+- All risk propagation scores and labels are **probabilistic**, not determinations of guilt
 - Outputs are designed for investigation and research, not as sole grounds for enforcement actions
 - $CIA is not affiliated with any government or intelligence agency
 
@@ -203,6 +193,7 @@ Additional blockchain support is architecturally ready:
 
 - [ ] Advanced AI Investigations
 - [ ] Stolen funds realtime monitoring and exchange notification
+- [ ] Wallet counterparty protection / monitoring
 
 ---
 
